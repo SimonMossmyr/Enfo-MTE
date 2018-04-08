@@ -53,3 +53,7 @@ _Why have you made it so hard to open and edit the map in World Editor?_
 > Unfortunately, `.w3x` files are binary and any changes made in commits won't show up when using `$ git diff`. This means we can't be sure that the changes reported in the commit message are actually the ones being made. Someone could potentially insert cheat codes without our knowledge, and this repository is public (or at least planned to be) so  anyone can make changes. 
 >
 > The solution is to extract all files in the map. All code in the map is in readable text files, and the other components (units, doodads, tileset, et.c.) are binary files which with some prying can actually be understood. This makes version control a lot easier.
+
+_How did you crack the map?_
+
+> Google it LOL.
