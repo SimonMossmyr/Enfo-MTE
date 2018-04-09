@@ -46,7 +46,7 @@ Then proceed as follows:
 Patch notes will (eventually) be found in the Wiki pages.
 
 ## FAQ
-_Why have you made it so hard to open and edit the map in World Editor?_
+_Why have you made it so hard to open and edit the map in World Editor? Why not just host the .w3x map file directly?_
 
 > Version control and security. 
 >
