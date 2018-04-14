@@ -19,11 +19,21 @@ STRING 3
 |cffffaa00Enfo's TS:MT Edition 1.93
 }
 
+STRING 4
+{
+Player 13
+}
+
 STRING 5
 {
   Choose a hero with unique abilities to help your team to fight against waves of monsters while using your spells to defeat the other team.
   Released on |cffffaa00October 30th|r, 2011.
   Hosted at |c004EEA1Awww.enfomt.com|r
+}
+
+STRING 6
+{
+Player 14
 }
 
 STRING 7
@@ -185,6 +195,11 @@ Everild's Rage is a deafening battle cry, delivered with a fury befitting that o
 |cffffcc00Armor increase: |r<A00F:ANbr,DataB8>
 |cffffcc00Life regeneration increase: |r<A00F:ANbr,Dur8> per second
 |cffffcc00Duration: |r<A00F:ANbr,Dur8>  seconds
+}
+
+STRING 22
+{
+Player 15
 }
 
 STRING 23
@@ -720,6 +735,11 @@ STRING 73
 X
 }
 
+STRING 74
+{
+Player 16
+}
+
 STRING 75
 // Items: I00Y (Uthmor's Skullcleaver), Hotkey (Hotkey)
 {
@@ -732,6 +752,11 @@ STRING 76
 [|cffffcc00X|r] Learn Chain Lightning - [|cffffcc00Level %d|r]
 }
 
+STRING 77
+{
+Player 17
+}
+
 STRING 78
 // Abilities: A00M (Chain Lightning), Tip (Tooltip - Normal)
 {
@@ -742,6 +767,11 @@ STRING 79
 // Abilities: A00M (Chain Lightning), Tip (Tooltip - Normal)
 {
 [|cffffcc00X|r] Chain Lightning - [|cffffcc00Level 2|r]
+}
+
+STRING 80
+{
+Player 18
 }
 
 STRING 81
@@ -882,6 +912,11 @@ Summons a crackling, semi-sentient ball of lightning to attack the Evoker's enem
 |c00ffcc00Area of Effect:|r 500
 |c00ffcc00Damage per hit: |r<A00O,Area2>
 |c00ffcc00Duration:|r <A00O,Dur2> seconds
+}
+
+STRING 100
+{
+Player 19
 }
 
 STRING 101
@@ -7830,6 +7865,11 @@ STRING 865
 [|cffffcc00V|r] Wolverine Dance - [|cffffcc00Level 2|r]
 }
 
+STRING 866
+{
+Player 20
+}
+
 STRING 867
 // Abilities: A02G (Wolverine Dance), Tip (Tooltip - Normal)
 {
@@ -11760,6 +11800,11 @@ STRING 1284
 // Abilities: A03G (Unnerving Symphony), Researchtip (Tooltip - Learn)
 {
 [|cffffcc00X|r] Learn Unnerving Symphony - [|cffffcc00Level %d|r]
+}
+
+STRING 1285
+{
+Player 21
 }
 
 STRING 1286
@@ -24426,6 +24471,16 @@ STRING 2660
 Sends a negative energy burst at an enemy that stops it from casting spells for <A04F:Acdh,Dur5> seconds.
 }
 
+STRING 2661
+{
+Player 22
+}
+
+STRING 2662
+{
+Player 23
+}
+
 STRING 2663
 // Abilities: A02V (MavDummy - Spellcurse), Ubertip (Tooltip - Normal - Extended)
 {
@@ -30573,6 +30628,11 @@ The cannibal is known for his skill with the axe, and his ability to try and beh
 
 |c00ffcc00Increase per level:|r Chance to deal increased damage
 |c00ffcc00Decrease per level: |rNone
+}
+
+STRING 3386
+{
+Player 24
 }
 
 STRING 3387
