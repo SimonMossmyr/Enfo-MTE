@@ -16,7 +16,7 @@ The `.w3x` under the [Releases](https://github.com/SimonMossmyr/Enfo-MTE/release
 Install said software and then proceed with these steps:
 
 1. Clone this repo anywhere,
-2. Make a copy of any `.w3x map` and place it anywhere. Some can be found in `X:\...\WarCraft III\Maps\FrozenThrone`,
+2. Make a copy of any `.w3x` map and place it anywhere. Some can be found in `X:\...\WarCraft III\Maps\FrozenThrone`,
 3. Make a copy of `X:\...\Enfo-MTE-repository\mpq-listfile.txt` and place it in MPQMaster's listfile directory `X:\...\MPQ master v1.2.0\mpqmaster\Listfiles\`,
 4. Open up said map in MPQMaster with the listfile and delete _all_ files in it,
 5. Import all files and directories found in `X:\...\Enfo-MTE-repository\w3x-mpq-raw\` into the map,
