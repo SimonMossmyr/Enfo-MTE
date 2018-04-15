@@ -52,3 +52,7 @@ _Why have you made it so hard to open and edit the map in World Editor? Why not 
 > Unfortunately, `.w3x` files are compressed archives (MPQ) and any changes made in commits won't be decipherable, which means they won't show up when using `$ git diff`. Thus, we can't be sure that any changes reported in the commit's message are actually the ones being made. Someone could potentially insert cheat codes without our knowledge, and this repository is public (or at least planned to be) so anyone can make changes. 
 >
 > The solution is to unpack all files in the map and have them be the repository. All file components (code, units, doodads, tilesets) are readable UTC-encoded text files which with some prying can actually be understood. This makes version control a lot safer.
+
+_Why are the function and variable names so weird?_
+
+> This map builds on Enfo's TS:MT Edition 1.93, which was protected using Wc3mapoptimizer and possibly some other software. One map protection technique used was code obfuscation. All global variables and function names were renamed to some combination of the characters I, O, 0 and 1. To make it more readable, these function names have been renamed to a combination of two random english words separated by an underscore.
