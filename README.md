@@ -49,6 +49,6 @@ _Why have you made it so hard to open and edit the map in World Editor? Why not 
 
 > Version control and security. 
 >
-> Unfortunately, `.w3x` files are compressed archives (MPQ) and any changes made in commits won't be decipherable. Which means they won't show up when using `$ git diff`, so we can't be sure that any changes reported in the commit's message are actually the ones being made. Someone could potentially insert cheat codes without our knowledge, and this repository is public (or at least planned to be) so anyone can make changes. 
+> Unfortunately, `.w3x` files are compressed archives (MPQ) and any changes made in commits won't be decipherable, which means they won't show up when using `$ git diff`. Thus, we can't be sure that any changes reported in the commit's message are actually the ones being made. Someone could potentially insert cheat codes without our knowledge, and this repository is public (or at least planned to be) so anyone can make changes. 
 >
 > The solution is to unpack all files in the map and have them be the repository. All file components (code, units, doodads, tilesets) are readable UTC-encoded text files which with some prying can actually be understood. This makes version control a lot safer.
