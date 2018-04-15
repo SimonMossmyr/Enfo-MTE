@@ -6,12 +6,12 @@
 
 STRING 1
 {
-Player 1
+|cffffaa00Enfo's TS:MTE Edition 1.0
 }
 
 STRING 2
 {
-[|cffffcc00V|r] Everlid's Rage - [|cffffcc00Leve
+6-8 (up to 24)
 }
 
 STRING 3
@@ -22,13 +22,6 @@ STRING 3
 STRING 4
 {
 Player 13
-}
-
-STRING 5
-{
-  Choose a hero with unique abilities to help your team to fight against waves of monsters while using your spells to defeat the other team.
-  Released on |cffffaa00October 30th|r, 2011.
-  Hosted at |c004EEA1Awww.enfomt.com|r
 }
 
 STRING 6
@@ -30641,10 +30634,22 @@ STRING 3387
 Behead - [|cffffcc00Level 1|r]
 }
 
+STRING 3388
+{
+  Choose a Hero with unique abilities to help your team to fight against waves of monsters while using your spells to defeat the other team.
+  Released on |cffffaa00Month DDth|r, 2018.
+  Hosted at |c004EEA1Agithub.com/SimonMossmyr/Enfo-MTE|r
+}
+
 STRING 3389
 // Abilities: A07B (Behead II), Tip (Tooltip - Normal)
 {
 Behead - [|cffffcc00Level 2|r]
+}
+
+STRING 3390
+{
+Player 1
 }
 
 STRING 3391

@@ -1,4 +1,74 @@
 globals
+//globals from Rawcodes:
+constant boolean LIBRARY_Rawcodes=true
+        //  Units
+constant integer RAW_UNIT_HERO_SELECTOR= 'ushd'
+    
+        //  Heroes
+constant integer RAW_HERO_SPIKED_TREE= 'E00U'
+constant integer RAW_HERO_AHLEN= 'E00E'
+constant integer RAW_HERO_ARCANE_MISTRESS= 'E00G'
+constant integer RAW_HERO_BARBARIAN= 'E002'
+constant integer RAW_HERO_BARD= 'E00L'
+constant integer RAW_HERO_BATTLE_CHANTER= 'E00M'
+constant integer RAW_HERO_BLOOD_DANCER= 'E00F'
+constant integer RAW_HERO_CABALIST= 'E003'
+constant integer RAW_HERO_CLERIC= 'E006'
+constant integer RAW_HERO_EMPATH= 'E000'
+constant integer RAW_HERO_ENTROPIST= 'E007'
+constant integer RAW_HERO_EVOKER= 'E004'
+constant integer RAW_HERO_FAENRAE_CHAMPION= 'E00V'
+constant integer RAW_HERO_FAENRAE_CHAMPION_ALT= 'E00R'
+constant integer RAW_HERO_HOLY_WARRIOR= 'E00K'
+constant integer RAW_HERO_HYPNOTIST= 'E00A'
+constant integer RAW_HERO_MAGIC_INFUSER= 'E00T'
+constant integer RAW_HERO_MENTALIST= 'E00B'
+constant integer RAW_HERO_MOON_MAGE= 'E00C'
+constant integer RAW_HERO_PALADIN= 'E008'
+constant integer RAW_HERO_RANGER= 'E001'
+constant integer RAW_HERO_REAPER= 'E00Z'
+constant integer RAW_HERO_REVENANT= 'E00X'
+constant integer RAW_HERO_SNIPER= 'E00Q'
+constant integer RAW_HERO_SNIPER_ALT= 'E010'
+constant integer RAW_HERO_TEMPEST= 'E00N'
+constant integer RAW_HERO_THIEF= 'E009'
+constant integer RAW_HERO_TRADER= 'E00I'
+constant integer RAW_HERO_TROLL_CANNIBAL= 'E011'
+constant integer RAW_HERO_WARLOCK= 'E00S'
+constant integer RAW_HERO_WARRIOR_MAGE= 'E00J'
+constant integer RAW_HERO_WEAPONSMITH= 'E00P'
+constant integer RAW_HERO_RANDOM_HERO= 'Nplh'
+constant integer RAW_HERO_RANDOM_COMBAT_HERO= 'N01V'
+constant integer RAW_HERO_RANDOM_ROUNDED_HERO= 'N01Y'
+constant integer RAW_HERO_RANDOM_SPELLCASTER_HERO= 'N01X'
+constant integer RAW_HERO_RANDOM_SUPPORT_HERO= 'N01W'
+constant integer RAW_HERO_SHADOW_PRIEST= 'E00Y'
+constant integer RAW_HERO_SUMMONER= 'E00O'
+constant integer RAW_HERO_TIME_MAGE= 'E00W'
+        
+        //  Monsters
+constant integer RAW_MONSTER_SPIRIT_HAWK= 'n01Z'
+constant integer RAW_MONSTER_SPIRIT_OWL= 'n020'
+        
+        //  Dummies
+constant integer RAW_DUMMY_DUMMY= 'h001'
+constant integer RAW_DUMMY_DUMMY_2= 'h002'
+constant integer RAW_DUMMY_DUMMY_3= 'h005'
+constant integer RAW_DUMMY_AURA_INFUSER= 'h003'
+constant integer RAW_DUMMY_AURA_MENTALIST= 'h006'
+constant integer RAW_DUMMY_AURA_PALADIN= 'h004'
+constant integer RAW_DUMMY_NIMSHA= 'h009'
+constant integer RAW_DUMMY_SPIRITUAL_SWARM= 'h008'
+        
+        //  Spells
+constant integer RAW_SPELL_BURST= 'A06G'
+constant integer RAW_SPELL_BURST_DUMMY= 'A045'
+//endglobals from Rawcodes
+//globals from Settings:
+constant boolean LIBRARY_Settings=true
+        // Spells
+constant real BALANCE_SPELL_BURST_DURATION= 20.
+//endglobals from Settings
     // Generated
 rect gg_rct_Hero_Select_East= null
 rect gg_rct_Hero_Select_North= null
@@ -34,52 +104,12 @@ sound gg_snd_Hint= null
 sound gg_snd_ItemReceived= null
 trigger gg_trg_Wiki= null
 trigger gg_trg_Entire_code_base= null
-constant integer HERO_RAW_SPIKED_TREE= 'E00U'
-constant integer HERO_RAW_AHLEN= 'E00E'
-constant integer HERO_RAW_ARCANE_MISTRESS= 'E00G'
-constant integer HERO_RAW_BARBARIAN= 'E002'
-constant integer HERO_RAW_BARD= 'E00L'
-constant integer HERO_RAW_BATTLE_CHANTER= 'E00M'
-constant integer HERO_RAW_BLOOD_DANCER= 'E00F'
-constant integer HERO_RAW_CABALIST= 'E003'
-constant integer HERO_RAW_CLERIC= 'E006'
-constant integer HERO_RAW_EMPATH= 'E000'
-constant integer HERO_RAW_ENTROPIST= 'E007'
-constant integer HERO_RAW_EVOKER= 'E004'
-constant integer HERO_RAW_FAENRAE_CHAMPION= 'E00V'
-constant integer HERO_RAW_FAENRAE_CHAMPION_ALT= 'E00R'
-constant integer HERO_RAW_HOLY_WARRIOR= 'E00K'
-constant integer HERO_RAW_HYPNOTIST= 'E00A'
-constant integer HERO_RAW_MAGIC_INFUSER= 'E00T'
-constant integer HERO_RAW_MENTALIST= 'E00B'
-constant integer HERO_RAW_MOON_MAGE= 'E00C'
-constant integer HERO_RAW_PALADIN= 'E008'
-constant integer HERO_RAW_RANGER= 'E001'
-constant integer HERO_RAW_REAPER= 'E00Z'
-constant integer HERO_RAW_REVENANT= 'E00X'
-constant integer HERO_RAW_SNIPER= 'E00Q'
-constant integer HERO_RAW_SNIPER_ALT= 'E010'
-constant integer HERO_RAW_TEMPEST= 'E00N'
-constant integer HERO_RAW_THIEF= 'E009'
-constant integer HERO_RAW_TRADER= 'E00I'
-constant integer HERO_RAW_TROLL_CANNIBAL= 'E011'
-constant integer HERO_RAW_WARLOCK= 'E00S'
-constant integer HERO_RAW_WARRIOR_MAGE= 'E00J'
-constant integer HERO_RAW_WEAPONSMITH= 'E00P'
-constant integer HERO_RAW_RANDOM_HERO= 'Nplh'
-constant integer HERO_RAW_RANDOM_COMBAT_HERO= 'N01V'
-constant integer HERO_RAW_RANDOM_ROUNDED_HERO= 'N01Y'
-constant integer HERO_RAW_RANDOM_SPELLCASTER_HERO= 'N01X'
-constant integer HERO_RAW_RANDOM_SUPPORT_HERO= 'N01W'
-constant integer HERO_RAW_SHADOW_PRIEST= 'E00Y'
-constant integer HERO_RAW_SUMMONER= 'E00O'
-constant integer HERO_RAW_TIME_MAGE= 'E00W'
 constant integer FORCE_WEST_ID= 1
 constant integer FORCE_EAST_ID= 2
 unit array starcraft
 integer array zergling
 integer rush_abusive=0
-integer array erratic_bright
+integer array numberOfLives
 unit array dinner_ragged
 dialog secondhand_touch=null
 button array record_halting
@@ -94,13 +124,13 @@ rect array obnoxious_army
 boolean educate_joyous=false
 integer trail_pin=0
 integer array yawn_follow
-force array force_on_west_east
+force array forceList
 location look_pumped=null
 boolean dime_marry=false
 integer array yell_supreme
 boolean array income_ground
 unit array spellbringer_of_player
-integer array blackandwhite_press
+integer array numberOfKillsByPlayer
 integer array torpid_pause
 integer appreciate_malicious=0
 integer array sand_park
@@ -196,7 +226,7 @@ player array gaze_friendly
 string array bike_mellow
 string addicted_decide=""
 boolean jam_use=false
-integer array march_ants
+integer array bonusMonstersKilled
 integer array thoughtful_value
 force loutish_title=null
 integer coach_maniacal=0
@@ -285,7 +315,7 @@ trigger night_tart=null
 trigger repeat_reject=null
 trigger untidy_chivalrous=null
 trigger hulking_paper=null
-trigger massive_view=null
+trigger spellBurstTrigger=null
 trigger foot_lethal=null
 trigger run_tease=null
 trigger freezing_normal=null
@@ -532,7 +562,7 @@ unit fretful_trot=null
 unit verse_trip=null
 unit veil_save=null
 unit spellbringer_player_3=null
-unit gaudy_mean=null
+unit spawnHeroTrader=null
 unit icicle_bare=null
 unit wrestle_impossible=null
 unit contain_appear=null
@@ -545,8 +575,8 @@ unit repair_responsible=null
 unit vague_fade=null
 unit magic_number=null
 unit friction_twig=null
-unit sign_hospital=null
-unit inquisitive_peep=null
+unit spawnHeroTrollCanibal=null
+unit spawnHeroFaenraeChampion=null
 unit wing_war=null
 unit land_shrug=null
 unit seal_test=null
@@ -575,7 +605,7 @@ real spare_warm=.0
 real hateful_purpose=.0
 group guess_sheet=null
 force lace_shave=null
-boolexpr harass_sturdy=null
+boolexpr trueFilter=null
 constant integer NUMBER_OF_DONORS= 15
 string array paypal_donor
 
@@ -585,13 +615,19 @@ string array paypal_donor
 endglobals
 
 
+//library Rawcodes:
+
+//library Rawcodes ends
+//library Settings:
+
+//library Settings ends
 //===========================================================================
 // 
-// Player 1
+// |cffffaa00Enfo's TS:MTE Edition 1.0
 // 
 //   Warcraft III map script
 //   Generated by the Warcraft III World Editor
-//   Date: Sat Apr 14 17:56:20 2018
+//   Date: Mon Apr 16 01:02:45 2018
 //   Map Author: |cffffaa00Enfo's TS:MT Edition 1.93
 // 
 //===========================================================================
@@ -691,6 +727,7 @@ endfunction
 
 
 
+
 function popcorn_married takes real pie_pleasure returns nothing
     local real bear_enter
     local real st=TimerGetElapsed(potato_clammy)
@@ -730,7 +767,7 @@ endfunction
 
 function joyous_telephone takes rect r returns group
     set guess_sheet=CreateGroup()
-    call GroupEnumUnitsInRect(guess_sheet, r, harass_sturdy)
+    call GroupEnumUnitsInRect(guess_sheet, r, trueFilter)
     return guess_sheet
 endfunction
 
@@ -749,7 +786,7 @@ endfunction
 
 function squirrel_stem takes player watch_education returns group
     set guess_sheet=CreateGroup()
-    call GroupEnumUnitsOfPlayer(guess_sheet, watch_education, harass_sturdy)
+    call GroupEnumUnitsOfPlayer(guess_sheet, watch_education, trueFilter)
     return guess_sheet
 endfunction
 
@@ -777,7 +814,7 @@ endfunction
 
 function question_temper takes player watch_education returns force
     set lace_shave=CreateForce()
-    call ForceEnumAllies(lace_shave, watch_education, harass_sturdy)
+    call ForceEnumAllies(lace_shave, watch_education, trueFilter)
     return lace_shave
 endfunction
 
@@ -806,7 +843,7 @@ function orange_land takes player watch_education,playercolor moaning_lamp,boole
     if abundant_bikes then
         set bj_setPlayerTargetColor=moaning_lamp
         set g=CreateGroup()
-        call GroupEnumUnitsOfPlayer(g, watch_education, harass_sturdy)
+        call GroupEnumUnitsOfPlayer(g, watch_education, trueFilter)
         call ForGroup(g, function SetPlayerColorBJEnum)
         call DestroyGroup(g)
         set g=null
@@ -818,7 +855,7 @@ function street_premium takes itemtype dramatic_peace,integer terrible_lethal re
     set bj_stockPickedItemType=dramatic_peace
     set bj_stockPickedItemLevel=terrible_lethal
     set g=CreateGroup()
-    call GroupEnumUnitsOfType(g, "marketplace", harass_sturdy)
+    call GroupEnumUnitsOfType(g, "marketplace", trueFilter)
     call ForGroup(g, function UpdateEachStockBuildingEnum)
     call DestroyGroup(g)
     set g=null
@@ -869,13 +906,13 @@ function pleasant_welltodo takes nothing returns nothing
     call TimerStart(bj_stockUpdateTimer, bj_STOCK_RESTOCK_INTERVAL, true, function raspy_far)
 endfunction
 
-function provide_craven takes nothing returns boolean
+function TrueFilterFunction takes nothing returns boolean
     return true
 endfunction
 
-function recognise_exciting takes location order_cabbage,string angle_versed returns nothing
+function recognise_exciting takes location loc,string angle_versed returns nothing
     local effect incredible_cute
-    set incredible_cute=AddSpecialEffectLoc(angle_versed, order_cabbage)
+    set incredible_cute=AddSpecialEffectLoc(angle_versed, loc)
     call DestroyEffect(incredible_cute)
     set incredible_cute=null
 endfunction
@@ -914,60 +951,59 @@ function cold_irritating takes integer debonair_chubby,player transport_red retu
     endif
 endfunction
 
-// Team number?
-function release_strong takes player aggressive_tremendous returns integer
-    if ( IsPlayerInForce(aggressive_tremendous, force_on_west_east[FORCE_WEST_ID]) ) then
-        return 1
+function GetPlayerForceID takes player p returns integer
+    if ( IsPlayerInForce(p, forceList[FORCE_WEST_ID]) ) then
+        return FORCE_WEST_ID
     else
-        return 2
+        return FORCE_EAST_ID
     endif
 endfunction
 
 function fertile_breezy takes integer boast_tested,integer form_report returns nothing
-    local location order_cabbage=GetSpellTargetLoc()
+    local location loc=GetSpellTargetLoc()
     local location workable_flap
     local string incredible_cute=( "Abilities\\Spells\\Human\\MassTeleport\\MassTeleportTarget.mdl" )
     local integer brave_axiomatic=0
-    local unit cure_combative=GetTriggerUnit()
+    local unit trigUnit=GetTriggerUnit()
     local rect nonstop_snotty
-    local integer measure_unequaled
-    local player basin_excite=GetOwningPlayer(cure_combative)
+    local integer measured_unequal
+    local player owningPlayer=GetOwningPlayer(trigUnit)
     loop
         exitwhen brave_axiomatic == boast_tested
         if ( educate_joyous == false ) then
             if ( ( rush_abusive == ( 17 - form_report ) ) or ( rush_abusive == ( 33 - form_report ) ) ) then
-                set measure_unequaled=4 + form_report
+                set measured_unequal=4 + form_report
             else
-                set measure_unequaled=3 + form_report
+                set measured_unequal=3 + form_report
             endif
             if ( ( ( form_report == 1 ) and ( brave_axiomatic > 1 ) ) or ( ( form_report == 0 ) and ( brave_axiomatic > 3 ) ) ) then
-                set cure_combative=CreateUnitAtLoc(basin_excite, vest_tempt[( rush_abusive + measure_unequaled )], order_cabbage, 270.)
+                set trigUnit=CreateUnitAtLoc(owningPlayer, vest_tempt[( rush_abusive + measured_unequal )], loc, 270.)
             else
-                set cure_combative=CreateUnitAtLoc(basin_excite, zergling[( rush_abusive + measure_unequaled )], order_cabbage, 270.)
+                set trigUnit=CreateUnitAtLoc(owningPlayer, zergling[( rush_abusive + measured_unequal )], loc, 270.)
             endif
-            call SetUnitAcquireRange(cure_combative, 1000.)
-            call UnitRemoveType(cure_combative, UNIT_TYPE_SUMMONED)
-            set workable_flap=GetUnitLoc(cure_combative)
-            call UnitApplyTimedLife(cure_combative, 'BTLF', 60)
+            call SetUnitAcquireRange(trigUnit, 1000.)
+            call UnitRemoveType(trigUnit, UNIT_TYPE_SUMMONED)
+            set workable_flap=GetUnitLoc(trigUnit)
+            call UnitApplyTimedLife(trigUnit, 'BTLF', 60)
             if ( form_report == 1 ) then
-                call UnitAddAbility(cure_combative, 'A01I')
+                call UnitAddAbility(trigUnit, 'A01I')
             endif
-            if ( GetUnitTypeId(cure_combative) != 'n016' ) then
-                call UnitRemoveAbility(cure_combative, 'ACsk')
+            if ( GetUnitTypeId(trigUnit) != 'n016' ) then
+                call UnitRemoveAbility(trigUnit, 'ACsk')
             endif
-            if ( GetUnitTypeId(cure_combative) == 'n021' ) then
-                call UnitRemoveAbility(cure_combative, 'A07T')
-                call UnitAddAbility(cure_combative, 'A07C')
+            if ( GetUnitTypeId(trigUnit) == 'n021' ) then
+                call UnitRemoveAbility(trigUnit, 'A07T')
+                call UnitAddAbility(trigUnit, 'A07C')
             endif
-            call UnitRemoveAbility(cure_combative, 'Amim')
-            if ( IsPlayerInForce(basin_excite, force_on_west_east[FORCE_WEST_ID]) ) then
+            call UnitRemoveAbility(trigUnit, 'Amim')
+            if ( IsPlayerInForce(owningPlayer, forceList[FORCE_WEST_ID]) ) then
                 set nonstop_snotty=gg_rct_West_Side
             else
                 set nonstop_snotty=gg_rct_East_Side
             endif
-            if ( RectContainsLoc(nonstop_snotty, order_cabbage) ) then
-                if ( ( GetUnitTypeId(cure_combative) == 'n00P' ) or ( GetUnitTypeId(cure_combative) == 'n00T' ) or ( GetUnitTypeId(cure_combative) == 'u005' ) or ( GetUnitTypeId(cure_combative) == 'n00R' ) or ( GetUnitTypeId(cure_combative) == 'n00H' ) or ( GetUnitTypeId(cure_combative) == 'n003' ) or ( GetUnitTypeId(cure_combative) == 'n00K' ) or ( GetUnitTypeId(cure_combative) == 'n00O' ) or ( GetUnitTypeId(cure_combative) == 'e00H' ) or ( GetUnitTypeId(cure_combative) == 'n011' ) or ( GetUnitTypeId(cure_combative) == 'n013' ) ) then
-                    call UnitAddAbility(cure_combative, 'A06A')
+            if ( RectContainsLoc(nonstop_snotty, loc) ) then
+                if ( ( GetUnitTypeId(trigUnit) == 'n00P' ) or ( GetUnitTypeId(trigUnit) == 'n00T' ) or ( GetUnitTypeId(trigUnit) == 'u005' ) or ( GetUnitTypeId(trigUnit) == 'n00R' ) or ( GetUnitTypeId(trigUnit) == 'n00H' ) or ( GetUnitTypeId(trigUnit) == 'n003' ) or ( GetUnitTypeId(trigUnit) == 'n00K' ) or ( GetUnitTypeId(trigUnit) == 'n00O' ) or ( GetUnitTypeId(trigUnit) == 'e00H' ) or ( GetUnitTypeId(trigUnit) == 'n011' ) or ( GetUnitTypeId(trigUnit) == 'n013' ) ) then
+                    call UnitAddAbility(trigUnit, 'A06A')
                 endif
             endif
             call recognise_exciting(workable_flap , incredible_cute)
@@ -975,37 +1011,37 @@ function fertile_breezy takes integer boast_tested,integer form_report returns n
         endif
         set brave_axiomatic=brave_axiomatic + 1
     endloop
-    set order_cabbage=null
+    set loc=null
     set workable_flap=null
     set incredible_cute=null
-    set cure_combative=null
+    set trigUnit=null
     set nonstop_snotty=null
-    set cure_combative=null
-    set basin_excite=null
+    set trigUnit=null
+    set owningPlayer=null
 endfunction
 
 function empty_whine takes nothing returns nothing
     call RemoveUnit(GetEnumUnit())
 endfunction
 
-function planes_letter takes player basin_excite,boolean battle_lean returns nothing
-    local integer partner_thoughtless=release_strong(basin_excite)
+function planes_letter takes player owningPlayer,boolean battle_lean returns nothing
+    local integer partner_thoughtless=GetPlayerForceID(owningPlayer)
     local integer brave_axiomatic=1
     local integer earn_harsh
     local integer handy_squeamish
     local integer sister_root
     local integer top_harmony
     local group plough_unhealthy
-    call ForceRemovePlayer(force_on_west_east[partner_thoughtless], basin_excite)
-    if ( CountPlayersInForceBJ(force_on_west_east[partner_thoughtless]) > 0 ) then
-        set earn_harsh=( GetPlayerState(basin_excite, PLAYER_STATE_RESOURCE_GOLD) / CountPlayersInForceBJ(force_on_west_east[partner_thoughtless]) )
-        set handy_squeamish=( GetPlayerState(basin_excite, PLAYER_STATE_RESOURCE_LUMBER) / CountPlayersInForceBJ(force_on_west_east[partner_thoughtless]) )
+    call ForceRemovePlayer(forceList[partner_thoughtless], owningPlayer)
+    if ( CountPlayersInForceBJ(forceList[partner_thoughtless]) > 0 ) then
+        set earn_harsh=( GetPlayerState(owningPlayer, PLAYER_STATE_RESOURCE_GOLD) / CountPlayersInForceBJ(forceList[partner_thoughtless]) )
+        set handy_squeamish=( GetPlayerState(owningPlayer, PLAYER_STATE_RESOURCE_LUMBER) / CountPlayersInForceBJ(forceList[partner_thoughtless]) )
         if ( receptive_carve ) then
             set sister_root=0
             set top_harmony=0
         else
-            set sister_root=( GetHeroXP(starcraft[( 1 + GetPlayerId(basin_excite) )]) / CountPlayersInForceBJ(force_on_west_east[partner_thoughtless]) )
-            set top_harmony=( ( R2I(GetUnitStateSwap(UNIT_STATE_MANA, spellbringer_of_player[( GetPlayerId(basin_excite) )])) / 2 ) / CountPlayersInForceBJ(force_on_west_east[partner_thoughtless]) )
+            set sister_root=( GetHeroXP(starcraft[( 1 + GetPlayerId(owningPlayer) )]) / CountPlayersInForceBJ(forceList[partner_thoughtless]) )
+            set top_harmony=( ( R2I(GetUnitStateSwap(UNIT_STATE_MANA, spellbringer_of_player[( GetPlayerId(owningPlayer) )])) / 2 ) / CountPlayersInForceBJ(forceList[partner_thoughtless]) )
         endif
         set brave_axiomatic=1
         loop
@@ -1017,53 +1053,53 @@ function planes_letter takes player basin_excite,boolean battle_lean returns not
             set brave_axiomatic=brave_axiomatic + 1
         endloop
     else
-        call SetPlayerState(basin_excite, PLAYER_STATE_RESOURCE_GOLD, 0)
-        call SetPlayerState(basin_excite, PLAYER_STATE_RESOURCE_LUMBER, 0)
+        call SetPlayerState(owningPlayer, PLAYER_STATE_RESOURCE_GOLD, 0)
+        call SetPlayerState(owningPlayer, PLAYER_STATE_RESOURCE_LUMBER, 0)
     endif
     if ( battle_lean == false ) then
-        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[( 1 + GetPlayerId(basin_excite) )], "(Player Left)")
+        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[( 1 + GetPlayerId(owningPlayer) )], "(Player Left)")
     else
-        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[( 1 + GetPlayerId(basin_excite) )], "(Player Kicked)")
+        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[( 1 + GetPlayerId(owningPlayer) )], "(Player Kicked)")
     endif
     set brave_axiomatic=1
-    if ( IsUnitAliveBJ(starcraft[( 1 + GetPlayerId(basin_excite) )]) == false ) then
+    if ( IsUnitAliveBJ(starcraft[( 1 + GetPlayerId(owningPlayer) )]) == false ) then
         loop
             exitwhen brave_axiomatic > 6
-            call CreateItemLoc(GetItemTypeId(UnitItemInSlotBJ(starcraft[( 1 + GetPlayerId(basin_excite) )], brave_axiomatic)), GetRectCenter(obnoxious_army[partner_thoughtless * 5]))
+            call CreateItemLoc(GetItemTypeId(UnitItemInSlotBJ(starcraft[( 1 + GetPlayerId(owningPlayer) )], brave_axiomatic)), GetRectCenter(obnoxious_army[partner_thoughtless * 5]))
             set brave_axiomatic=brave_axiomatic + 1
         endloop
     else
         loop
             exitwhen brave_axiomatic > 6
-            call UnitRemoveItemFromSlotSwapped(brave_axiomatic, starcraft[( 1 + GetPlayerId(basin_excite) )])
+            call UnitRemoveItemFromSlotSwapped(brave_axiomatic, starcraft[( 1 + GetPlayerId(owningPlayer) )])
             set brave_axiomatic=brave_axiomatic + 1
         endloop
     endif
-    set plough_unhealthy=squirrel_stem(basin_excite)
+    set plough_unhealthy=squirrel_stem(owningPlayer)
     call ForGroupBJ(plough_unhealthy, function empty_whine)
     call PlaySoundBJ(gg_snd_Warning)
     if ( battle_lean == false ) then
-        call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 30, ( range_uncovered[( 1 + GetPlayerId(basin_excite) )] + GetPlayerName(basin_excite) + " |rhas left the game!" ))
+        call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 30, ( range_uncovered[( 1 + GetPlayerId(owningPlayer) )] + GetPlayerName(owningPlayer) + " |rhas left the game!" ))
     else
-        call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 30, ( range_uncovered[( 1 + GetPlayerId(basin_excite) )] + GetPlayerName(basin_excite) + " |rwas kicked!" ))
+        call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 30, ( range_uncovered[( 1 + GetPlayerId(owningPlayer) )] + GetPlayerName(owningPlayer) + " |rwas kicked!" ))
     endif
-    if ( ( CountPlayersInForceBJ(force_on_west_east[partner_thoughtless]) == 0 ) and ( educate_joyous == false ) and ( dime_marry == false ) and ( CountPlayersInForceBJ(ambitious_pray[partner_thoughtless]) > 0 ) ) then
-        set erratic_bright[partner_thoughtless]=0
+    if ( ( CountPlayersInForceBJ(forceList[partner_thoughtless]) == 0 ) and ( educate_joyous == false ) and ( dime_marry == false ) and ( CountPlayersInForceBJ(ambitious_pray[partner_thoughtless]) > 0 ) ) then
+        set numberOfLives[partner_thoughtless]=0
         call DisplayTextToForce(bj_FORCE_ALL_PLAYERS, "There are no players on the other team, their lives will be set to 0.")
         call TriggerSleepAction(2.)
-        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[( partner_thoughtless + $A )], ( defiant_concerned[partner_thoughtless] + " [" + ( I2S(erratic_bright[partner_thoughtless]) + "]" ) ))
+        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[( partner_thoughtless + $A )], ( defiant_concerned[partner_thoughtless] + " [" + ( I2S(numberOfLives[partner_thoughtless]) + "]" ) ))
         set dime_marry=true
         call ConditionalTriggerExecute(test_desert)
     endif
-    call DisplayTimedTextToForce(force_on_west_east[partner_thoughtless], 30, ( "Your share of gold:|cffffcc00 " + I2S(earn_harsh) + "|r" ))
-    call DisplayTimedTextToForce(force_on_west_east[partner_thoughtless], 30, ( "Your share of lumber:|cffffcc00 " + I2S(handy_squeamish) + "|r" ))
-    call DisplayTimedTextToForce(force_on_west_east[partner_thoughtless], 30, ( "Your share of experience:|cffffcc00 " + I2S(sister_root) + "|r" ))
-    call DisplayTimedTextToForce(force_on_west_east[partner_thoughtless], 30, ( "Your share of Spellbringer mana:|cffffcc00 " + I2S(top_harmony) + "|r" ))
-    call CustomDefeatBJ(basin_excite, "You were kicked!")
+    call DisplayTimedTextToForce(forceList[partner_thoughtless], 30, ( "Your share of gold:|cffffcc00 " + I2S(earn_harsh) + "|r" ))
+    call DisplayTimedTextToForce(forceList[partner_thoughtless], 30, ( "Your share of lumber:|cffffcc00 " + I2S(handy_squeamish) + "|r" ))
+    call DisplayTimedTextToForce(forceList[partner_thoughtless], 30, ( "Your share of experience:|cffffcc00 " + I2S(sister_root) + "|r" ))
+    call DisplayTimedTextToForce(forceList[partner_thoughtless], 30, ( "Your share of Spellbringer mana:|cffffcc00 " + I2S(top_harmony) + "|r" ))
+    call CustomDefeatBJ(owningPlayer, "You were kicked!")
     call DestroyGroup(plough_unhealthy)
     set plough_unhealthy=null
-    set starcraft[( 1 + GetPlayerId(basin_excite) )]=null
-    call ForceRemovePlayer(babies_nail[partner_thoughtless], basin_excite)
+    set starcraft[( 1 + GetPlayerId(owningPlayer) )]=null
+    call ForceRemovePlayer(babies_nail[partner_thoughtless], owningPlayer)
 endfunction
 
 function subsequent_challenge takes nothing returns nothing
@@ -1153,7 +1189,7 @@ function round_peaceful takes unit debonair_chubby returns nothing
             endif
             set i=i + 1
         endloop
-        if ( thirsty_plane == ( CountPlayersInForceBJ(force_on_west_east[FORCE_WEST_ID]) + CountPlayersInForceBJ(force_on_west_east[FORCE_EAST_ID]) ) ) then
+        if ( thirsty_plane == ( CountPlayersInForceBJ(forceList[FORCE_WEST_ID]) + CountPlayersInForceBJ(forceList[FORCE_EAST_ID]) ) ) then
             call DestroyTimerDialog(hill_mysterious)
             call TriggerExecute(grey_bumpy)
         else
@@ -1186,7 +1222,7 @@ function lock_dirt takes rect secretary_help,unit boy_better returns nothing
     local player transport_red=GetOwningPlayer(boy_better)
     local group disgusting_place=CreateGroup()
     local integer i=1
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location change_pointless
     local force applaud_unusual=rotten_ship(transport_red)
     if ( fortunate_gentle == false ) then
@@ -1418,20 +1454,12 @@ function guide_play takes nothing returns boolean
     return ( GetPlayerSlotState(Player(bj_forLoopAIndex)) == PLAYER_SLOT_STATE_PLAYING ) and ( GetPlayerController(Player(bj_forLoopAIndex)) == MAP_CONTROL_USER )
 endfunction
 
-function wander_tremendous takes nothing returns boolean
-    return ( IsPlayerInForce(Player(bj_forLoopAIndex), prefer_change) ) or ( (( GetPlayerSlotState(Player(bj_forLoopAIndex)) == PLAYER_SLOT_STATE_PLAYING ) and ( GetPlayerController(Player(bj_forLoopAIndex)) == MAP_CONTROL_USER )) ) // INLINED!!
-endfunction
-
 function grey_robin takes nothing returns boolean
-    return ( IsPlayerInForce(Player(bj_forLoopAIndex), force_on_west_east[FORCE_WEST_ID]) )
+    return ( IsPlayerInForce(Player(bj_forLoopAIndex), forceList[FORCE_WEST_ID]) )
 endfunction
 
 function roasted_shake takes nothing returns boolean
     return ( IsPlayerInForce(Player(bj_forLoopAIndex), prefer_change) )
-endfunction
-
-function disturbed_fast takes nothing returns boolean
-    return ( (( IsPlayerInForce(Player(bj_forLoopAIndex), prefer_change) ) or ( (( GetPlayerSlotState(Player(bj_forLoopAIndex)) == PLAYER_SLOT_STATE_PLAYING ) and ( GetPlayerController(Player(bj_forLoopAIndex)) == MAP_CONTROL_USER )) )) ) // INLINED!!
 endfunction
 
 function queen_swift takes nothing returns boolean
@@ -1443,7 +1471,7 @@ function coach_abaft takes nothing returns boolean
 endfunction
 
 function punch_warm takes nothing returns boolean
-    return ( IsPlayerInForce(Player(bj_forLoopAIndex), force_on_west_east[FORCE_EAST_ID]) )
+    return ( IsPlayerInForce(Player(bj_forLoopAIndex), forceList[FORCE_EAST_ID]) )
 endfunction
 
 function request_gainful takes nothing returns boolean
@@ -1526,15 +1554,15 @@ function initiate_first_match takes nothing returns nothing
     set bj_forLoopAIndexEnd=11
     loop
         exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
-        if ( (( IsPlayerInForce(Player(bj_forLoopAIndex), prefer_change) ) or ( (( GetPlayerSlotState(Player(bj_forLoopAIndex)) == PLAYER_SLOT_STATE_PLAYING ) and ( GetPlayerController(Player(bj_forLoopAIndex)) == MAP_CONTROL_USER )) )) ) then // INLINED!!
+        if ( IsPlayerInForce(Player(bj_forLoopAIndex), prefer_change) ) or ( (( GetPlayerSlotState(Player(bj_forLoopAIndex)) == PLAYER_SLOT_STATE_PLAYING ) and ( GetPlayerController(Player(bj_forLoopAIndex)) == MAP_CONTROL_USER )) ) then // INLINED!!
             set income_ground[1]=true
-            call ForceAddPlayer(force_on_west_east[FORCE_WEST_ID], Player(bj_forLoopAIndex))
+            call ForceAddPlayer(forceList[FORCE_WEST_ID], Player(bj_forLoopAIndex))
             call ForceAddPlayer(ambitious_pray[1], Player(bj_forLoopAIndex))
             call ForceAddPlayer(ambitious_pray[3], Player(bj_forLoopAIndex))
             call ForceAddPlayer(babies_nail[1], Player(bj_forLoopAIndex))
             call CreateNUnitsAtLoc(1, 'h007', Player(bj_forLoopAIndex), GetRectCenter(bj_mapInitialPlayableArea), bj_UNIT_FACING)
             set cumbersome_obeisant[1 + bj_forLoopAIndex]=bj_lastCreatedUnit
-            call CreateNUnitsAtLoc(1, 'h009', Player(bj_forLoopAIndex), GetRectCenter(bj_mapInitialPlayableArea), bj_UNIT_FACING)
+            call CreateNUnitsAtLoc(1, RAW_DUMMY_NIMSHA, Player(bj_forLoopAIndex), GetRectCenter(bj_mapInitialPlayableArea), bj_UNIT_FACING)
             set breathe_religion[1 + bj_forLoopAIndex]=bj_lastCreatedUnit
             call UnitRemoveAbility(breathe_religion[1 + bj_forLoopAIndex], 'A082')
             call TriggerRegisterPlayerUnitEventSimple(load_care, Player(bj_forLoopAIndex), EVENT_PLAYER_UNIT_DEATH)
@@ -1560,7 +1588,7 @@ function initiate_first_match takes nothing returns nothing
             call SetPlayerAllianceStateBJ(Player(bj_forLoopAIndex), Player($D), 0)
             call SetPlayerAllianceStateBJ(Player($E), Player(bj_forLoopAIndex), 3)
             call SetPlayerAllianceStateBJ(Player(bj_forLoopAIndex), Player($E), 3)
-            if ( (IsPlayerInForce(Player(bj_forLoopAIndex), force_on_west_east[FORCE_WEST_ID])) ) then // INLINED!!
+            if ( (IsPlayerInForce(Player(bj_forLoopAIndex), forceList[FORCE_WEST_ID])) ) then // INLINED!!
                 call AdjustPlayerStateBJ($FA, Player(bj_forLoopAIndex), PLAYER_STATE_RESOURCE_GOLD)
             endif
             if ( (IsPlayerInForce(Player(bj_forLoopAIndex), prefer_change)) ) then // INLINED!!
@@ -1585,13 +1613,13 @@ function initiate_first_match takes nothing returns nothing
         exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
         if ( (( IsPlayerInForce(Player(bj_forLoopAIndex), prefer_change) ) or ( (( GetPlayerSlotState(Player(bj_forLoopAIndex)) == PLAYER_SLOT_STATE_PLAYING ) and ( GetPlayerController(Player(bj_forLoopAIndex)) == MAP_CONTROL_USER )) )) ) then // INLINED!!
             set income_ground[2]=true
-            call ForceAddPlayer(force_on_west_east[FORCE_EAST_ID], Player(bj_forLoopAIndex))
+            call ForceAddPlayer(forceList[FORCE_EAST_ID], Player(bj_forLoopAIndex))
             call ForceAddPlayer(ambitious_pray[2], Player(bj_forLoopAIndex))
             call ForceAddPlayer(ambitious_pray[3], Player(bj_forLoopAIndex))
             call ForceAddPlayer(babies_nail[2], Player(bj_forLoopAIndex))
             call CreateNUnitsAtLoc(1, 'h007', Player(bj_forLoopAIndex), GetRectCenter(bj_mapInitialPlayableArea), bj_UNIT_FACING)
             set cumbersome_obeisant[bj_forLoopAIndex]=bj_lastCreatedUnit
-            call CreateNUnitsAtLoc(1, 'h009', Player(bj_forLoopAIndex), GetRectCenter(bj_mapInitialPlayableArea), bj_UNIT_FACING)
+            call CreateNUnitsAtLoc(1, RAW_DUMMY_NIMSHA, Player(bj_forLoopAIndex), GetRectCenter(bj_mapInitialPlayableArea), bj_UNIT_FACING)
             set breathe_religion[bj_forLoopAIndex]=bj_lastCreatedUnit
             call UnitRemoveAbility(breathe_religion[bj_forLoopAIndex], 'A082')
             call TriggerRegisterUnitEvent(angry_inform, spellbringer_of_player[bj_forLoopAIndex], EVENT_UNIT_SPELL_EFFECT)
@@ -1617,7 +1645,7 @@ function initiate_first_match takes nothing returns nothing
             call SetPlayerAllianceStateBJ(Player(bj_forLoopAIndex), Player($D), 3)
             call SetPlayerAllianceStateBJ(Player($E), Player(bj_forLoopAIndex), 0)
             call SetPlayerAllianceStateBJ(Player(bj_forLoopAIndex), Player($E), 0)
-            if ( (IsPlayerInForce(Player(bj_forLoopAIndex), force_on_west_east[FORCE_EAST_ID])) ) then // INLINED!!
+            if ( (IsPlayerInForce(Player(bj_forLoopAIndex), forceList[FORCE_EAST_ID])) ) then // INLINED!!
                 call AdjustPlayerStateBJ($FA, Player(bj_forLoopAIndex), PLAYER_STATE_RESOURCE_GOLD)
             endif
             if ( (IsPlayerInForce(Player(bj_forLoopAIndex), prefer_change)) ) then // INLINED!!
@@ -1965,7 +1993,7 @@ function oil_license takes nothing returns nothing
     set pine_jolly[9]=corn_daughter
     set pine_jolly[$A]=righteous_jam
     set pine_jolly[$B]=stocking_cold
-    set pine_jolly[$C]=inquisitive_peep
+    set pine_jolly[$C]=spawnHeroFaenraeChampion
     set pine_jolly[$D]=various_hurry
     set pine_jolly[$E]=lip_amazing
     set pine_jolly[$F]=three_filthy
@@ -1980,8 +2008,8 @@ function oil_license takes nothing returns nothing
     set pine_jolly[24]=ignorant_chunky
     set pine_jolly[25]=day_health
     set pine_jolly[26]=offend_humdrum
-    set pine_jolly[27]=gaudy_mean
-    set pine_jolly[28]=sign_hospital
+    set pine_jolly[27]=spawnHeroTrader
+    set pine_jolly[28]=spawnHeroTrollCanibal
     set pine_jolly[29]=veil_save
     set pine_jolly[30]=useless_dysfunctional
     set pine_jolly[31]=seal_test
@@ -2070,7 +2098,7 @@ function swanky_lumber takes nothing returns boolean
 endfunction
 
 function crowd_subdued takes nothing returns boolean
-    return ( IsPlayerInForce(Player(bj_forLoopAIndex), force_on_west_east[FORCE_EAST_ID]) == false )
+    return ( IsPlayerInForce(Player(bj_forLoopAIndex), forceList[FORCE_EAST_ID]) == false )
 endfunction
 
 function tearful_dinner takes nothing returns boolean
@@ -2116,15 +2144,19 @@ endfunction
 
 // scope Multiboard begins
     function function_create_multiboard takes nothing returns nothing
-        call CreateMultiboardBJ(3, 32, "")
-        set game_multiboard=bj_lastCreatedMultiboard
+        set game_multiboard=CreateMultiboard()
+        set bj_lastCreatedMultiboard=game_multiboard
+        call MultiboardSetRowCount(game_multiboard, 32)
+        call MultiboardSetColumnCount(game_multiboard, 3)
         call MultiboardSetTitleText(game_multiboard, "|cffffcc00Enfo's Team Survival: MTE Edition|r")
+        call MultiboardDisplay(game_multiboard, true)
+        call CreateMultiboardBJ(3, 32, "")
         call MultiboardSetTitleTextColorBJ(game_multiboard, 'd', 100., 100., 0)
         set bj_forLoopAIndex=0
         set bj_forLoopAIndexEnd=23
         loop
             exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
-            set blackandwhite_press[1 + bj_forLoopAIndex]=0
+            set numberOfKillsByPlayer[1 + bj_forLoopAIndex]=0
             set man_drink[1 + bj_forLoopAIndex]=0
             set bj_forLoopAIndex=bj_forLoopAIndex + 1
         endloop
@@ -2142,7 +2174,7 @@ endfunction
             call MultiboardSetItemColorBJ(game_multiboard, 0, trail_pin, 100., 100., 100., 0)
             set yawn_follow[$B]=trail_pin
             
-            // West side something? Multiboard?
+            // Add West side to the multiboard
             set bj_forLoopAIndex=0
             set bj_forLoopAIndexEnd=11
             loop
@@ -2151,7 +2183,7 @@ endfunction
                     set trail_pin=( trail_pin + 1 )
                     
                     // Player is special boy, treat them special.
-                    if ( IsPlayerInForce(Player(bj_forLoopAIndex), force_on_west_east[FORCE_WEST_ID]) == false ) then
+                    if ( IsPlayerInForce(Player(bj_forLoopAIndex), forceList[FORCE_WEST_ID]) == false ) then
                         call MultiboardSetItemValueBJ(game_multiboard, 1, trail_pin, "(Referee)")
                     else
                         if ( is_player_paypal_donor(bj_forLoopAIndex) ) then
@@ -2198,7 +2230,7 @@ endfunction
                 exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
                 if ( (( IsPlayerInForce(Player(bj_forLoopAIndex), prefer_change) ) or ( (( GetPlayerSlotState(Player(bj_forLoopAIndex)) == PLAYER_SLOT_STATE_PLAYING ) and ( GetPlayerController(Player(bj_forLoopAIndex)) == MAP_CONTROL_USER )) )) ) then // INLINED!!
                     set trail_pin=( trail_pin + 1 )
-                    if ( (IsPlayerInForce(Player(bj_forLoopAIndex), force_on_west_east[FORCE_EAST_ID]) == false) ) then // INLINED!!
+                    if ( (IsPlayerInForce(Player(bj_forLoopAIndex), forceList[FORCE_EAST_ID]) == false) ) then // INLINED!!
                         call MultiboardSetItemValueBJ(game_multiboard, 1, trail_pin, "(Referee)")
                     else
                         if ( is_player_paypal_donor(bj_forLoopAIndex) ) then
@@ -2589,59 +2621,59 @@ endfunction
 
 function camp_wonderful takes nothing returns nothing
     local rect hospital_accessible=GetWorldBounds()
-    local location order_cabbage=GetRectCenter(hospital_accessible)
+    local location loc=GetRectCenter(hospital_accessible)
     local unit u
     call SetUnitAnimation(promise_action, "stand victory")
     call SetUnitAnimation(pot_test, "stand victory")
     call SetUnitAnimation(truck_abrasive, "stand victory")
     call SetUnitAnimation(comb_minor, "sleep")
     call SetUnitAnimation(living_draconian, "sleep")
-    call CreateUnitAtLoc(Player($C), HERO_RAW_RANDOM_HERO, OffsetLocation(order_cabbage, - 1667., - 3456.), 270.)
-    call CreateUnitAtLoc(Player($C), HERO_RAW_RANDOM_HERO, OffsetLocation(order_cabbage, - 1670.5, - 6782.), 270.)
-    call CreateUnitAtLoc(Player($C), HERO_RAW_RANDOM_HERO, OffsetLocation(order_cabbage, 1661., - 6784.25), 270.)
-    call UnitRemoveAbility(inquisitive_peep, 'A03Q')
+    call CreateUnitAtLoc(Player($C), RAW_HERO_RANDOM_HERO, OffsetLocation(loc, - 1667., - 3456.), 270.)
+    call CreateUnitAtLoc(Player($C), RAW_HERO_RANDOM_HERO, OffsetLocation(loc, - 1670.5, - 6782.), 270.)
+    call CreateUnitAtLoc(Player($C), RAW_HERO_RANDOM_HERO, OffsetLocation(loc, 1661., - 6784.25), 270.)
+    call UnitRemoveAbility(spawnHeroFaenraeChampion, 'A03Q')
     call UnitRemoveAbility(tightfisted_exotic, 'A07R')
-    call CreateDestructableLoc('OTsp', OffsetLocation(order_cabbage, - 8437., 6656.), 270., 1, 0)
-    call CreateDestructableLoc('OTsp', OffsetLocation(order_cabbage, - 4343., 6656.), 270., 1, 0)
-    call CreateDestructableLoc('OTsp', OffsetLocation(order_cabbage, 4339., 6656.), 270., 1, 0)
-    call CreateDestructableLoc('OTsp', OffsetLocation(order_cabbage, 8430., 6656.), 270., 1, 0)
-    call CreateUnitAtLoc(Player($F), 'n00F', OffsetLocation(order_cabbage, - 7424., - 2688.), 270.)
+    call CreateDestructableLoc('OTsp', OffsetLocation(loc, - 8437., 6656.), 270., 1, 0)
+    call CreateDestructableLoc('OTsp', OffsetLocation(loc, - 4343., 6656.), 270., 1, 0)
+    call CreateDestructableLoc('OTsp', OffsetLocation(loc, 4339., 6656.), 270., 1, 0)
+    call CreateDestructableLoc('OTsp', OffsetLocation(loc, 8430., 6656.), 270., 1, 0)
+    call CreateUnitAtLoc(Player($F), 'n00F', OffsetLocation(loc, - 7424., - 2688.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n00E', OffsetLocation(order_cabbage, - 6912., - 2688.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n00E', OffsetLocation(loc, - 6912., - 2688.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n00A', OffsetLocation(order_cabbage, - 5888., - 2688.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n00A', OffsetLocation(loc, - 5888., - 2688.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n00V', OffsetLocation(order_cabbage, - 6400., - 2688.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n00V', OffsetLocation(loc, - 6400., - 2688.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n008', OffsetLocation(order_cabbage, - 5376., - 2688.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n008', OffsetLocation(loc, - 5376., - 2688.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n015', OffsetLocation(order_cabbage, - 7808., - 256.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n015', OffsetLocation(loc, - 7808., - 256.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n014', OffsetLocation(order_cabbage, - 4992., - 128.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n014', OffsetLocation(loc, - 4992., - 128.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n018', OffsetLocation(order_cabbage, - 4992., - 448.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n018', OffsetLocation(loc, - 4992., - 448.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n00F', OffsetLocation(order_cabbage, 5376., - 2688.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n00F', OffsetLocation(loc, 5376., - 2688.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n00E', OffsetLocation(order_cabbage, 5888., - 2688.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n00E', OffsetLocation(loc, 5888., - 2688.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n00V', OffsetLocation(order_cabbage, 6400., - 2688.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n00V', OffsetLocation(loc, 6400., - 2688.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n00A', OffsetLocation(order_cabbage, 6912., - 2688.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n00A', OffsetLocation(loc, 6912., - 2688.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n008', OffsetLocation(order_cabbage, 7424., - 2688.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n008', OffsetLocation(loc, 7424., - 2688.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n015', OffsetLocation(order_cabbage, 4992., - 256.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n015', OffsetLocation(loc, 4992., - 256.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n014', OffsetLocation(order_cabbage, 7808., - 128.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n014', OffsetLocation(loc, 7808., - 128.), 270.)
     call TriggerSleepAction(.1)
-    call CreateUnitAtLoc(Player($F), 'n018', OffsetLocation(order_cabbage, 7808., - 448.), 270.)
+    call CreateUnitAtLoc(Player($F), 'n018', OffsetLocation(loc, 7808., - 448.), 270.)
     call TriggerSleepAction(.1)
     call FogEnable(false)
     call FogMaskEnable(false)
-    call RemoveLocation(order_cabbage)
+    call RemoveLocation(loc)
     set hospital_accessible=null
-    set order_cabbage=null
+    set loc=null
     set u=null
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
@@ -2654,8 +2686,8 @@ function resolute_questionable takes nothing returns boolean
     return ( rush_abusive > 42 )
 endfunction
 
-function godly_foamy takes nothing returns boolean
-    return ( GetUnitTypeId(GetFilterUnit()) == 'ushd' )
+function HeroSelectorFilter takes nothing returns boolean
+    return ( GetUnitTypeId(GetFilterUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function skillful_circle takes nothing returns nothing
@@ -2675,11 +2707,11 @@ function advertisement_sock takes nothing returns boolean
 endfunction
 
 function tiger_kitty takes nothing returns boolean
-    return ( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), force_on_west_east[FORCE_EAST_ID]) )
+    return ( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), forceList[FORCE_EAST_ID]) )
 endfunction
 
 function spotless_camera takes nothing returns boolean
-    return ( (( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), force_on_west_east[FORCE_EAST_ID]) )) ) // INLINED!!
+    return ( (( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), forceList[FORCE_EAST_ID]) )) ) // INLINED!!
 endfunction
 
 function pretty_fine takes nothing returns boolean
@@ -2727,7 +2759,7 @@ function pointless_hour takes nothing returns nothing
             if ( (rush_abusive == 4) ) then // INLINED!!
                 call PlaySoundBJ(gg_snd_SecretFound)
                 call DisplayTextToForce(bj_FORCE_ALL_PLAYERS, "TRIGSTR_1924")
-                call ForGroupBJ(chess_reply(gg_rct_Hero_Selection , Condition(function godly_foamy)), function skillful_circle)
+                call ForGroupBJ(chess_reply(gg_rct_Hero_Selection , Condition(function HeroSelectorFilter)), function skillful_circle)
             endif
         endif
         if ( (rush_abusive == 1) ) then // INLINED!!
@@ -2738,7 +2770,7 @@ function pointless_hour takes nothing returns nothing
             set bj_forLoopAIndexEnd=$A
             loop
                 exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
-                if ( (( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), force_on_west_east[FORCE_EAST_ID]) )) ) then // INLINED!!
+                if ( (( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( bj_forLoopAIndex )), forceList[FORCE_EAST_ID]) )) ) then // INLINED!!
                     call AdjustPlayerStateBJ(( $FA * rush_abusive ), Player(- 1 + ( bj_forLoopAIndex )), PLAYER_STATE_RESOURCE_GOLD)
                 endif
                 set bj_forLoopAIndex=bj_forLoopAIndex + 1
@@ -3060,7 +3092,7 @@ function bruise_whip takes nothing returns nothing
 endfunction
 
 function parallel_trip takes nothing returns boolean
-    return ( ( educate_joyous == false ) and ( ( erratic_bright[1] == 0 ) or ( erratic_bright[2] == 0 ) ) )
+    return ( ( educate_joyous == false ) and ( ( numberOfLives[1] == 0 ) or ( numberOfLives[2] == 0 ) ) )
 endfunction
 
 function twig_plate takes nothing returns nothing
@@ -3068,7 +3100,7 @@ function twig_plate takes nothing returns nothing
 endfunction
 
 function dam_cook takes nothing returns boolean
-    return ( ( GetUnitTypeId(GetFilterUnit()) != 'h000' ) and ( GetUnitTypeId(GetFilterUnit()) != 'h009' ) )
+    return ( ( GetUnitTypeId(GetFilterUnit()) != 'h000' ) and ( GetUnitTypeId(GetFilterUnit()) != RAW_DUMMY_NIMSHA ) )
 endfunction
 
 function waste_future takes nothing returns boolean
@@ -3095,13 +3127,13 @@ endfunction
 function initiate_rematch takes nothing returns nothing
     local integer i=1
     local group plough_unhealthy
-    local player basin_excite
+    local player owningPlayer
     local rect hospital_accessible=bj_mapInitialPlayableArea
-    local location order_cabbage=GetRectCenter(hospital_accessible)
+    local location loc=GetRectCenter(hospital_accessible)
     set educate_joyous=true
     set appreciate_malicious=( appreciate_malicious + 1 )
     call PlaySoundBJ(gg_snd_QuestCompleted)
-    if ( erratic_bright[1] == 0 ) then
+    if ( numberOfLives[1] == 0 ) then
         set torpid_pause[2]=( torpid_pause[2] + 1 )
         call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 10., defiant_concerned[2] + " has won! Congratulations!")
     else
@@ -3118,7 +3150,7 @@ function initiate_rematch takes nothing returns nothing
     loop
         exitwhen i > $E
         if ( i <= 5 ) then
-            if ( IsPlayerInForce(gaze_friendly[i], force_on_west_east[FORCE_WEST_ID]) ) then
+            if ( IsPlayerInForce(gaze_friendly[i], forceList[FORCE_WEST_ID]) ) then
                 if ( IsPlayerInForce(gaze_friendly[i], prefer_change) ) then
                     set recognise_abnormal=recognise_abnormal + range_uncovered[i] + GetUnitName(starcraft[i]) + "|r* (" + I2S(GetHeroLevel(starcraft[i])) + "), "
                 else
@@ -3126,7 +3158,7 @@ function initiate_rematch takes nothing returns nothing
                 endif
             endif
         else
-            if ( IsPlayerInForce(gaze_friendly[i], force_on_west_east[FORCE_EAST_ID]) ) then
+            if ( IsPlayerInForce(gaze_friendly[i], forceList[FORCE_EAST_ID]) ) then
                 if ( IsPlayerInForce(gaze_friendly[i], prefer_change) ) then
                     set seemly_cough=seemly_cough + range_uncovered[i] + GetUnitName(starcraft[i]) + "|r* (" + I2S(GetHeroLevel(starcraft[i])) + "), "
                 else
@@ -3149,21 +3181,21 @@ function initiate_rematch takes nothing returns nothing
     set i=1
     loop
         exitwhen i > $A
-        set basin_excite=Player(- 1 + ( i ))
-        call SetPlayerStateBJ(basin_excite, PLAYER_STATE_RESOURCE_FOOD_USED, 0)
-        call SetPlayerStateBJ(basin_excite, PLAYER_STATE_RESOURCE_FOOD_CAP, 0)
+        set owningPlayer=Player(- 1 + ( i ))
+        call SetPlayerStateBJ(owningPlayer, PLAYER_STATE_RESOURCE_FOOD_USED, 0)
+        call SetPlayerStateBJ(owningPlayer, PLAYER_STATE_RESOURCE_FOOD_CAP, 0)
         set achiever_pollution[i]=false
         set worry_fresh[i]=false
         set join_governor[i]=false
         set sand_park[i]=0
         set efficient_unbecoming[i]=0
         set chilly_ceaseless[i]=0
-        set cumbersome_obeisant[i]=CreateUnitAtLoc(basin_excite, 'h007', order_cabbage, 270.)
-        call SetPlayerStateBJ(basin_excite, PLAYER_STATE_RESOURCE_GOLD, $FA)
-        call SetPlayerStateBJ(basin_excite, PLAYER_STATE_RESOURCE_LUMBER, 0)
-        call SetPlayerAbilityAvailableBJ(true, 'A06S', basin_excite)
-        call SetPlayerAbilityAvailableBJ(true, 'A06Z', basin_excite)
-        call SetPlayerHandicapXP(basin_excite, 1.)
+        set cumbersome_obeisant[i]=CreateUnitAtLoc(owningPlayer, 'h007', loc, 270.)
+        call SetPlayerStateBJ(owningPlayer, PLAYER_STATE_RESOURCE_GOLD, $FA)
+        call SetPlayerStateBJ(owningPlayer, PLAYER_STATE_RESOURCE_LUMBER, 0)
+        call SetPlayerAbilityAvailableBJ(true, 'A06S', owningPlayer)
+        call SetPlayerAbilityAvailableBJ(true, 'A06Z', owningPlayer)
+        call SetPlayerHandicapXP(owningPlayer, 1.)
         set i=i + 1
     endloop
     set plough_unhealthy=chess_reply(hospital_accessible , Condition(function waste_future))
@@ -3180,16 +3212,16 @@ function initiate_rematch takes nothing returns nothing
     call DisableTrigger(rinse_relax)
     call DisableTrigger(wandering_silver)
     if ( round_outrageous ) then
-        set erratic_bright[1]=1
-        set erratic_bright[2]=1
+        set numberOfLives[1]=1
+        set numberOfLives[2]=1
     else
-        set erratic_bright[1]='d'
-        set erratic_bright[2]='d'
+        set numberOfLives[1]='d'
+        set numberOfLives[2]='d'
     endif
     set thoughtful_value[1]=0
     set thoughtful_value[2]=0
-    set march_ants[1]=0
-    set march_ants[2]=0
+    set bonusMonstersKilled[1]=0
+    set bonusMonstersKilled[2]=0
     set yell_supreme[1]=0
     set yell_supreme[2]=0
     set yell_supreme[3]=0
@@ -3201,10 +3233,10 @@ function initiate_rematch takes nothing returns nothing
     set obscene_cable=0
     set boast_jellyfish=0
     call ConditionalTriggerExecute(arrogant_fry)
-    if ( CountPlayersInForceBJ(force_on_west_east[FORCE_WEST_ID]) == 0 ) then
+    if ( CountPlayersInForceBJ(forceList[FORCE_WEST_ID]) == 0 ) then
         set income_ground[1]=false
     endif
-    if ( CountPlayersInForceBJ(force_on_west_east[FORCE_EAST_ID]) == 0 ) then
+    if ( CountPlayersInForceBJ(forceList[FORCE_EAST_ID]) == 0 ) then
         set income_ground[2]=false
     endif
     call TriggerSleepAction(7.)
@@ -3216,15 +3248,15 @@ function initiate_rematch takes nothing returns nothing
     set educate_joyous=false
     call DestroyMultiboard(game_multiboard)
     call ForceClear(ambitious_pray[3])
-    call ForForce(force_on_west_east[FORCE_WEST_ID], function wooden_defeated)
-    call ForForce(force_on_west_east[FORCE_WEST_ID], function square_chunky)
-    call ForForce(force_on_west_east[FORCE_EAST_ID], function wooden_defeated)
-    call ForForce(force_on_west_east[FORCE_EAST_ID], function rescue_simon)
+    call ForForce(forceList[FORCE_WEST_ID], function wooden_defeated)
+    call ForForce(forceList[FORCE_WEST_ID], function square_chunky)
+    call ForForce(forceList[FORCE_EAST_ID], function wooden_defeated)
+    call ForForce(forceList[FORCE_EAST_ID], function rescue_simon)
     call DestroyGroup(plough_unhealthy)
     set plough_unhealthy=null
-    set basin_excite=null
+    set owningPlayer=null
     set hospital_accessible=null
-    set order_cabbage=null
+    set loc=null
     call TriggerExecute(trigger_create_multiboard)
     set plot_accurate=GetRandomInt(1, 2)
     if ( building_ancient == false ) then
@@ -3253,12 +3285,12 @@ function rail_ray takes nothing returns nothing
     set person_believe=( person_believe + 6 )
 endfunction
 
-function wave_amusement takes nothing returns nothing
-    call CreateNUnitsAtLoc(1, 'ushd', GetEnumPlayer(), GetRectCenter(gg_rct_Hero_Selection), bj_UNIT_FACING)
+function CreateHeroSelector takes nothing returns nothing
+    call CreateNUnitsAtLoc(1, RAW_UNIT_HERO_SELECTOR, GetEnumPlayer(), GetRectCenter(gg_rct_Hero_Selection), bj_UNIT_FACING)
 endfunction
 
 function handsome_veil takes nothing returns nothing
-    call CreateNUnitsAtLoc(1, 'ushd', GetEnumPlayer(), GetUnitLoc(GroupPickRandomUnit(possess_hapless)), bj_UNIT_FACING)
+    call CreateNUnitsAtLoc(1, RAW_UNIT_HERO_SELECTOR, GetEnumPlayer(), GetUnitLoc(GroupPickRandomUnit(possess_hapless)), bj_UNIT_FACING)
     call TriggerSleepAction(.02)
 endfunction
 
@@ -3271,7 +3303,7 @@ function war_hole takes nothing returns boolean
 endfunction
 
 function steady_automatic takes nothing returns boolean
-    return ( CountPlayersInForceBJ(force_on_west_east[hammer_driving]) == 0 ) or ( CountPlayersInForceBJ(babies_nail[hammer_driving]) == 0 )
+    return ( CountPlayersInForceBJ(forceList[hammer_driving]) == 0 ) or ( CountPlayersInForceBJ(babies_nail[hammer_driving]) == 0 )
 endfunction
 
 function maid_border takes nothing returns boolean
@@ -3283,19 +3315,19 @@ function price_meaty takes nothing returns boolean
 endfunction
 
 function route_melted takes nothing returns boolean
-    return ( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_EAST_ID]) )
+    return ( IsPlayerInForce(taboo_lunch, forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, forceList[FORCE_EAST_ID]) )
 endfunction
 
 function rod_splendid takes nothing returns boolean
-    return ( (( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_EAST_ID]) )) ) // INLINED!!
+    return ( (( IsPlayerInForce(taboo_lunch, forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, forceList[FORCE_EAST_ID]) )) ) // INLINED!!
 endfunction
 
 function frantic_tug takes nothing returns boolean
-    return ( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_EAST_ID]) )
+    return ( IsPlayerInForce(taboo_lunch, forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, forceList[FORCE_EAST_ID]) )
 endfunction
 
 function necessary_rigid takes nothing returns boolean
-    return ( GetUnitTypeId(GetFilterUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetFilterUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function quack_busy takes nothing returns boolean
@@ -3319,11 +3351,11 @@ function outgoing_tax takes nothing returns nothing
 endfunction
 
 function tasteless_truthful takes nothing returns boolean
-    return ( (( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_EAST_ID]) )) ) // INLINED!!
+    return ( (( IsPlayerInForce(taboo_lunch, forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, forceList[FORCE_EAST_ID]) )) ) // INLINED!!
 endfunction
 
 function flashy_zoo takes nothing returns boolean
-    return ( (( CountPlayersInForceBJ(force_on_west_east[hammer_driving]) == 0 ) or ( CountPlayersInForceBJ(babies_nail[hammer_driving]) == 0 )) ) // INLINED!!
+    return ( (( CountPlayersInForceBJ(forceList[hammer_driving]) == 0 ) or ( CountPlayersInForceBJ(babies_nail[hammer_driving]) == 0 )) ) // INLINED!!
 endfunction
 
 function hurt_number takes nothing returns boolean
@@ -3332,7 +3364,7 @@ endfunction
 
 function succinct_possessive takes nothing returns nothing
     if ( (flavor_repulsive) ) then // INLINED!!
-        if ( (( CountPlayersInForceBJ(force_on_west_east[hammer_driving]) == 0 ) or ( CountPlayersInForceBJ(babies_nail[hammer_driving]) == 0 )) ) then // INLINED!!
+        if ( (( CountPlayersInForceBJ(forceList[hammer_driving]) == 0 ) or ( CountPlayersInForceBJ(babies_nail[hammer_driving]) == 0 )) ) then // INLINED!!
             if ( (hammer_driving == 1) ) then // INLINED!!
                 set hammer_driving=2
             else
@@ -3352,7 +3384,7 @@ function succinct_possessive takes nothing returns nothing
             set taboo_lunch=ForcePickRandomPlayer(psychotic_unfasten)
             call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 5., ( "|cffffaa00Next player to pick a hero will be " + ( range_uncovered[( 1 + GetPlayerId(taboo_lunch) )] + ( GetPlayerName(taboo_lunch) + "|r|cffffaa00!|r" ) ) ))
             call TriggerSleepAction(2.)
-            call CreateNUnitsAtLoc(1, 'ushd', taboo_lunch, GetRectCenter(gg_rct_Hero_Selection), bj_UNIT_FACING)
+            call CreateNUnitsAtLoc(1, RAW_UNIT_HERO_SELECTOR, taboo_lunch, GetRectCenter(gg_rct_Hero_Selection), bj_UNIT_FACING)
             call ForceClear(psychotic_unfasten)
             call StartTimerBJ(many_hanging, false, 30.)
             call CreateTimerDialogBJ(many_hanging, "Hero Selection:")
@@ -3361,7 +3393,7 @@ function succinct_possessive takes nothing returns nothing
             set bj_forLoopBIndexEnd=26
             loop
                 exitwhen bj_forLoopBIndex > bj_forLoopBIndexEnd
-                if ( (( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_EAST_ID]) )) ) then // INLINED!!
+                if ( (( IsPlayerInForce(taboo_lunch, forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, forceList[FORCE_EAST_ID]) )) ) then // INLINED!!
                     call TriggerSleepAction(1.)
                     if ( (starcraft[( 1 + GetPlayerId(taboo_lunch) )] != null) ) then // INLINED!!
                         return
@@ -3372,7 +3404,7 @@ function succinct_possessive takes nothing returns nothing
                 endif
                 set bj_forLoopBIndex=bj_forLoopBIndex + 1
             endloop
-            if ( (( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, force_on_west_east[FORCE_EAST_ID]) )) ) then // INLINED!!
+            if ( (( IsPlayerInForce(taboo_lunch, forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(taboo_lunch, forceList[FORCE_EAST_ID]) )) ) then // INLINED!!
                 call DestroyTimerDialog(hill_mysterious)
                 call ForGroupBJ(chess_reply(gg_rct_Hero_Selection , Condition(function necessary_rigid)), function outgoing_tax)
             endif
@@ -3383,9 +3415,9 @@ function succinct_possessive takes nothing returns nothing
         loop
             exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
             if ( (fortunate_gentle) ) then // INLINED!!
-                call ForForce(force_on_west_east[bj_forLoopAIndex], function handsome_veil)
+                call ForForce(forceList[bj_forLoopAIndex], function handsome_veil)
             else
-                call ForForce(force_on_west_east[bj_forLoopAIndex], function wave_amusement)
+                call ForForce(forceList[bj_forLoopAIndex], function CreateHeroSelector)
             endif
             set bj_forLoopAIndex=bj_forLoopAIndex + 1
         endloop
@@ -3399,17 +3431,17 @@ function blind_cakes takes nothing returns nothing
     call DestroyEffect(l__oven_cherries)
 endfunction
 
-function utter_stamp takes nothing returns integer
-    local integer i=1
-    local integer honey_donkey=0
+function IndexOfPlayerWithMostKills takes nothing returns integer
+    local integer i=0
+    local integer playerIndex=0
     loop
-        exitwhen i > 9
-        if ( blackandwhite_press[i] > blackandwhite_press[i - 1] ) then
-            set honey_donkey=i
+        exitwhen i > 23
+        if ( numberOfKillsByPlayer[i] > numberOfKillsByPlayer[playerIndex] ) then
+            set playerIndex=i
         endif
         set i=i + 1
     endloop
-    return honey_donkey
+    return playerIndex
 endfunction
 
 function expert_bedroom takes nothing returns integer
@@ -3425,111 +3457,111 @@ function expert_bedroom takes nothing returns integer
     return gigantic_stream
 endfunction
 
-function place_halting takes nothing returns nothing
+function PrintScoreChart takes nothing returns nothing
     local force extralarge_plant
-    local integer judge_afraid=utter_stamp()
+    local integer mostKillingPlayer= IndexOfPlayerWithMostKills()
     local integer sidewalk_powerful=expert_bedroom()
     local player honey_donkey
     local player gigantic_stream
     local integer array cheap_deserve
-    local integer measure_unequaled
+    local integer forceID
     local integer trip_lame
     local string cycle_simplistic=""
     call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 10., "|cffffcc00---------------------------------------------|r")
     call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 10., "|cffffcc00Score Chart for your side (BETA):|r")
-    if ( judge_afraid != 0 ) then
-        set honey_donkey=Player(judge_afraid - 1)
-        if ( IsPlayerInForce(honey_donkey, force_on_west_east[FORCE_WEST_ID]) ) then
-            set measure_unequaled=1
+    if ( mostKillingPlayer != 0 ) then
+        set honey_donkey=Player(mostKillingPlayer - 1)
+        if ( IsPlayerInForce(honey_donkey, forceList[FORCE_WEST_ID]) ) then
+            set forceID=1
         else
-            set measure_unequaled=2
+            set forceID=2
         endif
-        set extralarge_plant=force_on_west_east[measure_unequaled]
-        set cheap_deserve[measure_unequaled]=cheap_deserve[measure_unequaled] + 500
-        call DisplayTimedTextToForce(extralarge_plant, 10., ( " - Player with most kills: " ) + ( range_uncovered[judge_afraid] ) + ( GetPlayerName(honey_donkey) ) + ( "|r" ) + ( " (|c0000ff00+500 PTS|r)" ))
+        set extralarge_plant=forceList[forceID]
+        set cheap_deserve[forceID]=cheap_deserve[forceID] + 500
+        call DisplayTimedTextToForce(extralarge_plant, 10., ( " - Player with most kills: " ) + ( range_uncovered[mostKillingPlayer] ) + ( GetPlayerName(honey_donkey) ) + ( "|r" ) + ( " (|c0000ff00+500 PTS|r)" ))
     endif
-    call DisplayTimedTextToForce(loutish_title, 5., "Player 1: " + I2S(blackandwhite_press[1]))
-    call DisplayTimedTextToForce(loutish_title, 5., "Player 2: " + I2S(blackandwhite_press[2]))
-    call DisplayTimedTextToForce(loutish_title, 5., "Player 3: " + I2S(blackandwhite_press[3]))
-    call DisplayTimedTextToForce(loutish_title, 5., "Player 4: " + I2S(blackandwhite_press[4]))
-    call DisplayTimedTextToForce(loutish_title, 5., "Player 5: " + I2S(blackandwhite_press[5]))
-    call DisplayTimedTextToForce(loutish_title, 5., "Player 6: " + I2S(blackandwhite_press[6]))
-    call DisplayTimedTextToForce(loutish_title, 5., "Player 7: " + I2S(blackandwhite_press[7]))
-    call DisplayTimedTextToForce(loutish_title, 5., "Player 8: " + I2S(blackandwhite_press[8]))
-    call DisplayTimedTextToForce(loutish_title, 5., "Player 9: " + I2S(blackandwhite_press[9]))
-    call DisplayTimedTextToForce(loutish_title, 5., "Player 10: " + I2S(blackandwhite_press[$A]))
+    call DisplayTimedTextToForce(loutish_title, 5., "Player 1: " + I2S(numberOfKillsByPlayer[1]))
+    call DisplayTimedTextToForce(loutish_title, 5., "Player 2: " + I2S(numberOfKillsByPlayer[2]))
+    call DisplayTimedTextToForce(loutish_title, 5., "Player 3: " + I2S(numberOfKillsByPlayer[3]))
+    call DisplayTimedTextToForce(loutish_title, 5., "Player 4: " + I2S(numberOfKillsByPlayer[4]))
+    call DisplayTimedTextToForce(loutish_title, 5., "Player 5: " + I2S(numberOfKillsByPlayer[5]))
+    call DisplayTimedTextToForce(loutish_title, 5., "Player 6: " + I2S(numberOfKillsByPlayer[6]))
+    call DisplayTimedTextToForce(loutish_title, 5., "Player 7: " + I2S(numberOfKillsByPlayer[7]))
+    call DisplayTimedTextToForce(loutish_title, 5., "Player 8: " + I2S(numberOfKillsByPlayer[8]))
+    call DisplayTimedTextToForce(loutish_title, 5., "Player 9: " + I2S(numberOfKillsByPlayer[9]))
+    call DisplayTimedTextToForce(loutish_title, 5., "Player 10: " + I2S(numberOfKillsByPlayer[10]))
     if ( sidewalk_powerful != 0 ) then
         set gigantic_stream=Player(sidewalk_powerful - 1)
-        if ( IsPlayerInForce(gigantic_stream, force_on_west_east[FORCE_WEST_ID]) ) then
-            set measure_unequaled=1
+        if ( IsPlayerInForce(gigantic_stream, forceList[FORCE_WEST_ID]) ) then
+            set forceID=1
         else
-            set measure_unequaled=2
+            set forceID=2
         endif
-        set extralarge_plant=force_on_west_east[measure_unequaled]
-        set cheap_deserve[measure_unequaled]=cheap_deserve[measure_unequaled] - 500
+        set extralarge_plant=forceList[forceID]
+        set cheap_deserve[forceID]=cheap_deserve[forceID] - 500
         call DisplayTimedTextToForce(extralarge_plant, 10., ( " - Player with most deaths: " ) + ( range_uncovered[sidewalk_powerful] ) + ( GetPlayerName(gigantic_stream) ) + ( "|r" ) + ( " (|c00ff0000-500 PTS|r)" ))
     endif
     if ( test_selection == 1 ) then
-        set measure_unequaled=1
+        set forceID=1
     else
-        set measure_unequaled=2
+        set forceID=2
     endif
-    set extralarge_plant=force_on_west_east[measure_unequaled]
-    set cheap_deserve[measure_unequaled]=cheap_deserve[measure_unequaled] - $FA
+    set extralarge_plant=forceList[forceID]
+    set cheap_deserve[forceID]=cheap_deserve[forceID] - $FA
     call DisplayTimedTextToForce(extralarge_plant, 10., " - First Life Lost (|c00ff0000-250 PTS|r)")
     if ( dime_marry == false ) then
-        if ( erratic_bright[1] == 'd' ) then
-            set measure_unequaled=1
+        if ( numberOfLives[1] == 'd' ) then
+            set forceID=1
         else
-            set measure_unequaled=2
+            set forceID=2
         endif
-        set extralarge_plant=force_on_west_east[measure_unequaled]
-        set cheap_deserve[measure_unequaled]=cheap_deserve[measure_unequaled] + $5DC
-        if ( ( erratic_bright[1] == 'd' ) or ( erratic_bright[2] == 'd' ) ) then
+        set extralarge_plant=forceList[forceID]
+        set cheap_deserve[forceID]=cheap_deserve[forceID] + $5DC
+        if ( ( numberOfLives[1] == 'd' ) or ( numberOfLives[2] == 'd' ) ) then
             call DisplayTimedTextToForce(extralarge_plant, 10., " - No Life Lost (|c0000ff00+1500 PTS|r)")
         endif
     endif
     if ( dime_marry == false ) then
-        if ( erratic_bright[1] > erratic_bright[2] ) then
-            set measure_unequaled=1
+        if ( numberOfLives[1] > numberOfLives[2] ) then
+            set forceID=1
         else
-            set measure_unequaled=2
+            set forceID=2
         endif
-        set extralarge_plant=force_on_west_east[measure_unequaled]
-        set cheap_deserve[measure_unequaled]=cheap_deserve[measure_unequaled] + ( erratic_bright[measure_unequaled] * $A )
-        call DisplayTimedTextToForce(extralarge_plant, 10., " - Remaining Lives (" + I2S(erratic_bright[measure_unequaled]) + ") (|c0000ff00+" + I2S(( erratic_bright[measure_unequaled] * $A )) + " PTS|r)")
+        set extralarge_plant=forceList[forceID]
+        set cheap_deserve[forceID]=cheap_deserve[forceID] + ( numberOfLives[forceID] * $A )
+        call DisplayTimedTextToForce(extralarge_plant, 10., " - Remaining Lives (" + I2S(numberOfLives[forceID]) + ") (|c0000ff00+" + I2S(( numberOfLives[forceID] * $A )) + " PTS|r)")
     endif
-    if ( erratic_bright[1] > erratic_bright[2] ) then
-        set measure_unequaled=1
+    if ( numberOfLives[1] > numberOfLives[2] ) then
+        set forceID=1
         set trip_lame=1
     else
-        set measure_unequaled=2
+        set forceID=2
         set trip_lame=2
     endif
-    set extralarge_plant=force_on_west_east[measure_unequaled]
+    set extralarge_plant=forceList[forceID]
     if ( dime_marry == false ) then
-        set cheap_deserve[measure_unequaled]=cheap_deserve[measure_unequaled] + 5000
+        set cheap_deserve[forceID]=cheap_deserve[forceID] + 5000
     endif
     call DisplayTimedTextToForce(extralarge_plant, 10., " - Victory (|c0000ff00+5000 PTS|r)")
-    set measure_unequaled=1
+    set forceID=1
     loop
-        exitwhen measure_unequaled == 3
-        if ( march_ants[measure_unequaled] > 0 ) then
-            set extralarge_plant=force_on_west_east[measure_unequaled]
-            set cheap_deserve[measure_unequaled]=cheap_deserve[measure_unequaled] + ( march_ants[measure_unequaled] * 'd' )
-            call DisplayTimedTextToForce(extralarge_plant, 10., " - Bonus Monsters Killed (" + I2S(march_ants[measure_unequaled]) + ") (|c0000ff00+" + I2S(( march_ants[measure_unequaled] * 'd' )) + " PTS|r)")
+        exitwhen forceID == 3
+        if ( bonusMonstersKilled[forceID] > 0 ) then
+            set extralarge_plant=forceList[forceID]
+            set cheap_deserve[forceID]=cheap_deserve[forceID] + ( bonusMonstersKilled[forceID] * 'd' )
+            call DisplayTimedTextToForce(extralarge_plant, 10., " - Bonus Monsters Killed (" + I2S(bonusMonstersKilled[forceID]) + ") (|c0000ff00+" + I2S(( bonusMonstersKilled[forceID] * 'd' )) + " PTS|r)")
         endif
-        set measure_unequaled=measure_unequaled + 1
+        set forceID=forceID + 1
     endloop
-    set measure_unequaled=1
+    set forceID=1
     loop
-        exitwhen measure_unequaled == 3
-        if ( thoughtful_value[measure_unequaled] > 0 ) then
-            set extralarge_plant=force_on_west_east[measure_unequaled]
-            set cheap_deserve[measure_unequaled]=cheap_deserve[measure_unequaled] - ( thoughtful_value[measure_unequaled] * 500 )
-            call DisplayTimedTextToForce(extralarge_plant, 10., " - Not Killing Fast Enough (" + I2S(thoughtful_value[measure_unequaled]) + ") (|c00ff0000" + I2S(( thoughtful_value[measure_unequaled] * ( - 500 ) )) + " PTS|r)")
+        exitwhen forceID == 3
+        if ( thoughtful_value[forceID] > 0 ) then
+            set extralarge_plant=forceList[forceID]
+            set cheap_deserve[forceID]=cheap_deserve[forceID] - ( thoughtful_value[forceID] * 500 )
+            call DisplayTimedTextToForce(extralarge_plant, 10., " - Not Killing Fast Enough (" + I2S(thoughtful_value[forceID]) + ") (|c00ff0000" + I2S(( thoughtful_value[forceID] * ( - 500 ) )) + " PTS|r)")
         endif
-        set measure_unequaled=measure_unequaled + 1
+        set forceID=forceID + 1
     endloop
     if ( dime_marry ) then
         call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 10., " - Survival Time (" + I2S(boast_jellyfish) + ":" + I2S(obscene_cable) + ") (|c0000ff00+" + I2S(( boast_jellyfish * 60 ) + obscene_cable) + " PTS|r)")
@@ -3617,7 +3649,7 @@ function place_halting takes nothing returns nothing
 endfunction
 
 function available_anger takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' ) and ( flavor_repulsive == false )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR ) and ( flavor_repulsive == false )
 endfunction
 
 function fire_knotty takes nothing returns nothing
@@ -3625,7 +3657,7 @@ function fire_knotty takes nothing returns nothing
     local player transport_red=GetOwningPlayer(dry_deep)
     local group disgusting_place=CreateGroup()
     local integer i=1
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location change_pointless
     local force applaud_unusual=rotten_ship(transport_red)
     call SetUnitPathing(dry_deep, false)
@@ -3661,7 +3693,7 @@ function fire_knotty takes nothing returns nothing
 endfunction
 
 function volleyball_point takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' ) and ( flavor_repulsive == false )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR ) and ( flavor_repulsive == false )
 endfunction
 
 function aggressive_scary takes nothing returns nothing
@@ -3671,7 +3703,7 @@ function aggressive_scary takes nothing returns nothing
 endfunction
 
 function homely_channel takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' ) and ( flavor_repulsive == false )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR ) and ( flavor_repulsive == false )
 endfunction
 
 function energetic_slap takes nothing returns nothing
@@ -3681,7 +3713,7 @@ function energetic_slap takes nothing returns nothing
 endfunction
 
 function include_lick takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' ) and ( flavor_repulsive == false )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR ) and ( flavor_repulsive == false )
 endfunction
 
 function dream_proud takes nothing returns nothing
@@ -3691,7 +3723,7 @@ function dream_proud takes nothing returns nothing
 endfunction
 
 function irritate_unnatural takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' ) and ( flavor_repulsive == false )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR ) and ( flavor_repulsive == false )
 endfunction
 
 function woebegone_chalk takes nothing returns nothing
@@ -3701,14 +3733,14 @@ function woebegone_chalk takes nothing returns nothing
 endfunction
 
 function hysterical_crooked takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function obsolete_materialistic takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=1
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -3719,7 +3751,7 @@ function obsolete_materialistic takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_AHLEN, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_AHLEN, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -3741,14 +3773,14 @@ function obsolete_materialistic takes nothing returns nothing
 endfunction
 
 function zipper_lunchroom takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function jelly_wine takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=2
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -3759,7 +3791,7 @@ function jelly_wine takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_ARCANE_MISTRESS, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_ARCANE_MISTRESS, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -3779,14 +3811,14 @@ function jelly_wine takes nothing returns nothing
 endfunction
 
 function notebook_keen takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function shoe_destruction takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=3
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -3797,7 +3829,7 @@ function shoe_destruction takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_BARBARIAN, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_BARBARIAN, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -3816,14 +3848,14 @@ function shoe_destruction takes nothing returns nothing
 endfunction
 
 function pipe_examine takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function fast_multiply takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=4
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -3834,7 +3866,7 @@ function fast_multiply takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_BARD, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_BARD, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -3856,14 +3888,14 @@ function fast_multiply takes nothing returns nothing
 endfunction
 
 function spotted_pull takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function hurried_uttermost takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=5
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -3874,7 +3906,7 @@ function hurried_uttermost takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_BATTLE_CHANTER, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_BATTLE_CHANTER, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -3896,14 +3928,14 @@ function hurried_uttermost takes nothing returns nothing
 endfunction
 
 function pretend_needy takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function report_fortunate takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=6
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -3914,7 +3946,7 @@ function report_fortunate takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_BLOOD_DANCER, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_BLOOD_DANCER, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -3933,14 +3965,14 @@ function report_fortunate takes nothing returns nothing
 endfunction
 
 function capable_compete takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function excuse_exclusive takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=7
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -3951,7 +3983,7 @@ function excuse_exclusive takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_CABALIST, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_CABALIST, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -3971,14 +4003,14 @@ function excuse_exclusive takes nothing returns nothing
 endfunction
 
 function bore_tame takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function ski_metal takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=8
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -3989,7 +4021,7 @@ function ski_metal takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_CLERIC, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_CLERIC, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4010,14 +4042,14 @@ function ski_metal takes nothing returns nothing
 endfunction
 
 function responsible_nondescript takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function miscreant_obedient takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=9
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4028,7 +4060,7 @@ function miscreant_obedient takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_EMPATH, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_EMPATH, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4050,14 +4082,14 @@ function miscreant_obedient takes nothing returns nothing
 endfunction
 
 function float_rain takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function sound_decide takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=$A
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4068,7 +4100,7 @@ function sound_decide takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_ENTROPIST, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_ENTROPIST, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4088,14 +4120,14 @@ function sound_decide takes nothing returns nothing
 endfunction
 
 function faint_earthy takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function abusive_memory takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=$B
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4106,7 +4138,7 @@ function abusive_memory takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_EVOKER, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_EVOKER, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4126,14 +4158,14 @@ function abusive_memory takes nothing returns nothing
 endfunction
 
 function natural_lumpy takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function paint_doubtful takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=$C
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4144,7 +4176,7 @@ function paint_doubtful takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_FAENRAE_CHAMPION_ALT, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_FAENRAE_CHAMPION_ALT, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4165,14 +4197,14 @@ function paint_doubtful takes nothing returns nothing
 endfunction
 
 function penitent_worthless takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function fire_check takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=$D
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4183,7 +4215,7 @@ function fire_check takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_HYPNOTIST, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_HYPNOTIST, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4206,14 +4238,14 @@ function fire_check takes nothing returns nothing
 endfunction
 
 function battle_challenge takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function look_bow takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=$E
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4224,7 +4256,7 @@ function look_bow takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_HOLY_WARRIOR, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_HOLY_WARRIOR, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4246,14 +4278,14 @@ function look_bow takes nothing returns nothing
 endfunction
 
 function bulb_amuse takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function theory_dam takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=$F
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4264,7 +4296,7 @@ function theory_dam takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_MAGIC_INFUSER, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_MAGIC_INFUSER, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4291,14 +4323,14 @@ function theory_dam takes nothing returns nothing
 endfunction
 
 function motion_painful takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function meddle_cap takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=16
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4309,7 +4341,7 @@ function meddle_cap takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_MENTALIST, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_MENTALIST, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4330,14 +4362,14 @@ function meddle_cap takes nothing returns nothing
 endfunction
 
 function neighborly_knowledgeable takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function book_unbiased takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=17
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4348,7 +4380,7 @@ function book_unbiased takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_MOON_MAGE, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_MOON_MAGE, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4371,14 +4403,14 @@ function book_unbiased takes nothing returns nothing
 endfunction
 
 function medical_zany takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function scold_broad takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=18
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4389,7 +4421,7 @@ function scold_broad takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_PALADIN, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_PALADIN, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4412,14 +4444,14 @@ function scold_broad takes nothing returns nothing
 endfunction
 
 function work_shape takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function rail_hypnotic takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=19
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4430,7 +4462,7 @@ function rail_hypnotic takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_RANGER, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_RANGER, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4451,14 +4483,14 @@ function rail_hypnotic takes nothing returns nothing
 endfunction
 
 function property_immense takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function twist_rightful takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=20
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4469,7 +4501,7 @@ function twist_rightful takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_SNIPER, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_SNIPER, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4492,14 +4524,14 @@ function twist_rightful takes nothing returns nothing
 endfunction
 
 function blushing_cloistered takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function handy_quiver takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=21
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4510,7 +4542,7 @@ function handy_quiver takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_SHADOW_PRIEST, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_SHADOW_PRIEST, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4533,14 +4565,14 @@ function handy_quiver takes nothing returns nothing
 endfunction
 
 function terrific_trees takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function scattered_treatment takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=22
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4551,7 +4583,7 @@ function scattered_treatment takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_SPIKED_TREE, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_SPIKED_TREE, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4570,14 +4602,14 @@ function scattered_treatment takes nothing returns nothing
 endfunction
 
 function elegant_remarkable takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function arrange_shop takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=23
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4588,7 +4620,7 @@ function arrange_shop takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_SUMMONER, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_SUMMONER, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4611,14 +4643,14 @@ function arrange_shop takes nothing returns nothing
 endfunction
 
 function illegal_disapprove takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function thumb_sofa takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=24
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4629,12 +4661,12 @@ function thumb_sofa takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_TEMPEST, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_TEMPEST, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
     call RemoveUnit(dry_deep)
-    call TriggerRegisterUnitEvent(massive_view, unadvised_expect, EVENT_UNIT_SPELL_EFFECT)
+    call TriggerRegisterUnitEvent(spellBurstTrigger, unadvised_expect, EVENT_UNIT_SPELL_EFFECT)
     call TriggerRegisterUnitEvent(useless_office, unadvised_expect, EVENT_UNIT_SPELL_EFFECT)
     call MultiboardSetItemIconBJ(game_multiboard, 1, yawn_follow[( 1 + GetPlayerId(transport_red) )], "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
     call DisplayTimedTextToForce(flagrant_existence, 20., "|cffffcc00Tempest|r - Master of the Wind Magic, this balanced caster can shape the weather to deal high damage, push enemies back or even heal allies.")
@@ -4650,14 +4682,14 @@ function thumb_sofa takes nothing returns nothing
 endfunction
 
 function wheel_grotesque takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function modern_amount takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=25
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4668,7 +4700,7 @@ function modern_amount takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_THIEF, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_THIEF, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4688,14 +4720,14 @@ function modern_amount takes nothing returns nothing
 endfunction
 
 function wild_venomous takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function rabid_humdrum takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=26
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4706,7 +4738,7 @@ function rabid_humdrum takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_TIME_MAGE, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_TIME_MAGE, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4727,14 +4759,14 @@ function rabid_humdrum takes nothing returns nothing
 endfunction
 
 function labored_tall takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function unknown_boot takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=27
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4746,7 +4778,7 @@ function unknown_boot takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_TRADER, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_TRADER, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4773,14 +4805,14 @@ function unknown_boot takes nothing returns nothing
 endfunction
 
 function frightened_stitch takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function want_deliver takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=28
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4791,7 +4823,7 @@ function want_deliver takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_TROLL_CANNIBAL, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_TROLL_CANNIBAL, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4833,14 +4865,14 @@ function want_deliver takes nothing returns nothing
 endfunction
 
 function chew_gray takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function attack_rightful takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=29
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4851,7 +4883,7 @@ function attack_rightful takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_WARLOCK, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_WARLOCK, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4875,14 +4907,14 @@ function attack_rightful takes nothing returns nothing
 endfunction
 
 function taste_rat takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function innocent_spot takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=30
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4893,7 +4925,7 @@ function innocent_spot takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_WARRIOR_MAGE, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_WARRIOR_MAGE, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4914,14 +4946,14 @@ function innocent_spot takes nothing returns nothing
 endfunction
 
 function copy_rainy takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function adhesive_escape takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=31
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4932,7 +4964,7 @@ function adhesive_escape takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_WEAPONSMITH, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_WEAPONSMITH, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -4957,14 +4989,14 @@ function adhesive_escape takes nothing returns nothing
 endfunction
 
 function wound_pig takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == 'ushd' )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_UNIT_HERO_SELECTOR )
 endfunction
 
 function mute_partner takes nothing returns nothing
     local unit dry_deep=GetTriggerUnit()
     local player transport_red=GetOwningPlayer(dry_deep)
     local integer debonair_chubby=32
-    local integer partner_thoughtless=release_strong(transport_red)
+    local integer partner_thoughtless=GetPlayerForceID(transport_red)
     local location happy_ancient=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(transport_red) )])
     local location crate_drunk=GetUnitLoc(dry_deep)
     local unit unadvised_expect
@@ -4975,7 +5007,7 @@ function mute_partner takes nothing returns nothing
     if ( thunder_authority(debonair_chubby , partner_thoughtless , transport_red) == false ) then
         return
     endif
-    set unadvised_expect=CreateUnitAtLoc(transport_red, HERO_RAW_REVENANT, happy_ancient, 270.)
+    set unadvised_expect=CreateUnitAtLoc(transport_red, RAW_HERO_REVENANT, happy_ancient, 270.)
     call round_peaceful(unadvised_expect)
     call AddSpecialEffectLoc("Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", crate_drunk)
     call TriggerExecute(love_finger)
@@ -5004,46 +5036,46 @@ endfunction
 
 function frogs_grate takes nothing returns boolean
     local unit clear_plantation=GetFilterUnit()
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    if ( ( ( IsUnitEnemy(clear_plantation, basin_excite) ) and ( IsUnitAliveBJ(clear_plantation) ) and ( GetUnitAbilityLevelSwapped('Avul', clear_plantation) != 1 ) ) ) then
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
+    if ( ( ( IsUnitEnemy(clear_plantation, owningPlayer) ) and ( IsUnitAliveBJ(clear_plantation) ) and ( GetUnitAbilityLevelSwapped('Avul', clear_plantation) != 1 ) ) ) then
         set clear_plantation=null
-        set cure_combative=null
-        set basin_excite=null
+        set trigUnit=null
+        set owningPlayer=null
         return true
     else
         set clear_plantation=null
-        set cure_combative=null
-        set basin_excite=null
+        set trigUnit=null
+        set owningPlayer=null
         return false
     endif
 endfunction
 
 function bless_announce takes nothing returns nothing
-    local unit cure_combative=GetEnumUnit()
-    local location order_cabbage=GetUnitLoc(cure_combative)
+    local unit trigUnit=GetEnumUnit()
+    local location loc=GetUnitLoc(trigUnit)
     local unit tent_nut=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(tent_nut)
-    local unit spray_vase=CreateUnitAtLoc(basin_excite, 'h001', order_cabbage, .0)
-    call UnitApplyTimedLife(spray_vase, 'BTLF', 2.)
-    call SetUnitAbilityLevelSwapped('A06F', spray_vase, GetUnitAbilityLevelSwapped('A032', tent_nut))
-    call IssueTargetOrderById(spray_vase, $D006B, cure_combative)
-    set cure_combative=null
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
+    local player owningPlayer=GetOwningPlayer(tent_nut)
+    local unit dummyUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY, loc, .0)
+    call UnitApplyTimedLife(dummyUnit, 'BTLF', 2.)
+    call SetUnitAbilityLevelSwapped('A06F', dummyUnit, GetUnitAbilityLevelSwapped('A032', tent_nut))
+    call IssueTargetOrderById(dummyUnit, $D006B, trigUnit)
+    set trigUnit=null
+    call RemoveLocation(loc)
+    set loc=null
     set tent_nut=null
-    set basin_excite=null
-    set spray_vase=null
+    set owningPlayer=null
+    set dummyUnit=null
 endfunction
 
 function disillusioned_throat takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    local location order_cabbage=GetUnitLoc(cure_combative)
-    local group nice_acoustics=wriggle_brown(( 450. + ( 50. * I2R(GetUnitAbilityLevelSwapped('A032', cure_combative)) ) ) , order_cabbage , Condition(function frogs_grate))
+    local unit trigUnit=GetTriggerUnit()
+    local location loc=GetUnitLoc(trigUnit)
+    local group nice_acoustics=wriggle_brown(( 450. + ( 50. * I2R(GetUnitAbilityLevelSwapped('A032', trigUnit)) ) ) , loc , Condition(function frogs_grate))
     call ForGroupBJ(nice_acoustics, function bless_announce)
-    set cure_combative=null
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
+    set trigUnit=null
+    call RemoveLocation(loc)
+    set loc=null
     call DestroyGroup(nice_acoustics)
     set nice_acoustics=null
 endfunction
@@ -5061,7 +5093,7 @@ function stay_geese takes nothing returns nothing
     local location mark_plastic=GetSpellTargetLoc()
     loop
         exitwhen i > 3
-        set u=CreateUnitAtLoc(basketball_guard, 'h001', change_pointless, 270.)
+        set u=CreateUnitAtLoc(basketball_guard, RAW_DUMMY_DUMMY, change_pointless, 270.)
         call SetUnitAbilityLevel(u, 'A07G', GetUnitAbilityLevel(wander_complete, 'A02R'))
         call IssuePointOrderByIdLoc(u, $D009D, mark_plastic)
         call UnitApplyTimedLifeBJ(3., 'BTLF', u)
@@ -5083,16 +5115,16 @@ endfunction
 function placid_spark takes nothing returns boolean
     local unit clear_plantation=GetFilterUnit()
     local unit tent_nut=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(tent_nut)
-    if ( ( IsUnitAliveBJ(clear_plantation) ) and ( IsUnitEnemy(clear_plantation, basin_excite) ) ) then
+    local player owningPlayer=GetOwningPlayer(tent_nut)
+    if ( ( IsUnitAliveBJ(clear_plantation) ) and ( IsUnitEnemy(clear_plantation, owningPlayer) ) ) then
         set clear_plantation=null
         set tent_nut=null
-        set basin_excite=null
+        set owningPlayer=null
         return true
     else
         set clear_plantation=null
         set tent_nut=null
-        set basin_excite=null
+        set owningPlayer=null
         return false
     endif
 endfunction
@@ -5104,13 +5136,13 @@ function head_unequaled takes nothing returns nothing
 endfunction
 
 function crash_mammoth takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    local location order_cabbage=GetUnitLoc(cure_combative)
-    local group nice_acoustics=wriggle_brown(1500. , order_cabbage , Condition(function placid_spark))
+    local unit trigUnit=GetTriggerUnit()
+    local location loc=GetUnitLoc(trigUnit)
+    local group nice_acoustics=wriggle_brown(1500. , loc , Condition(function placid_spark))
     call ForGroupBJ(nice_acoustics, function head_unequaled)
-    set cure_combative=null
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
+    set trigUnit=null
+    call RemoveLocation(loc)
+    set loc=null
     call DestroyGroup(nice_acoustics)
     set nice_acoustics=null
 endfunction
@@ -5163,7 +5195,7 @@ endfunction
 function hilarious_end takes nothing returns boolean
     local unit animal_guide=GetSummoningUnit()
     local unit brash_jazzy=GetSummonedUnit()
-    if ( ( GetUnitTypeId(animal_guide) == HERO_RAW_REVENANT ) and ( GetUnitTypeId(brash_jazzy) != 'oeye' ) and ( GetUnitTypeId(brash_jazzy) != 'h008' ) ) then
+    if ( ( GetUnitTypeId(animal_guide) == RAW_HERO_REVENANT ) and ( GetUnitTypeId(brash_jazzy) != 'oeye' ) and ( GetUnitTypeId(brash_jazzy) != RAW_DUMMY_SPIRITUAL_SWARM ) ) then
         set brash_jazzy=null
         set animal_guide=null
         return true
@@ -5199,16 +5231,16 @@ endfunction
 
 function shaky_even takes nothing returns boolean
     local unit six_calculator=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(six_calculator)
+    local player owningPlayer=GetOwningPlayer(six_calculator)
     local unit arithmetic_explain=GetFilterUnit()
-    if ( ( IsUnitAliveBJ(arithmetic_explain) ) and ( IsUnitEnemy(arithmetic_explain, basin_excite) ) ) then
+    if ( ( IsUnitAliveBJ(arithmetic_explain) ) and ( IsUnitEnemy(arithmetic_explain, owningPlayer) ) ) then
         set six_calculator=null
-        set basin_excite=null
+        set owningPlayer=null
         set arithmetic_explain=null
         return true
     else
         set six_calculator=null
-        set basin_excite=null
+        set owningPlayer=null
         set arithmetic_explain=null
         return false
     endif
@@ -5216,47 +5248,47 @@ endfunction
 
 function first_activity takes nothing returns nothing
     local unit six_calculator=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(six_calculator)
+    local player owningPlayer=GetOwningPlayer(six_calculator)
     local rect nonstop_snotty
-    local location order_cabbage
-    local unit cure_combative
+    local location loc
+    local unit trigUnit
     local integer advise_cherries
     local integer brave_axiomatic=1
     local group plough_unhealthy=null
-    if ( IsPlayerInForce(basin_excite, force_on_west_east[FORCE_WEST_ID]) ) then
+    if ( IsPlayerInForce(owningPlayer, forceList[FORCE_WEST_ID]) ) then
         set nonstop_snotty=gg_rct_West_Side
     else
         set nonstop_snotty=gg_rct_East_Side
     endif
-    set order_cabbage=GetRectCenter(nonstop_snotty)
-    set cure_combative=CreateUnitAtLoc(basin_excite, 'h001', order_cabbage, 270.)
-    call SetUnitAbilityLevelSwapped('A07E', cure_combative, GetUnitAbilityLevelSwapped('A07Y', six_calculator))
-    set advise_cherries=R2I(20. / ( .75 - ( .06 * I2R(GetUnitAbilityLevelSwapped('A07Y', cure_combative)) ) ))
+    set loc=GetRectCenter(nonstop_snotty)
+    set trigUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY, loc, 270.)
+    call SetUnitAbilityLevelSwapped('A07E', trigUnit, GetUnitAbilityLevelSwapped('A07Y', six_calculator))
+    set advise_cherries=R2I(20. / ( .75 - ( .06 * I2R(GetUnitAbilityLevelSwapped('A07Y', trigUnit)) ) ))
     loop
         exitwhen brave_axiomatic >= advise_cherries
         if ( IsUnitAliveBJ(six_calculator) ) then
-            set order_cabbage=GetUnitLoc(six_calculator)
-            set plough_unhealthy=wriggle_brown(750. , order_cabbage , Condition(function shaky_even))
+            set loc=GetUnitLoc(six_calculator)
+            set plough_unhealthy=wriggle_brown(750. , loc , Condition(function shaky_even))
             if ( ( CountUnitsInGroup(plough_unhealthy) >= 1 ) and ( GetRandomInt(1, $A) <= GetUnitAbilityLevelSwapped('A07A', six_calculator) ) ) then
-                set order_cabbage=GetUnitLoc(GroupPickRandomUnit(plough_unhealthy))
-                call IssuePointOrderByIdLoc(cure_combative, $D0100, order_cabbage)
+                set loc=GetUnitLoc(GroupPickRandomUnit(plough_unhealthy))
+                call IssuePointOrderByIdLoc(trigUnit, $D0100, loc)
             else
-                call IssuePointOrderByIdLoc(cure_combative, $D0100, bridge_basin(order_cabbage , GetRandomReal(.0, 750.) , GetRandomReal(0, 360)))
+                call IssuePointOrderByIdLoc(trigUnit, $D0100, bridge_basin(loc , GetRandomReal(.0, 750.) , GetRandomReal(0, 360)))
             endif
-            call TriggerSleepAction(( .75 - ( .06 * I2R(GetUnitAbilityLevelSwapped('A07Y', cure_combative)) ) ))
+            call TriggerSleepAction(( .75 - ( .06 * I2R(GetUnitAbilityLevelSwapped('A07Y', trigUnit)) ) ))
             set brave_axiomatic=brave_axiomatic + 1
         else
             set brave_axiomatic=advise_cherries + 1
         endif
     endloop
     call TriggerSleepAction(1.)
-    call KillUnit(cure_combative)
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
+    call KillUnit(trigUnit)
+    call RemoveLocation(loc)
+    set loc=null
     set six_calculator=null
-    set basin_excite=null
+    set owningPlayer=null
     set nonstop_snotty=null
-    set cure_combative=null
+    set trigUnit=null
     call DestroyGroup(plough_unhealthy)
     set plough_unhealthy=null
 endfunction
@@ -5267,19 +5299,19 @@ endfunction
 
 function unsightly_bump takes nothing returns nothing
     local unit tent_nut=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(tent_nut)
-    local location order_cabbage
-    local unit cure_combative
-    set order_cabbage=GetRectCenter(madly_kittens[release_strong(basin_excite)])
-    set cure_combative=CreateUnitAtLoc(basin_excite, 'h006', order_cabbage, .0)
-    call SetUnitAbilityLevelSwapped('A015', cure_combative, GetUnitAbilityLevelSwapped('A05T', tent_nut))
+    local player owningPlayer=GetOwningPlayer(tent_nut)
+    local location loc
+    local unit trigUnit
+    set loc=GetRectCenter(madly_kittens[GetPlayerForceID(owningPlayer)])
+    set trigUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_AURA_MENTALIST, loc, .0)
+    call SetUnitAbilityLevelSwapped('A015', trigUnit, GetUnitAbilityLevelSwapped('A05T', tent_nut))
     call TriggerSleepAction(20.)
-    call RemoveUnit(cure_combative)
+    call RemoveUnit(trigUnit)
     set tent_nut=null
-    set basin_excite=null
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
-    set cure_combative=null
+    set owningPlayer=null
+    call RemoveLocation(loc)
+    set loc=null
+    set trigUnit=null
 endfunction
 
 function level_elated takes nothing returns boolean
@@ -5326,7 +5358,7 @@ endfunction
 function try_back takes nothing returns nothing
     local location l__look_pumped
     set l__look_pumped=GetSpellTargetLoc()
-    call CreateNUnitsAtLoc(1, 'h002', GetOwningPlayer(GetSpellAbilityUnit()), l__look_pumped, .0)
+    call CreateNUnitsAtLoc(1, RAW_DUMMY_DUMMY_2, GetOwningPlayer(GetSpellAbilityUnit()), l__look_pumped, .0)
     call UnitApplyTimedLifeBJ(3., 'BTLF', bj_lastCreatedUnit)
     call SetUnitAbilityLevelSwapped('A022', bj_lastCreatedUnit, GetUnitAbilityLevelSwapped('A04N', GetTriggerUnit()))
     call IssueImmediateOrderById(bj_lastCreatedUnit, $D0080)
@@ -5337,25 +5369,25 @@ function try_back takes nothing returns nothing
     call TriggerExecute(love_finger)
 endfunction
 
-function boat_rings takes nothing returns boolean
-    return ( GetSpellAbilityId() == 'A06G' )
+function SpellIsBurst takes nothing returns boolean
+    return ( GetSpellAbilityId() == RAW_SPELL_BURST )
 endfunction
 
-function breathe_gusty takes nothing returns nothing
-    local location order_cabbage=GetSpellTargetLoc()
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    local unit spray_vase=CreateUnitAtLoc(basin_excite, 'h001', order_cabbage, .0)
-    local integer measure_unequaled=GetSpellAbilityId()
-    call UnitAddAbility(spray_vase, 'A045')
-    call SetUnitAbilityLevelSwapped('A045', spray_vase, GetUnitAbilityLevelSwapped(measure_unequaled, cure_combative))
-    call TriggerSleepAction(20.)
-    call RemoveUnit(spray_vase)
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
-    set cure_combative=null
-    set basin_excite=null
-    set spray_vase=null
+function SpellBurstIsCast takes nothing returns nothing
+    local location loc=GetSpellTargetLoc()
+    local unit castingUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(castingUnit)
+    local unit dummyUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY, loc, .0)
+    local integer abilityId=GetSpellAbilityId()
+    call UnitAddAbility(dummyUnit, RAW_SPELL_BURST_DUMMY)
+    call SetUnitAbilityLevel(dummyUnit, RAW_SPELL_BURST_DUMMY, GetUnitAbilityLevel(castingUnit, abilityId))
+    call TriggerSleepAction(BALANCE_SPELL_BURST_DURATION)
+    call RemoveUnit(dummyUnit)
+    call RemoveLocation(loc)
+    set loc=null
+    set castingUnit=null
+    set owningPlayer=null
+    set dummyUnit=null
 endfunction
 
 function chief_depend takes nothing returns boolean
@@ -5363,30 +5395,30 @@ function chief_depend takes nothing returns boolean
 endfunction
 
 function pancake_six takes nothing returns nothing
-    local unit cure_combative=GetSpellAbilityUnit()
+    local unit trigUnit=GetSpellAbilityUnit()
     local integer i=0
     local string sable_thank="Abilities\\Spells\\Other\\Monsoon\\MonsoonBoltTarget.mdl"
-    call PlaySoundOnUnitBJ(gg_snd_LightningBolt, 'd', cure_combative)
+    call PlaySoundOnUnitBJ(gg_snd_LightningBolt, 'd', trigUnit)
     loop
         exitwhen i > 2
         set i=i + 1
-        call AddSpecialEffectTargetUnitBJ("weapon", cure_combative, sable_thank)
+        call AddSpecialEffectTargetUnitBJ("weapon", trigUnit, sable_thank)
         call TriggerExecute(love_finger)
         call popcorn_married(.7)
-        if ( GetUnitCurrentOrder(cure_combative) == $D00D8 ) then
+        if ( GetUnitCurrentOrder(trigUnit) == $D00D8 ) then
         else
             return
         endif
     endloop
-    call AddSpecialEffectTargetUnitBJ("weapon", cure_combative, sable_thank)
+    call AddSpecialEffectTargetUnitBJ("weapon", trigUnit, sable_thank)
     call TriggerExecute(love_finger)
     call popcorn_married(.7)
     call PlaySoundOnUnitBJ(gg_snd_LightningBolt, 'd', GetSpellAbilityUnit())
-    call UnitRemoveAbility(cure_combative, 'A03N')
-    call UnitAddAbility(cure_combative, 'A03O')
-    call AddSpecialEffectTargetUnitBJ("weapon", cure_combative, sable_thank)
+    call UnitRemoveAbility(trigUnit, 'A03N')
+    call UnitAddAbility(trigUnit, 'A03O')
+    call AddSpecialEffectTargetUnitBJ("weapon", trigUnit, sable_thank)
     call TriggerExecute(love_finger)
-    set cure_combative=null
+    set trigUnit=null
     set sable_thank=null
 endfunction
 
@@ -5401,17 +5433,17 @@ function inject_plant takes nothing returns boolean
 endfunction
 
 function grab_wire takes nothing returns nothing
-    local unit cure_combative=GetAttacker()
+    local unit trigUnit=GetAttacker()
     local unit toys_damaging=GetTriggerUnit()
-    local location order_cabbage=GetUnitLoc(toys_damaging)
-    call UnitRemoveAbility(cure_combative, 'A03O')
-    call UnitAddAbility(cure_combative, 'A03N')
+    local location loc=GetUnitLoc(toys_damaging)
+    call UnitRemoveAbility(trigUnit, 'A03O')
+    call UnitAddAbility(trigUnit, 'A03N')
     call popcorn_married(.1)
-    call recognise_exciting(order_cabbage , "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl")
-    set cure_combative=null
+    call recognise_exciting(loc , "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl")
+    set trigUnit=null
     set toys_damaging=null
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
+    call RemoveLocation(loc)
+    set loc=null
 endfunction
 
 function whip_smart takes nothing returns boolean
@@ -5419,25 +5451,25 @@ function whip_smart takes nothing returns boolean
 endfunction
 
 function roasted_dry takes nothing returns nothing
-    local unit cure_combative=GetSpellTargetUnit()
-    local location order_cabbage=GetUnitLoc(cure_combative)
-    local unit spray_vase=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(spray_vase)
-    local integer measure_unequaled=GetSpellAbilityId()
+    local unit trigUnit=GetSpellTargetUnit()
+    local location loc=GetUnitLoc(trigUnit)
+    local unit dummyUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(dummyUnit)
+    local integer forceID=GetSpellAbilityId()
     call TriggerSleepAction(.2)
-    call SetUnitPositionLoc(spray_vase, order_cabbage)
-    call SetWidgetLife(cure_combative, 1.)
-    set cure_combative=CreateUnitAtLoc(basin_excite, 'h001', order_cabbage, 270.)
-    call UnitApplyTimedLife(cure_combative, 'BTLF', 3.)
-    call SetUnitAbilityLevel(cure_combative, 'A028', GetUnitAbilityLevel(spray_vase, measure_unequaled))
-    call IssueImmediateOrderById(cure_combative, $D009F)
-    call TerrainDeformationRippleBJ(1., false, order_cabbage, 600., 600., 100., 1, 600.)
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
-    set basin_excite=null
+    call SetUnitPositionLoc(dummyUnit, loc)
+    call SetWidgetLife(trigUnit, 1.)
+    set trigUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY, loc, 270.)
+    call UnitApplyTimedLife(trigUnit, 'BTLF', 3.)
+    call SetUnitAbilityLevel(trigUnit, 'A028', GetUnitAbilityLevel(dummyUnit, forceID))
+    call IssueImmediateOrderById(trigUnit, $D009F)
+    call TerrainDeformationRippleBJ(1., false, loc, 600., 600., 100., 1, 600.)
+    call RemoveLocation(loc)
+    set loc=null
+    set owningPlayer=null
     call TriggerSleepAction(4.)
-    call RemoveUnit(cure_combative)
-    set cure_combative=null
+    call RemoveUnit(trigUnit)
+    set trigUnit=null
 endfunction
 
 function girls_overflow takes nothing returns boolean
@@ -5446,12 +5478,12 @@ endfunction
 
 function weight_powder takes nothing returns nothing
     local unit tent_nut=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(tent_nut)
+    local player owningPlayer=GetOwningPlayer(tent_nut)
     local group plough_unhealthy=null
     local integer i
     local integer stereotyped_fog
     local integer bat_annoyed
-    set stereotyped_fog=( ( release_strong(basin_excite) - 1 ) * 5 ) + 1
+    set stereotyped_fog=( ( GetPlayerForceID(owningPlayer) - 1 ) * 5 ) + 1
     set bat_annoyed=stereotyped_fog + 4
     set i=stereotyped_fog
     loop
@@ -5459,7 +5491,7 @@ function weight_powder takes nothing returns nothing
         if ( ( GetUnitAbilityLevel(starcraft[i], 'A01H') == 0 ) and ( tent_nut != starcraft[i] ) ) then
             call UnitAddAbility(starcraft[i], 'Avul')
             call UnitAddAbility(starcraft[i], 'A01H')
-            call SetPlayerHandicapXP(basin_excite, 1.)
+            call SetPlayerHandicapXP(owningPlayer, 1.)
         endif
         if ( tent_nut != starcraft[i] ) then
             set recess_double[i]=( recess_double[i] + 1 )
@@ -5480,7 +5512,7 @@ function weight_powder takes nothing returns nothing
         set i=i + 1
     endloop
     set tent_nut=null
-    set basin_excite=null
+    set owningPlayer=null
     call DestroyGroup(plough_unhealthy)
     set plough_unhealthy=null
 endfunction
@@ -5490,19 +5522,19 @@ function level_magenta takes nothing returns boolean
 endfunction
 
 function bulb_stage takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    local integer intend_dispensable=( 3 + ( GetHeroLevel(cure_combative) / 4 ) )
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
+    local integer intend_dispensable=( 3 + ( GetHeroLevel(trigUnit) / 4 ) )
     local texttag judge_quizzical
-    set achiever_pollution[( 1 + GetPlayerId(basin_excite) )]=true
-    call AdjustPlayerStateBJ(intend_dispensable, basin_excite, PLAYER_STATE_RESOURCE_LUMBER)
-    set judge_quizzical=CreateTextTagUnitBJ("+" + I2S(intend_dispensable), cure_combative, .0, $A, 0, 90., 0, 0)
+    set achiever_pollution[( 1 + GetPlayerId(owningPlayer) )]=true
+    call AdjustPlayerStateBJ(intend_dispensable, owningPlayer, PLAYER_STATE_RESOURCE_LUMBER)
+    set judge_quizzical=CreateTextTagUnitBJ("+" + I2S(intend_dispensable), trigUnit, .0, $A, 0, 90., 0, 0)
     call SetTextTagVelocityBJ(judge_quizzical, 64, 90)
     call SetTextTagPermanentBJ(judge_quizzical, false)
     call SetTextTagFadepointBJ(judge_quizzical, 2.)
     call SetTextTagLifespanBJ(judge_quizzical, 3.)
-    set cure_combative=null
-    set basin_excite=null
+    set trigUnit=null
+    set owningPlayer=null
     set judge_quizzical=null
 endfunction
 
@@ -5511,23 +5543,23 @@ function narrow_racial takes nothing returns boolean
 endfunction
 
 function bruise_separate takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    local location order_cabbage=GetUnitLoc(cure_combative)
-    local unit spray_vase=CreateUnitAtLoc(basin_excite, 'h002', order_cabbage, .0)
-    call SetUnitAbilityLevelSwapped('A03R', spray_vase, GetUnitAbilityLevelSwapped('A04I', cure_combative))
-    call IssueTargetOrderById(spray_vase, $D00DD, cure_combative)
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
+    local location loc=GetUnitLoc(trigUnit)
+    local unit dummyUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY_2, loc, .0)
+    call SetUnitAbilityLevelSwapped('A03R', dummyUnit, GetUnitAbilityLevelSwapped('A04I', trigUnit))
+    call IssueTargetOrderById(dummyUnit, $D00DD, trigUnit)
     call TriggerSleepAction(3.)
-    call RemoveUnit(spray_vase)
-    set cure_combative=null
-    set spray_vase=null
-    set basin_excite=null
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
+    call RemoveUnit(dummyUnit)
+    set trigUnit=null
+    set dummyUnit=null
+    set owningPlayer=null
+    call RemoveLocation(loc)
+    set loc=null
 endfunction
 
 function shoe_tight takes nothing returns boolean
-    return ( UnitHasBuffBJ(GetSummonedUnit(), 'BUan') ) and ( GetUnitTypeId(GetSummoningUnit()) == HERO_RAW_REVENANT )
+    return ( UnitHasBuffBJ(GetSummonedUnit(), 'BUan') ) and ( GetUnitTypeId(GetSummoningUnit()) == RAW_HERO_REVENANT )
 endfunction
 
 function smell_birth takes nothing returns boolean
@@ -5603,7 +5635,7 @@ function hall_lyrical takes nothing returns nothing
     set coach_maniacal=1
     loop
         exitwhen coach_maniacal > $A
-        if ( ( GetUnitTypeId(starcraft[coach_maniacal]) == HERO_RAW_PALADIN ) and ( IsUnitAliveBJ(starcraft[coach_maniacal]) ) ) then
+        if ( ( GetUnitTypeId(starcraft[coach_maniacal]) == RAW_HERO_PALADIN ) and ( IsUnitAliveBJ(starcraft[coach_maniacal]) ) ) then
             set dare_mark=GetOwningPlayer(starcraft[coach_maniacal])
             set change_pointless=GetUnitLoc(starcraft[coach_maniacal])
             set disgusting_place=wriggle_brown('d' * GetUnitAbilityLevel(starcraft[coach_maniacal], 'A014') , change_pointless , Condition(function female_guarantee))
@@ -5647,7 +5679,7 @@ function week_object takes nothing returns nothing
     local location change_pointless=GetUnitLoc(trouble_sudden)
     local unit u
     call recognise_exciting(change_pointless , "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl")
-    set u=CreateUnitAtLoc(basketball_guard, 'h002', change_pointless, 270.)
+    set u=CreateUnitAtLoc(basketball_guard, RAW_DUMMY_DUMMY_2, change_pointless, 270.)
     call SetUnitAbilityLevel(u, 'A06I', GetUnitAbilityLevel(wander_complete, 'A06H'))
     call IssueTargetOrderById(u, $D0106, trouble_sudden)
     call UnitApplyTimedLifeBJ(3., 'BTLF', u)
@@ -5798,7 +5830,7 @@ function offend_wretched takes nothing returns nothing
     local unit trouble_sudden=GetEnumUnit()
     local player p=GetOwningPlayer(t)
     local location change_pointless=GetUnitLoc(t)
-    local unit u=CreateUnitAtLoc(p, 'h001', change_pointless, .0)
+    local unit u=CreateUnitAtLoc(p, RAW_DUMMY_DUMMY, change_pointless, .0)
     call SetUnitAbilityLevelSwapped('A06L', u, GetUnitAbilityLevel(t, 'A06J'))
     call IssueTargetOrderById(u, $D00DD, trouble_sudden)
     call UnitDamageTargetBJ(u, trouble_sudden, ( 30. * Pow(1.5, I2R(GetUnitAbilityLevel(t, 'A06J'))) ), ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC)
@@ -5886,15 +5918,15 @@ function ugliest_gorgeous takes nothing returns boolean
 endfunction
 
 function regret_stitch takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    call SetPlayerHandicapXP(basin_excite, 1.)
-    call UnitAddAbility(cure_combative, 'A077')
-    call CameraClearNoiseForPlayer(basin_excite)
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
+    call SetPlayerHandicapXP(owningPlayer, 1.)
+    call UnitAddAbility(trigUnit, 'A077')
+    call CameraClearNoiseForPlayer(owningPlayer)
     call TriggerSleepAction(20.)
-    call UnitRemoveAbility(cure_combative, 'A077')
-    set cure_combative=null
-    set basin_excite=null
+    call UnitRemoveAbility(trigUnit, 'A077')
+    set trigUnit=null
+    set owningPlayer=null
 endfunction
 
 function coat_outstanding takes nothing returns boolean
@@ -5909,23 +5941,23 @@ endfunction
 
 function diligent_observe takes nothing returns nothing
     local unit gullible_separate=GetAttacker()
-    local location order_cabbage=GetUnitLoc(gullible_separate)
-    local player basin_excite=GetOwningPlayer(gullible_separate)
-    local unit cure_combative=CreateUnitAtLoc(basin_excite, 'h002', order_cabbage, .0)
+    local location loc=GetUnitLoc(gullible_separate)
+    local player owningPlayer=GetOwningPlayer(gullible_separate)
+    local unit trigUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY_2, loc, .0)
     local unit toys_damaging=GetTriggerUnit()
     local location workable_flap=GetUnitLoc(toys_damaging)
     call TriggerSleepAction(.2)
-    call SetUnitAbilityLevelSwapped('A04Q', cure_combative, GetUnitUserData(starcraft[( 1 + GetPlayerId(basin_excite) )]))
-    call IssuePointOrderByIdLoc(cure_combative, $D009D, workable_flap)
+    call SetUnitAbilityLevelSwapped('A04Q', trigUnit, GetUnitUserData(starcraft[( 1 + GetPlayerId(owningPlayer) )]))
+    call IssuePointOrderByIdLoc(trigUnit, $D009D, workable_flap)
     call TriggerSleepAction(2.)
-    call RemoveUnit(cure_combative)
-    call RemoveLocation(order_cabbage)
+    call RemoveUnit(trigUnit)
+    call RemoveLocation(loc)
     call RemoveLocation(workable_flap)
     set gullible_separate=null
-    set order_cabbage=null
+    set loc=null
     set workable_flap=null
-    set basin_excite=null
-    set cure_combative=null
+    set owningPlayer=null
+    set trigUnit=null
     set toys_damaging=null
 endfunction
 
@@ -5934,26 +5966,26 @@ function ultra_wealth takes nothing returns boolean
 endfunction
 
 function water_porter takes nothing returns nothing
-    local location order_cabbage
+    local location loc
     local unit tent_nut=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(tent_nut)
-    local unit cure_combative
+    local player owningPlayer=GetOwningPlayer(tent_nut)
+    local unit trigUnit
     local integer lying_bleach=GetUnitAbilityLevelSwapped('A070', tent_nut)
-    if ( IsPlayerInForce(basin_excite, force_on_west_east[FORCE_WEST_ID]) ) then
-        set order_cabbage=GetRectCenter(gg_rct_West_Side)
+    if ( IsPlayerInForce(owningPlayer, forceList[FORCE_WEST_ID]) ) then
+        set loc=GetRectCenter(gg_rct_West_Side)
     else
-        set order_cabbage=GetRectCenter(gg_rct_East_Side)
+        set loc=GetRectCenter(gg_rct_East_Side)
     endif
-    set cure_combative=CreateUnitAtLoc(basin_excite, 'h003', order_cabbage, .0)
+    set trigUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_AURA_INFUSER, loc, .0)
     call SetUnitUserData(tent_nut, lying_bleach)
-    call SetUnitAbilityLevel(cure_combative, 'A061', lying_bleach)
+    call SetUnitAbilityLevel(trigUnit, 'A061', lying_bleach)
     call TriggerSleepAction(25.)
-    call RemoveUnit(cure_combative)
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
+    call RemoveUnit(trigUnit)
+    call RemoveLocation(loc)
+    set loc=null
     set tent_nut=null
-    set basin_excite=null
-    set cure_combative=null
+    set owningPlayer=null
+    set trigUnit=null
 endfunction
 
 function disappear_rescue takes nothing returns boolean
@@ -5988,7 +6020,7 @@ endfunction
 function manage_irate takes nothing returns boolean
     local unit invincible_walk=GetAttacker()
     local integer fear_furniture=GetUnitAbilityLevelSwapped('A063', invincible_walk)
-    if ( ( GetUnitTypeId(invincible_walk) == HERO_RAW_MAGIC_INFUSER ) and ( fear_furniture >= 1 ) ) then
+    if ( ( GetUnitTypeId(invincible_walk) == RAW_HERO_MAGIC_INFUSER ) and ( fear_furniture >= 1 ) ) then
         set invincible_walk=null
         return true
     endif
@@ -6003,7 +6035,7 @@ function itch_voracious takes nothing returns nothing
     local player breakable_spark=GetOwningPlayer(invincible_walk)
     local unit u
     if ( ( fear_furniture >= 1 ) and ( GetRandomInt(1, 'd') <= ( $A + 2 * fear_furniture ) ) and ( GetUnitAbilityLevel(invincible_walk, 'BNsi') == 0 ) and ( GetUnitState(invincible_walk, UNIT_STATE_MANA) >= 4. ) ) then
-        set u=CreateUnitAtLoc(breakable_spark, 'h002', change_pointless, 120.)
+        set u=CreateUnitAtLoc(breakable_spark, RAW_DUMMY_DUMMY_2, change_pointless, 120.)
         call SetUnitAbilityLevelSwapped('A05Z', u, fear_furniture)
         call IssueImmediateOrderById(u, $D026C)
         call SetUnitManaBJ(invincible_walk, ( GetUnitStateSwap(UNIT_STATE_MANA, invincible_walk) - 4. ))
@@ -6019,7 +6051,7 @@ endfunction
 
 function needless_face takes nothing returns boolean
     local unit invincible_walk=GetAttacker()
-    if ( ( GetUnitTypeId(invincible_walk) == HERO_RAW_MAGIC_INFUSER ) and ( UnitHasBuffBJ(invincible_walk, 'BNsi') == false ) and ( GetUnitStateSwap(UNIT_STATE_MANA, invincible_walk) >= 2. ) and ( GetRandomInt(1, 'd') <= ( 3 * GetUnitAbilityLevelSwapped('A062', invincible_walk) ) ) ) then
+    if ( ( GetUnitTypeId(invincible_walk) == RAW_HERO_MAGIC_INFUSER ) and ( UnitHasBuffBJ(invincible_walk, 'BNsi') == false ) and ( GetUnitStateSwap(UNIT_STATE_MANA, invincible_walk) >= 2. ) and ( GetRandomInt(1, 'd') <= ( 3 * GetUnitAbilityLevelSwapped('A062', invincible_walk) ) ) ) then
         set invincible_walk=null
         return true
     endif
@@ -6029,19 +6061,19 @@ endfunction
 
 function wine_deserted takes nothing returns nothing
     local unit gullible_separate=GetAttacker()
-    local player basin_excite=GetOwningPlayer(gullible_separate)
-    local location order_cabbage=GetUnitLoc(gullible_separate)
+    local player owningPlayer=GetOwningPlayer(gullible_separate)
+    local location loc=GetUnitLoc(gullible_separate)
     local real reduce_meek=GetUnitStateSwap(UNIT_STATE_MANA, gullible_separate)
-    local unit cure_combative=CreateUnitAtLoc(basin_excite, 'h002', order_cabbage, .0)
+    local unit trigUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY_2, loc, .0)
     call SetUnitManaBJ(gullible_separate, ( reduce_meek - 2. ))
-    call IssuePointOrderByIdLoc(cure_combative, $D02AC, order_cabbage)
+    call IssuePointOrderByIdLoc(trigUnit, $D02AC, loc)
     call TriggerSleepAction(1.)
-    call RemoveUnit(cure_combative)
-    call RemoveLocation(order_cabbage)
+    call RemoveUnit(trigUnit)
+    call RemoveLocation(loc)
     set gullible_separate=null
-    set basin_excite=null
-    set order_cabbage=null
-    set cure_combative=null
+    set owningPlayer=null
+    set loc=null
+    set trigUnit=null
 endfunction
 
 function cause_trot takes nothing returns boolean
@@ -6139,21 +6171,21 @@ function color_aquatic takes nothing returns boolean
 endfunction
 
 function knowledgeable_children takes nothing returns nothing
-    local unit cure_combative=GetSpellTargetUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
+    local unit trigUnit=GetSpellTargetUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
     local unit vase_lucky=GetTriggerUnit()
     local player p=GetOwningPlayer(vase_lucky)
     set achiever_pollution[( 1 + GetPlayerId(p) )]=true
-    set hat_knife[GetPlayerId(basin_excite) + 1]=hat_knife[GetPlayerId(basin_excite) + 1] + 1
-    call SetPlayerHandicapXP(basin_excite, ( .1 ))
+    set hat_knife[GetPlayerId(owningPlayer) + 1]=hat_knife[GetPlayerId(owningPlayer) + 1] + 1
+    call SetPlayerHandicapXP(owningPlayer, ( .1 ))
     call TriggerSleepAction($B + I2R(GetUnitAbilityLevelSwapped('A07A', vase_lucky)))
-    set hat_knife[GetPlayerId(basin_excite) + 1]=hat_knife[GetPlayerId(basin_excite) + 1] - 1
-    if ( ( hat_knife[GetPlayerId(basin_excite) + 1] == 0 ) and ( improve_sky[GetPlayerId(basin_excite) + 1] == 0 ) ) then
-        call SetPlayerHandicapXP(basin_excite, 1.)
-        call UnitRemoveAbility(cure_combative, 'B00P')
+    set hat_knife[GetPlayerId(owningPlayer) + 1]=hat_knife[GetPlayerId(owningPlayer) + 1] - 1
+    if ( ( hat_knife[GetPlayerId(owningPlayer) + 1] == 0 ) and ( improve_sky[GetPlayerId(owningPlayer) + 1] == 0 ) ) then
+        call SetPlayerHandicapXP(owningPlayer, 1.)
+        call UnitRemoveAbility(trigUnit, 'B00P')
     endif
-    set cure_combative=null
-    set basin_excite=null
+    set trigUnit=null
+    set owningPlayer=null
     set vase_lucky=null
     set p=null
 endfunction
@@ -6163,20 +6195,20 @@ function cobweb_illinformed takes nothing returns boolean
 endfunction
 
 function talk_dust takes nothing returns nothing
-    local unit cure_combative=GetSpellTargetUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
+    local unit trigUnit=GetSpellTargetUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
     local unit vase_lucky=GetTriggerUnit()
     local player p=GetOwningPlayer(vase_lucky)
     set achiever_pollution[( 1 + GetPlayerId(p) )]=true
-    call SetPlayerHandicapXP(basin_excite, 1.5)
-    set improve_sky[GetPlayerId(basin_excite) + 1]=improve_sky[GetPlayerId(basin_excite) + 1] + 1
+    call SetPlayerHandicapXP(owningPlayer, 1.5)
+    set improve_sky[GetPlayerId(owningPlayer) + 1]=improve_sky[GetPlayerId(owningPlayer) + 1] + 1
     call TriggerSleepAction(36 + ( 5 * I2R(GetUnitAbilityLevelSwapped('A06M', vase_lucky)) ))
-    set improve_sky[GetPlayerId(basin_excite) + 1]=improve_sky[GetPlayerId(basin_excite) + 1] - 1
-    if ( ( hat_knife[GetPlayerId(basin_excite) + 1] == 0 ) and ( improve_sky[GetPlayerId(basin_excite) + 1] == 0 ) ) then
-        call SetPlayerHandicapXP(basin_excite, 1.)
+    set improve_sky[GetPlayerId(owningPlayer) + 1]=improve_sky[GetPlayerId(owningPlayer) + 1] - 1
+    if ( ( hat_knife[GetPlayerId(owningPlayer) + 1] == 0 ) and ( improve_sky[GetPlayerId(owningPlayer) + 1] == 0 ) ) then
+        call SetPlayerHandicapXP(owningPlayer, 1.)
     endif
-    set cure_combative=null
-    set basin_excite=null
+    set trigUnit=null
+    set owningPlayer=null
     set vase_lucky=null
     set p=null
 endfunction
@@ -6208,7 +6240,7 @@ function hushed_lewd takes nothing returns nothing
     local player pt=GetOwningPlayer(t)
     local location alleged_straw=GetUnitLoc(t)
     local unit u
-    set u=CreateUnitAtLoc(pt, 'h001', change_pointless, bj_UNIT_FACING)
+    set u=CreateUnitAtLoc(pt, RAW_DUMMY_DUMMY, change_pointless, bj_UNIT_FACING)
     call UnitApplyTimedLife(u, 'BTLF', 3.)
     call IssueTargetOrderById(u, $D007F, e)
     call recognise_exciting(alleged_straw , "Abilities\\Spells\\Human\\Resurrect\\ResurrectTarget.mdl")
@@ -6285,7 +6317,7 @@ function rule_rot takes nothing returns boolean
     local unit threatening_car=GetTriggerUnit()
     local unit invincible_walk=GetAttacker()
     local player breakable_spark=GetOwningPlayer(invincible_walk)
-    if ( ( GetUnitTypeId(threatening_car) != zergling[kettle_near[( 1 + GetPlayerId(breakable_spark) )]] ) and ( GetUnitTypeId(threatening_car) != vest_tempt[kettle_near[( 1 + GetPlayerId(breakable_spark) )]] ) and ( GetUnitTypeId(invincible_walk) == HERO_RAW_RANGER ) and ( GetUnitAbilityLevel(invincible_walk, 'A07J') == 1 ) ) then
+    if ( ( GetUnitTypeId(threatening_car) != zergling[kettle_near[( 1 + GetPlayerId(breakable_spark) )]] ) and ( GetUnitTypeId(threatening_car) != vest_tempt[kettle_near[( 1 + GetPlayerId(breakable_spark) )]] ) and ( GetUnitTypeId(invincible_walk) == RAW_HERO_RANGER ) and ( GetUnitAbilityLevel(invincible_walk, 'A07J') == 1 ) ) then
         set invincible_walk=null
         set threatening_car=null
         set breakable_spark=null
@@ -6327,25 +6359,25 @@ function crime_nonstop takes nothing returns nothing
 endfunction
 
 function divergent_cooing takes nothing returns boolean
-    local unit cure_combative=GetSummonedUnit()
-    if ( GetUnitTypeId(cure_combative) == 'o001' ) then
+    local unit trigUnit=GetSummonedUnit()
+    if ( GetUnitTypeId(trigUnit) == 'o001' ) then
         return true
     endif
     return false
 endfunction
 
 function arrogant_savory takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    local integer grandfather_swanky=( 1 + GetPlayerId(basin_excite) )
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
+    local integer grandfather_swanky=( 1 + GetPlayerId(owningPlayer) )
     local integer ticket_cheat=GetUnitTypeId(dinner_ragged[grandfather_swanky])
-    set cure_combative=GetSummonedUnit()
+    set trigUnit=GetSummonedUnit()
     if ( ( ticket_cheat == 'o001' ) or ( ticket_cheat == 'o003' ) ) then
         call RemoveUnit(dinner_ragged[grandfather_swanky])
     endif
-    set dinner_ragged[grandfather_swanky]=cure_combative
-    set cure_combative=null
-    set basin_excite=null
+    set dinner_ragged[grandfather_swanky]=trigUnit
+    set trigUnit=null
+    set owningPlayer=null
 endfunction
 
 function redundant_numberless takes nothing returns boolean
@@ -6354,29 +6386,29 @@ endfunction
 
 function pack_clip takes nothing returns nothing
     local integer i=1
-    local unit cure_combative=GetTriggerUnit()
-    local integer i2=GetUnitAbilityLevelSwapped('A03Y', cure_combative)
+    local unit trigUnit=GetTriggerUnit()
+    local integer i2=GetUnitAbilityLevelSwapped('A03Y', trigUnit)
     loop
         exitwhen i > i2
-        call UnitAddItemByIdSwapped('I014', cure_combative)
+        call UnitAddItemByIdSwapped('I014', trigUnit)
         set i=i + 1
     endloop
-    if ( GetUnitAbilityLevelSwapped('A03O', cure_combative) == 1 ) then
-        call UnitRemoveAbility(cure_combative, 'A03O')
-        call UnitAddAbility(cure_combative, 'A03N')
-        call PlaySoundOnUnitBJ(gg_snd_LightningBolt, 'd', cure_combative)
+    if ( GetUnitAbilityLevelSwapped('A03O', trigUnit) == 1 ) then
+        call UnitRemoveAbility(trigUnit, 'A03O')
+        call UnitAddAbility(trigUnit, 'A03N')
+        call PlaySoundOnUnitBJ(gg_snd_LightningBolt, 'd', trigUnit)
         set i=1
         loop
             exitwhen i > i2
-            call UnitAddItemByIdSwapped('I014', cure_combative)
+            call UnitAddItemByIdSwapped('I014', trigUnit)
             set i=i + 1
         endloop
-        call AddSpecialEffectTargetUnitBJ("weapon", cure_combative, "Abilities\\Spells\\Human\\Flare\\FlareCaster.mdl")
+        call AddSpecialEffectTargetUnitBJ("weapon", trigUnit, "Abilities\\Spells\\Human\\Flare\\FlareCaster.mdl")
         call TriggerExecute(love_finger)
-        call AddSpecialEffectTargetUnitBJ("weapon", cure_combative, "Abilities\\Spells\\Other\\Monsoon\\MonsoonBoltTarget.mdl")
+        call AddSpecialEffectTargetUnitBJ("weapon", trigUnit, "Abilities\\Spells\\Other\\Monsoon\\MonsoonBoltTarget.mdl")
         call TriggerExecute(love_finger)
     endif
-    set cure_combative=null
+    set trigUnit=null
 endfunction
 
 function squealing_plant takes nothing returns boolean
@@ -6492,7 +6524,7 @@ function succeed_rare takes nothing returns nothing
 endfunction
 
 function debonair_nasty takes nothing returns boolean
-    return ( GetUnitTypeId(GetSummoningUnit()) == HERO_RAW_SUMMONER )
+    return ( GetUnitTypeId(GetSummoningUnit()) == RAW_HERO_SUMMONER )
 endfunction
 
 function force_mushy takes nothing returns nothing
@@ -6525,8 +6557,8 @@ endfunction
 function regret_spotted takes nothing returns nothing
     local unit flaky_drown=GetEnumUnit()
     local location change_pointless=GetUnitLoc(flaky_drown)
-    local player basin_excite=GetOwningPlayer(starcraft[skip_tame])
-    local unit grease_scatter=CreateUnitAtLoc(basin_excite, 'h001', change_pointless, 270.)
+    local player owningPlayer=GetOwningPlayer(starcraft[skip_tame])
+    local unit grease_scatter=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY, change_pointless, 270.)
     call UnitApplyTimedLife(grease_scatter, 'BTLF', 3.)
     call SetWidgetLife(flaky_drown, 50.)
     call UnitDamageTargetBJ(grease_scatter, flaky_drown, 500, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_NORMAL)
@@ -6534,7 +6566,7 @@ function regret_spotted takes nothing returns nothing
     set flaky_drown=null
     call RemoveLocation(change_pointless)
     set change_pointless=null
-    set basin_excite=null
+    set owningPlayer=null
     set grease_scatter=null
 endfunction
 
@@ -6545,9 +6577,9 @@ function example_fumbling takes nothing returns nothing
     set skip_tame=1
     loop
         exitwhen skip_tame > $A
-        if ( ( GetUnitTypeId(starcraft[skip_tame]) == HERO_RAW_REVENANT ) and ( IsUnitAliveBJ(starcraft[skip_tame]) ) ) then
+        if ( ( GetUnitTypeId(starcraft[skip_tame]) == RAW_HERO_REVENANT ) and ( IsUnitAliveBJ(starcraft[skip_tame]) ) ) then
             set bright_painstaking=GetOwningPlayer(starcraft[skip_tame])
-            if ( IsPlayerInForce(bright_painstaking, force_on_west_east[FORCE_WEST_ID]) ) then
+            if ( IsPlayerInForce(bright_painstaking, forceList[FORCE_WEST_ID]) ) then
                 set stingy_chicken=gg_rct_West_Side
             else
                 set stingy_chicken=gg_rct_East_Side
@@ -6596,7 +6628,7 @@ function imminent_chess takes nothing returns nothing
     local unit t=GetTriggerUnit()
     local player pt=GetOwningPlayer(t)
     local location change_pointless=GetUnitLoc(e)
-    local unit u=CreateUnitAtLoc(pt, 'h001', change_pointless, .0)
+    local unit u=CreateUnitAtLoc(pt, RAW_DUMMY_DUMMY, change_pointless, .0)
     call UnitApplyTimedLife(u, 'BTLF', 3.)
     call IssueTargetOrderById(u, $D00CB, e)
     set e=null
@@ -6621,7 +6653,7 @@ function wound_plausible takes nothing returns nothing
 endfunction
 
 function celery_precious takes nothing returns boolean
-    return ( GetUnitTypeId(GetSummoningUnit()) == HERO_RAW_WARRIOR_MAGE ) and ( GetUnitTypeId(GetSummonedUnit()) == 'o007' )
+    return ( GetUnitTypeId(GetSummoningUnit()) == RAW_HERO_WARRIOR_MAGE ) and ( GetUnitTypeId(GetSummonedUnit()) == 'o007' )
 endfunction
 
 function cheer_winter takes nothing returns boolean
@@ -6661,7 +6693,7 @@ endfunction
 
 function shiver_quirky takes nothing returns boolean
     local unit invincible_walk=GetAttacker()
-    if ( ( ( GetUnitTypeId(invincible_walk) == HERO_RAW_SNIPER ) or ( GetUnitTypeId(invincible_walk) == HERO_RAW_SNIPER_ALT ) ) and ( GetUnitAbilityLevel(invincible_walk, 'A054') >= 1 ) and ( GetRandomInt(1, 'd') <= GetUnitAbilityLevel(invincible_walk, 'A054') ) and ( GetUnitAbilityLevel(invincible_walk, 'BNsi') == 0 ) ) then
+    if ( ( ( GetUnitTypeId(invincible_walk) == RAW_HERO_SNIPER ) or ( GetUnitTypeId(invincible_walk) == RAW_HERO_SNIPER_ALT ) ) and ( GetUnitAbilityLevel(invincible_walk, 'A054') >= 1 ) and ( GetRandomInt(1, 'd') <= GetUnitAbilityLevel(invincible_walk, 'A054') ) and ( GetUnitAbilityLevel(invincible_walk, 'BNsi') == 0 ) ) then
         set invincible_walk=null
         return true
     endif
@@ -6690,49 +6722,49 @@ function suggest_volatile takes nothing returns boolean
 endfunction
 
 function salty_valuable takes nothing returns boolean
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
     local unit arithmetic_explain=GetFilterUnit()
-    if ( ( IsUnitAliveBJ(arithmetic_explain) ) and ( IsUnitEnemy(arithmetic_explain, basin_excite) ) ) then
+    if ( ( IsUnitAliveBJ(arithmetic_explain) ) and ( IsUnitEnemy(arithmetic_explain, owningPlayer) ) ) then
         set arithmetic_explain=null
-        set cure_combative=null
-        set basin_excite=null
+        set trigUnit=null
+        set owningPlayer=null
         return true
     else
         set arithmetic_explain=null
-        set cure_combative=null
-        set basin_excite=null
+        set trigUnit=null
+        set owningPlayer=null
         return false
     endif
 endfunction
 
 function page_childlike takes nothing returns nothing
     local unit scale_inconclusive=GetEnumUnit()
-    local location order_cabbage=GetUnitLoc(scale_inconclusive)
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    set cure_combative=CreateUnitAtLoc(basin_excite, 'h001', order_cabbage, 270)
-    call UnitApplyTimedLifeBJ(3., 'BTLF', cure_combative)
-    call IssueTargetOrderById(cure_combative, $D0216, scale_inconclusive)
-    call RemoveLocation(order_cabbage)
+    local location loc=GetUnitLoc(scale_inconclusive)
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
+    set trigUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY, loc, 270)
+    call UnitApplyTimedLifeBJ(3., 'BTLF', trigUnit)
+    call IssueTargetOrderById(trigUnit, $D0216, scale_inconclusive)
+    call RemoveLocation(loc)
     set scale_inconclusive=null
-    set order_cabbage=null
-    set cure_combative=null
-    set basin_excite=null
+    set loc=null
+    set trigUnit=null
+    set owningPlayer=null
 endfunction
 
 function appliance_clean takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    local location order_cabbage=GetUnitLoc(dinner_ragged[( 1 + GetPlayerId(basin_excite) )])
-    local group plough_unhealthy=wriggle_brown(750. , order_cabbage , Condition(function salty_valuable))
-    call recognise_exciting(order_cabbage , "Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdl")
-    call KillUnit(dinner_ragged[( 1 + GetPlayerId(basin_excite) )])
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
+    local location loc=GetUnitLoc(dinner_ragged[( 1 + GetPlayerId(owningPlayer) )])
+    local group plough_unhealthy=wriggle_brown(750. , loc , Condition(function salty_valuable))
+    call recognise_exciting(loc , "Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdl")
+    call KillUnit(dinner_ragged[( 1 + GetPlayerId(owningPlayer) )])
     call ForGroupBJ(plough_unhealthy, function page_childlike)
-    call RemoveLocation(order_cabbage)
+    call RemoveLocation(loc)
     call DestroyGroup(plough_unhealthy)
-    set cure_combative=null
-    set basin_excite=null
+    set trigUnit=null
+    set owningPlayer=null
 endfunction
 
 function cross_spill takes nothing returns boolean
@@ -6830,7 +6862,7 @@ function weight_blink takes nothing returns nothing
     local player five_dispensable=GetOwningPlayer(small_dust)
     local location change_pointless=GetRectCenter(bj_mapInitialPlayableArea)
     call UnitResetCooldown(small_dust)
-    if ( ( GetUnitTypeId(small_dust) == HERO_RAW_MAGIC_INFUSER ) and ( GetUnitTypeId(arm_club[( 1 + GetPlayerId(five_dispensable) )]) != 'o004' ) ) then
+    if ( ( GetUnitTypeId(small_dust) == RAW_HERO_MAGIC_INFUSER ) and ( GetUnitTypeId(arm_club[( 1 + GetPlayerId(five_dispensable) )]) != 'o004' ) ) then
     else
         set arm_club[( 1 + GetPlayerId(five_dispensable) )]=CreateUnitAtLoc(five_dispensable, 'o004', change_pointless, 270.)
     endif
@@ -6902,7 +6934,7 @@ function pollution_farflung takes nothing returns nothing
     local location oceanic_thin=GetUnitLoc(trouble_sudden)
     local integer i=1
     local unit field_peace=GetTriggerUnit()
-    local player aggressive_tremendous=GetOwningPlayer(trouble_sudden)
+    local player p=GetOwningPlayer(trouble_sudden)
     loop
         exitwhen i > ( 4 + GetUnitAbilityLevelSwapped(GetSpellAbilityId(), field_peace) )
         if ( ( RectContainsLoc(gg_rct_West_Spellbringer, bridge_basin(oceanic_thin , 50. , GetUnitFacing(field_peace))) == false ) and ( RectContainsLoc(gg_rct_West_Boundary_W, bridge_basin(oceanic_thin , 50. , GetUnitFacing(field_peace))) == false ) and ( RectContainsLoc(gg_rct_West_Boundary_E, bridge_basin(oceanic_thin , 50. , GetUnitFacing(field_peace))) == false ) and ( RectContainsLoc(gg_rct_East_Spellbringer, bridge_basin(oceanic_thin , 50. , GetUnitFacing(field_peace))) == false ) and ( RectContainsLoc(gg_rct_East_Boundary_W, bridge_basin(oceanic_thin , 50. , GetUnitFacing(field_peace))) == false ) and ( RectContainsLoc(gg_rct_East_Boundary_E, bridge_basin(oceanic_thin , 50. , GetUnitFacing(field_peace))) == false ) ) then
@@ -6926,7 +6958,7 @@ function pollution_farflung takes nothing returns nothing
     set oceanic_thin=GetUnitLoc(trouble_sudden)
     call AddSpecialEffectLocBJ(oceanic_thin, "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl")
     if ( ( GetUnitTypeId(trouble_sudden) == 'n01Z' ) or ( GetUnitTypeId(trouble_sudden) == 'n020' ) ) then
-        if ( IsPlayerAlly(aggressive_tremendous, Player(0)) ) then
+        if ( IsPlayerAlly(p, Player(0)) ) then
             call IssueTargetOrderById(trouble_sudden, $D000F, strip_nifty)
         else
             call IssueTargetOrderById(trouble_sudden, $D000F, makeshift_example)
@@ -6937,7 +6969,7 @@ function pollution_farflung takes nothing returns nothing
     set oceanic_thin=null
     call RemoveLocation(oceanic_thin)
     set field_peace=null
-    set aggressive_tremendous=null
+    set p=null
 endfunction
 
 function classy_obsolete takes nothing returns nothing
@@ -7083,13 +7115,13 @@ endfunction
 function sack_stimulating takes nothing returns nothing
     local unit vase_lucky=GetTriggerUnit()
     local unit scale_inconclusive=GetSpellTargetUnit()
-    local player basin_excite=GetOwningPlayer(vase_lucky)
+    local player owningPlayer=GetOwningPlayer(vase_lucky)
     local player porter_stop=GetOwningPlayer(scale_inconclusive)
     local integer basketball_happen
     local integer amused_hissing
     local integer church_nebulous
-    local force extralarge_plant=question_temper(basin_excite)
-    set achiever_pollution[( 1 + GetPlayerId(basin_excite) )]=true
+    local force extralarge_plant=question_temper(owningPlayer)
+    set achiever_pollution[( 1 + GetPlayerId(owningPlayer) )]=true
     if ( ( GetUnitAbilityLevelSwapped(GetSpellAbilityId(), vase_lucky) == 1 ) ) then
         set basketball_happen=GetRandomInt(0, 6)
         set amused_hissing=GetRandomInt(0, 6)
@@ -7107,7 +7139,7 @@ function sack_stimulating takes nothing returns nothing
     call ModifyHeroStat(0, scale_inconclusive, 0, basketball_happen)
     call ModifyHeroStat(1, scale_inconclusive, 0, amused_hissing)
     call ModifyHeroStat(2, scale_inconclusive, 0, church_nebulous)
-    call DisplayTextToForce(extralarge_plant, ( range_uncovered[( 1 + GetPlayerId(basin_excite) )] + GetPlayerName(basin_excite) + "|r's " + GetUnitName(vase_lucky) + " enhanced " + range_uncovered[( 1 + GetPlayerId(porter_stop) )] + GetPlayerName(porter_stop) + "|r's " + GetUnitName(scale_inconclusive) + "'s Strength by " + I2S(basketball_happen) + ", Agility by " + I2S(amused_hissing) + ", and Intelligence by " + I2S(church_nebulous) + "." ))
+    call DisplayTextToForce(extralarge_plant, ( range_uncovered[( 1 + GetPlayerId(owningPlayer) )] + GetPlayerName(owningPlayer) + "|r's " + GetUnitName(vase_lucky) + " enhanced " + range_uncovered[( 1 + GetPlayerId(porter_stop) )] + GetPlayerName(porter_stop) + "|r's " + GetUnitName(scale_inconclusive) + "'s Strength by " + I2S(basketball_happen) + ", Agility by " + I2S(amused_hissing) + ", and Intelligence by " + I2S(church_nebulous) + "." ))
 endfunction
 
 function spectacular_languid takes nothing returns boolean
@@ -7116,23 +7148,23 @@ endfunction
 
 function fowl_jar takes nothing returns nothing
     local unit vase_lucky=GetTriggerUnit()
-    local integer measure_unequaled=R2I(1 + I2R(GetUnitAbilityLevelSwapped('A07A', vase_lucky) / 2))
+    local integer forceID=R2I(1 + I2R(GetUnitAbilityLevelSwapped('A07A', vase_lucky) / 2))
     local integer rhythm_certain
-    local player basin_excite=GetOwningPlayer(vase_lucky)
-    local force extralarge_plant=question_temper(basin_excite)
-    set achiever_pollution[( 1 + GetPlayerId(basin_excite) )]=true
-    set rhythm_certain=release_strong(basin_excite)
-    set erratic_bright[rhythm_certain]=( erratic_bright[rhythm_certain] + measure_unequaled )
-    call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[( rhythm_certain + $A )], ( defiant_concerned[rhythm_certain] + " [" + ( I2S(erratic_bright[rhythm_certain]) + "]" ) ))
-    if ( ( measure_unequaled * 2 ) < 4 ) then
-        call DisplayTimedTextToForce(extralarge_plant, 3., ( ( "|c004EEA1A" + ( I2S(measure_unequaled) + " Life Gained - |r" ) ) + ( I2S(erratic_bright[rhythm_certain]) + " |c004EEA1ARemaining!|r" ) ))
+    local player owningPlayer=GetOwningPlayer(vase_lucky)
+    local force extralarge_plant=question_temper(owningPlayer)
+    set achiever_pollution[( 1 + GetPlayerId(owningPlayer) )]=true
+    set rhythm_certain=GetPlayerForceID(owningPlayer)
+    set numberOfLives[rhythm_certain]=( numberOfLives[rhythm_certain] + forceID )
+    call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[( rhythm_certain + $A )], ( defiant_concerned[rhythm_certain] + " [" + ( I2S(numberOfLives[rhythm_certain]) + "]" ) ))
+    if ( ( forceID * 2 ) < 4 ) then
+        call DisplayTimedTextToForce(extralarge_plant, 3., ( ( "|c004EEA1A" + ( I2S(forceID) + " Life Gained - |r" ) ) + ( I2S(numberOfLives[rhythm_certain]) + " |c004EEA1ARemaining!|r" ) ))
     else
-        call DisplayTimedTextToForce(extralarge_plant, 3., ( ( "|c004EEA1A" + ( I2S(measure_unequaled) + " Lives Gained - |r" ) ) + ( I2S(erratic_bright[rhythm_certain]) + " |c004EEA1ARemaining!|r" ) ))
+        call DisplayTimedTextToForce(extralarge_plant, 3., ( ( "|c004EEA1A" + ( I2S(forceID) + " Lives Gained - |r" ) ) + ( I2S(numberOfLives[rhythm_certain]) + " |c004EEA1ARemaining!|r" ) ))
     endif
     call DestroyForce(extralarge_plant)
     set extralarge_plant=null
     set vase_lucky=null
-    set basin_excite=null
+    set owningPlayer=null
 endfunction
 
 function tough_supply takes nothing returns boolean
@@ -7144,7 +7176,7 @@ function stretch_point takes nothing returns nothing
     local player basketball_guard=GetOwningPlayer(wander_complete)
     local location change_pointless=GetUnitLoc(wander_complete)
     local unit u
-    set u=CreateUnitAtLoc(basketball_guard, 'h001', change_pointless, .0)
+    set u=CreateUnitAtLoc(basketball_guard, RAW_DUMMY_DUMMY, change_pointless, .0)
     call SetUnitAbilityLevel(u, 'A00J', GetUnitAbilityLevel(wander_complete, 'A052'))
     call IssueTargetOrderById(u, $D00C0, wander_complete)
     call TriggerSleepAction(2.)
@@ -7169,7 +7201,7 @@ function offer_puzzling takes nothing returns nothing
     else
         set look_pumped=GetRectCenter(gg_rct_East_Side)
     endif
-    call CreateNUnitsAtLoc(1, 'h004', GetOwningPlayer(GetTriggerUnit()), look_pumped, bj_UNIT_FACING)
+    call CreateNUnitsAtLoc(1, RAW_DUMMY_AURA_PALADIN, GetOwningPlayer(GetTriggerUnit()), look_pumped, bj_UNIT_FACING)
     call SetUnitAbilityLevelSwapped('A01T', bj_lastCreatedUnit, GetUnitAbilityLevelSwapped('A06R', GetTriggerUnit()))
     call SetUnitAbilityLevelSwapped('A05B', bj_lastCreatedUnit, GetUnitAbilityLevelSwapped('A06R', GetTriggerUnit()))
     call UnitApplyTimedLifeBJ(30., 'BTLF', bj_lastCreatedUnit)
@@ -7184,21 +7216,21 @@ function terrible_travel takes nothing returns nothing
     local player hunt_greet=GetOwningPlayer(spiteful_snobbish)
     local unit wilderness_strong=GetSpellTargetUnit()
     local player brown_nest=GetOwningPlayer(wilderness_strong)
-    local location order_cabbage=GetUnitLoc(spiteful_snobbish)
-    local unit cure_combative=CreateUnitAtLoc(hunt_greet, 'h001', order_cabbage, .0)
-    call IssueTargetOrderById(cure_combative, $D0269, spellbringer_of_player[( GetPlayerId(brown_nest) )])
-    call UnitApplyTimedLifeBJ(2., 'BTLF', cure_combative)
+    local location loc=GetUnitLoc(spiteful_snobbish)
+    local unit trigUnit=CreateUnitAtLoc(hunt_greet, RAW_DUMMY_DUMMY, loc, .0)
+    call IssueTargetOrderById(trigUnit, $D0269, spellbringer_of_player[( GetPlayerId(brown_nest) )])
+    call UnitApplyTimedLifeBJ(2., 'BTLF', trigUnit)
     call RemoveUnit(cumbersome_obeisant[( 1 + GetPlayerId(brown_nest) )])
     call TriggerSleepAction(25.)
-    set order_cabbage=GetRectCenter(bj_mapInitialPlayableArea)
-    set cumbersome_obeisant[( 1 + GetPlayerId(brown_nest) )]=CreateUnitAtLoc(brown_nest, 'h007', order_cabbage, .0)
-    call RemoveLocation(order_cabbage)
+    set loc=GetRectCenter(bj_mapInitialPlayableArea)
+    set cumbersome_obeisant[( 1 + GetPlayerId(brown_nest) )]=CreateUnitAtLoc(brown_nest, 'h007', loc, .0)
+    call RemoveLocation(loc)
     set spiteful_snobbish=null
     set hunt_greet=null
     set wilderness_strong=null
     set brown_nest=null
-    set order_cabbage=null
-    set cure_combative=null
+    set loc=null
+    set trigUnit=null
 endfunction
 
 function curl_kill takes nothing returns boolean
@@ -7208,7 +7240,7 @@ endfunction
 function shivering_bouncy takes nothing returns nothing
     set achiever_pollution[( 1 + GetPlayerId(GetOwningPlayer(GetTriggerUnit())) )]=true
     set look_pumped=GetUnitLoc(GetTriggerUnit())
-    call CreateNUnitsAtLoc(1, 'h002', GetOwningPlayer(GetTriggerUnit()), look_pumped, bj_UNIT_FACING)
+    call CreateNUnitsAtLoc(1, RAW_DUMMY_DUMMY_2, GetOwningPlayer(GetTriggerUnit()), look_pumped, bj_UNIT_FACING)
     call UnitAddAbility(bj_lastCreatedUnit, 'A04S')
     call UnitApplyTimedLifeBJ(1., 'BTLF', bj_lastCreatedUnit)
     call SetUnitAbilityLevelSwapped('A04S', bj_lastCreatedUnit, GetUnitAbilityLevelSwapped('A036', GetTriggerUnit()))
@@ -7221,32 +7253,32 @@ function include_knowledge takes nothing returns boolean
 endfunction
 
 function disagree_stare takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
+    local unit trigUnit=GetTriggerUnit()
     local integer brave_axiomatic=1
-    local location order_cabbage=GetUnitLoc(cure_combative)
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    local unit spray_vase=CreateUnitAtLoc(basin_excite, 'h001', order_cabbage, 270.)
-    call UnitAddAbility(spray_vase, 'A06Y')
-    call UnitApplyTimedLifeBJ(7., 'BTLF', spray_vase)
+    local location loc=GetUnitLoc(trigUnit)
+    local player owningPlayer=GetOwningPlayer(trigUnit)
+    local unit dummyUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY, loc, 270.)
+    call UnitAddAbility(dummyUnit, 'A06Y')
+    call UnitApplyTimedLifeBJ(7., 'BTLF', dummyUnit)
     loop
         exitwhen brave_axiomatic > $E
-        if ( GetUnitCurrentOrder(cure_combative) == 852188 and GetUnitCurrentOrder(cure_combative) != $D0003 ) then
+        if ( GetUnitCurrentOrder(trigUnit) == 852188 and GetUnitCurrentOrder(trigUnit) != $D0003 ) then
             call TriggerSleepAction(.5)
         else
-            call UnitApplyTimedLifeBJ(.01, 'BTLF', spray_vase)
-            call UnitRemoveAbility(cure_combative, 'B00H')
+            call UnitApplyTimedLifeBJ(.01, 'BTLF', dummyUnit)
+            call UnitRemoveAbility(trigUnit, 'B00H')
         endif
         set brave_axiomatic=brave_axiomatic + 1
     endloop
-    set cure_combative=null
-    set order_cabbage=null
-    set basin_excite=null
-    set spray_vase=null
+    set trigUnit=null
+    set loc=null
+    set owningPlayer=null
+    set dummyUnit=null
 endfunction
 
 function wiggly_high takes nothing returns boolean
     local unit t=GetTriggerUnit()
-    if ( ( IsUnitType(t, UNIT_TYPE_HERO) ) and ( GetUnitTypeId(t) != HERO_RAW_TROLL_CANNIBAL ) ) then
+    if ( ( IsUnitType(t, UNIT_TYPE_HERO) ) and ( GetUnitTypeId(t) != RAW_HERO_TROLL_CANNIBAL ) ) then
         set t=null
         return true
     endif
@@ -7268,7 +7300,7 @@ function awesome_farm takes nothing returns nothing
         set i=i + 1
     endloop
     if ( debonair_chubby == 0 ) then
-        if ( GetUnitTypeId(t) == HERO_RAW_SNIPER_ALT ) then
+        if ( GetUnitTypeId(t) == RAW_HERO_SNIPER_ALT ) then
             set debonair_chubby=20
         else
             set debonair_chubby=$C
@@ -7279,7 +7311,7 @@ function awesome_farm takes nothing returns nothing
     loop
         exitwhen i > $A
         call DisplayTextToForce(loutish_title, I2S(i))
-        if ( ( GetUnitTypeId(starcraft[i]) == HERO_RAW_TROLL_CANNIBAL ) and ( GetUnitAbilityLevel(starcraft[i], 'A088') != 1 ) and ( GetUnitAbilityLevel(starcraft[i], 'A06Z') >= 1 ) ) then
+        if ( ( GetUnitTypeId(starcraft[i]) == RAW_HERO_TROLL_CANNIBAL ) and ( GetUnitAbilityLevel(starcraft[i], 'A088') != 1 ) and ( GetUnitAbilityLevel(starcraft[i], 'A06Z') >= 1 ) ) then
             call SetPlayerAbilityAvailable(Player(i - 1), 'A06Z', false)
             call UnitAddAbility(starcraft[i], greasy_belligerent[debonair_chubby])
             call SetUnitAbilityLevel(starcraft[i], greasy_belligerent[debonair_chubby], GetUnitAbilityLevel(starcraft[i], 'A06Z'))
@@ -7525,7 +7557,7 @@ function representative_possessive takes nothing returns nothing
 endfunction
 
 function seemly_adjoining takes nothing returns boolean
-    return ( GetUnitTypeId(starcraft[bj_forLoopAIndex]) == HERO_RAW_TROLL_CANNIBAL ) and ( GetUnitAbilityLevelSwapped('A03L', starcraft[bj_forLoopAIndex]) > 0 )
+    return ( GetUnitTypeId(starcraft[bj_forLoopAIndex]) == RAW_HERO_TROLL_CANNIBAL ) and ( GetUnitAbilityLevelSwapped('A03L', starcraft[bj_forLoopAIndex]) > 0 )
 endfunction
 
 function pet_laughable takes nothing returns nothing
@@ -7534,7 +7566,7 @@ function pet_laughable takes nothing returns nothing
     set bj_forLoopAIndexEnd=$A
     loop
         exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
-        if ( (( GetUnitTypeId(starcraft[bj_forLoopAIndex]) == HERO_RAW_TROLL_CANNIBAL ) and ( GetUnitAbilityLevelSwapped('A03L', starcraft[bj_forLoopAIndex]) > 0 )) ) then // INLINED!!
+        if ( (( GetUnitTypeId(starcraft[bj_forLoopAIndex]) == RAW_HERO_TROLL_CANNIBAL ) and ( GetUnitAbilityLevelSwapped('A03L', starcraft[bj_forLoopAIndex]) > 0 )) ) then // INLINED!!
             call UnitRemoveAbility(starcraft[bj_forLoopAIndex], 'A03L')
             call UnitRemoveAbility(starcraft[bj_forLoopAIndex], 'A088')
             call SetPlayerAbilityAvailableBJ(true, 'A06Z', Player(- 1 + ( bj_forLoopAIndex )))
@@ -7544,7 +7576,7 @@ function pet_laughable takes nothing returns nothing
 endfunction
 
 function obey_development takes nothing returns boolean
-    return ( GetUnitTypeId(starcraft[bj_forLoopAIndex]) == HERO_RAW_TROLL_CANNIBAL ) and ( GetUnitAbilityLevelSwapped('A01G', starcraft[bj_forLoopAIndex]) > 0 )
+    return ( GetUnitTypeId(starcraft[bj_forLoopAIndex]) == RAW_HERO_TROLL_CANNIBAL ) and ( GetUnitAbilityLevelSwapped('A01G', starcraft[bj_forLoopAIndex]) > 0 )
 endfunction
 
 function utopian_envious takes nothing returns nothing
@@ -7553,7 +7585,7 @@ function utopian_envious takes nothing returns nothing
     set bj_forLoopAIndexEnd=$A
     loop
         exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
-        if ( (( GetUnitTypeId(starcraft[bj_forLoopAIndex]) == HERO_RAW_TROLL_CANNIBAL ) and ( GetUnitAbilityLevelSwapped('A01G', starcraft[bj_forLoopAIndex]) > 0 )) ) then // INLINED!!
+        if ( (( GetUnitTypeId(starcraft[bj_forLoopAIndex]) == RAW_HERO_TROLL_CANNIBAL ) and ( GetUnitAbilityLevelSwapped('A01G', starcraft[bj_forLoopAIndex]) > 0 )) ) then // INLINED!!
             call UnitRemoveAbility(starcraft[bj_forLoopAIndex], 'A01G')
             call UnitRemoveAbility(starcraft[bj_forLoopAIndex], 'A088')
             call SetPlayerAbilityAvailableBJ(true, 'A06Z', Player(- 1 + ( bj_forLoopAIndex )))
@@ -7563,7 +7595,7 @@ function utopian_envious takes nothing returns nothing
 endfunction
 
 function arrange_hope takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == HERO_RAW_SNIPER )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_HERO_SNIPER )
 endfunction
 
 function ratty_tan takes nothing returns boolean
@@ -7637,7 +7669,7 @@ function authority_driving takes nothing returns nothing
     loop
         exitwhen i > 3
         if ( CountUnitsInGroup(g) >= 1 ) then
-            set u=CreateUnitAtLoc(pt, 'h001', change_pointless, 120.)
+            set u=CreateUnitAtLoc(pt, RAW_DUMMY_DUMMY, change_pointless, 120.)
             set determined_familiar=GroupPickRandomUnit(g)
             call UnitRemoveAbility(determined_familiar, 'ANss')
             call UnitRemoveAbility(determined_familiar, 'A02U')
@@ -7651,7 +7683,7 @@ function authority_driving takes nothing returns nothing
 endfunction
 
 function turkey_berserk takes nothing returns boolean
-    return ( GetUnitTypeId(GetDyingUnit()) == 'h008' ) and ( whip_nonchalant[( 1 + GetPlayerId(GetOwningPlayer(GetDyingUnit())) )] < ( 30 + tight_gate[( 1 + GetPlayerId(GetOwningPlayer(GetDyingUnit())) )] ) )
+    return ( GetUnitTypeId(GetDyingUnit()) == RAW_DUMMY_SPIRITUAL_SWARM ) and ( whip_nonchalant[( 1 + GetPlayerId(GetOwningPlayer(GetDyingUnit())) )] < ( 30 + tight_gate[( 1 + GetPlayerId(GetOwningPlayer(GetDyingUnit())) )] ) )
 endfunction
 
 function lively_crabby takes nothing returns boolean
@@ -7660,26 +7692,26 @@ endfunction
 
 function harm_cart takes nothing returns nothing
     local unit accept_yoke=GetDyingUnit()
-    local player basin_excite=GetOwningPlayer(accept_yoke)
-    local location order_cabbage=GetUnitLoc(accept_yoke)
-    local unit cure_combative=CreateUnitAtLoc(basin_excite, 'h001', order_cabbage, .0)
-    local unit spray_vase
+    local player owningPlayer=GetOwningPlayer(accept_yoke)
+    local location loc=GetUnitLoc(accept_yoke)
+    local unit trigUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY, loc, .0)
+    local unit dummyUnit
     local group plough_unhealthy
     call TriggerSleepAction(GetRandomReal(0, .2))
-    set whip_nonchalant[( 1 + GetPlayerId(basin_excite) )]=( whip_nonchalant[( 1 + GetPlayerId(basin_excite) )] + 1 )
-    call SetUnitAbilityLevelSwapped('A06B', cure_combative, tight_gate[( 1 + GetPlayerId(basin_excite) )])
-    set plough_unhealthy=wriggle_brown(1700. , order_cabbage , Condition(function lively_crabby))
-    set spray_vase=GroupPickRandomUnit(plough_unhealthy)
-    call UnitRemoveAbility(spray_vase, 'ANss')
-    call UnitRemoveAbility(spray_vase, 'A02U')
-    call SetUnitUserData(spray_vase, 1)
-    call IssueTargetOrderById(cure_combative, $D0279, spray_vase)
-    call UnitApplyTimedLifeBJ(30., 'BTLF', cure_combative)
+    set whip_nonchalant[( 1 + GetPlayerId(owningPlayer) )]=( whip_nonchalant[( 1 + GetPlayerId(owningPlayer) )] + 1 )
+    call SetUnitAbilityLevelSwapped('A06B', trigUnit, tight_gate[( 1 + GetPlayerId(owningPlayer) )])
+    set plough_unhealthy=wriggle_brown(1700. , loc , Condition(function lively_crabby))
+    set dummyUnit=GroupPickRandomUnit(plough_unhealthy)
+    call UnitRemoveAbility(dummyUnit, 'ANss')
+    call UnitRemoveAbility(dummyUnit, 'A02U')
+    call SetUnitUserData(dummyUnit, 1)
+    call IssueTargetOrderById(trigUnit, $D0279, dummyUnit)
+    call UnitApplyTimedLifeBJ(30., 'BTLF', trigUnit)
     set accept_yoke=null
-    set basin_excite=null
-    set order_cabbage=null
-    set cure_combative=null
-    set spray_vase=null
+    set owningPlayer=null
+    set loc=null
+    set trigUnit=null
+    set dummyUnit=null
     set plough_unhealthy=null
 endfunction
 
@@ -7688,22 +7720,22 @@ function outgoing_one takes nothing returns boolean
 endfunction
 
 function donkey_desire takes nothing returns nothing
-    local location order_cabbage
+    local location loc
     local unit tent_nut=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(tent_nut)
-    local unit cure_combative
-    if ( IsPlayerInForce(basin_excite, force_on_west_east[FORCE_WEST_ID]) ) then
-        set order_cabbage=GetRectCenter(gg_rct_West_Side)
+    local player owningPlayer=GetOwningPlayer(tent_nut)
+    local unit trigUnit
+    if ( IsPlayerInForce(owningPlayer, forceList[FORCE_WEST_ID]) ) then
+        set loc=GetRectCenter(gg_rct_West_Side)
     else
-        set order_cabbage=GetRectCenter(gg_rct_East_Side)
+        set loc=GetRectCenter(gg_rct_East_Side)
     endif
-    set cure_combative=CreateUnitAtLoc(basin_excite, 'h002', order_cabbage, .0)
-    call IssueImmediateOrderById(cure_combative, $D009F)
+    set trigUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY_2, loc, .0)
+    call IssueImmediateOrderById(trigUnit, $D009F)
     call TriggerSleepAction(2.)
-    call RemoveUnit(cure_combative)
-    set cure_combative=null
-    set order_cabbage=null
-    set basin_excite=null
+    call RemoveUnit(trigUnit)
+    set trigUnit=null
+    set loc=null
+    set owningPlayer=null
     set tent_nut=null
 endfunction
 
@@ -7712,7 +7744,7 @@ function malicious_smile takes nothing returns boolean
 endfunction
 
 function produce_mine takes nothing returns nothing
-    local unit cure_combative=GetSpellTargetUnit()
+    local unit trigUnit=GetSpellTargetUnit()
     local item fruit_suspend
     local integer i=0
     local integer array square_scrub
@@ -7721,23 +7753,23 @@ function produce_mine takes nothing returns nothing
     local player p=GetOwningPlayer(t)
     set achiever_pollution[( 1 + GetPlayerId(p) )]=true
     call TriggerSleepAction(.1)
-    if ( ( UnitHasBuffBJ(cure_combative, 'BEsh') ) and ( UnitHasBuffBJ(cure_combative, 'B00S') == false ) ) then
+    if ( ( UnitHasBuffBJ(trigUnit, 'BEsh') ) and ( UnitHasBuffBJ(trigUnit, 'B00S') == false ) ) then
         loop
             exitwhen brave_axiomatic > 6
-            if ( IsItemOwned(UnitItemInSlotBJ(cure_combative, brave_axiomatic)) ) then
+            if ( IsItemOwned(UnitItemInSlotBJ(trigUnit, brave_axiomatic)) ) then
                 set i=i + 1
                 set square_scrub[i]=brave_axiomatic
             endif
             set brave_axiomatic=brave_axiomatic + 1
         endloop
-        call UnitRemoveItemFromSlotSwapped(square_scrub[GetRandomInt(1, i)], cure_combative)
+        call UnitRemoveItemFromSlotSwapped(square_scrub[GetRandomInt(1, i)], trigUnit)
         set fruit_suspend=bj_lastRemovedItem
         call SetItemVisible(fruit_suspend, false)
         call TriggerSleepAction(7.)
         call SetItemVisible(fruit_suspend, true)
     endif
     set fruit_suspend=null
-    set cure_combative=null
+    set trigUnit=null
     set t=null
     set p=null
 endfunction
@@ -7777,7 +7809,7 @@ function fit_try takes nothing returns nothing
     local unit u
     if ( GetUnitState(t, UNIT_STATE_MANA) >= ( 2. + I2R(GetUnitAbilityLevel(t, 'A01Q')) ) ) then
         call SetUnitFacing(t, AngleBetweenPoints(alleged_straw, suggest_graceful))
-        set u=CreateUnitAtLoc(pt, 'h002', alleged_straw, .0)
+        set u=CreateUnitAtLoc(pt, RAW_DUMMY_DUMMY_2, alleged_straw, .0)
         call SetUnitAbilityLevel(u, 'A04O', GetUnitAbilityLevel(t, 'A01Q'))
         call IssueTargetOrderById(u, $D007F, e)
         call UnitApplyTimedLife(u, 'BTLF', 3.)
@@ -7798,9 +7830,9 @@ function key_burst takes nothing returns boolean
 endfunction
 
 function astonishing_request takes nothing returns boolean
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    if ( ( IsUnitAlly(GetFilterUnit(), basin_excite) == false ) and ( GetUnitAbilityLevel(GetFilterUnit(), 'Avul') < 1 ) and ( IsUnitAliveBJ(GetFilterUnit()) ) ) then
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
+    if ( ( IsUnitAlly(GetFilterUnit(), owningPlayer) == false ) and ( GetUnitAbilityLevel(GetFilterUnit(), 'Avul') < 1 ) and ( IsUnitAliveBJ(GetFilterUnit()) ) ) then
         return true
     else
         return false
@@ -7808,21 +7840,21 @@ function astonishing_request takes nothing returns boolean
 endfunction
 
 function advise_tree takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    call IssueTargetOrderById(GetEnumUnit(), $D000F, cure_combative)
+    local unit trigUnit=GetTriggerUnit()
+    call IssueTargetOrderById(GetEnumUnit(), $D000F, trigUnit)
 endfunction
 
 function furtive_island takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
     local group plough_unhealthy
-    local location order_cabbage=GetUnitLoc(cure_combative)
-    set plough_unhealthy=wriggle_brown(400. , order_cabbage , Condition(function astonishing_request))
+    local location loc=GetUnitLoc(trigUnit)
+    set plough_unhealthy=wriggle_brown(400. , loc , Condition(function astonishing_request))
     call ForGroup(plough_unhealthy, function advise_tree)
-    set cure_combative=null
-    set basin_excite=null
+    set trigUnit=null
+    set owningPlayer=null
     set plough_unhealthy=null
-    set order_cabbage=null
+    set loc=null
 endfunction
 
 function spiky_tense takes nothing returns boolean
@@ -7833,7 +7865,7 @@ function violet_grandfather takes nothing returns nothing
     local unit wander_complete=GetTriggerUnit()
     local player basketball_guard=GetOwningPlayer(wander_complete)
     local location change_pointless=GetSpellTargetLoc()
-    local unit u=CreateUnitAtLoc(basketball_guard, 'h001', change_pointless, .0)
+    local unit u=CreateUnitAtLoc(basketball_guard, RAW_DUMMY_DUMMY, change_pointless, .0)
     call IssueImmediateOrderById(u, $D026C)
     call TriggerSleepAction(2.)
     call RemoveUnit(u)
@@ -7889,7 +7921,7 @@ function present_military takes nothing returns nothing
     call popcorn_married(.3)
     set disgusting_place=wriggle_brown(570. + 130. * I2R(GetUnitAbilityLevel(wander_complete, 'A03M')) , change_pointless , Condition(function whistle_hanging))
     call ForGroupBJ(disgusting_place, function confuse_messy)
-    set u=CreateUnitAtLoc(basketball_guard, 'h001', change_pointless, .0)
+    set u=CreateUnitAtLoc(basketball_guard, RAW_DUMMY_DUMMY, change_pointless, .0)
     call SetUnitAbilityLevel(u, 'A03S', GetUnitAbilityLevel(wander_complete, 'A03M'))
     call IssueImmediateOrderById(u, $D0080)
     call UnitRemoveAbility(wander_complete, 'A03O')
@@ -7981,24 +8013,24 @@ endfunction
 function concentrate_skip takes nothing returns nothing
     local unit tent_nut=GetTriggerUnit()
     local unit ambiguous_dapper=GetEnumUnit()
-    local player basin_excite=GetOwningPlayer(tent_nut)
+    local player owningPlayer=GetOwningPlayer(tent_nut)
     local real comfortable_fear=GetRandomReal(1., ( 105. - ( 5. * I2R(GetUnitAbilityLevelSwapped('A025', tent_nut)) ) ))
-    local location order_cabbage=GetUnitLoc(ambiguous_dapper)
+    local location loc=GetUnitLoc(ambiguous_dapper)
     local location workable_flap=GetUnitLoc(tent_nut)
-    local unit cure_combative
-    local unit spray_vase=CreateUnitAtLoc(basin_excite, 'h001', workable_flap, 270.)
-    call UnitApplyTimedLife(spray_vase, 'BTLF', 3.)
+    local unit trigUnit
+    local unit dummyUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY, workable_flap, 270.)
+    call UnitApplyTimedLife(dummyUnit, 'BTLF', 3.)
     if ( comfortable_fear <= $A ) then
         call AddSpecialEffectTargetUnitBJ("overhead", ambiguous_dapper, "Abilities\\Spells\\Other\\Stampede\\StampedeMissileDeath.mdl")
         call UnitRemoveAbility(ambiguous_dapper, 'A085')
         call SetWidgetLife(ambiguous_dapper, 100.)
-        call UnitDamageTargetBJ(spray_vase, ambiguous_dapper, 10000., ATTACK_TYPE_NORMAL, DAMAGE_TYPE_NORMAL)
+        call UnitDamageTargetBJ(dummyUnit, ambiguous_dapper, 10000., ATTACK_TYPE_NORMAL, DAMAGE_TYPE_NORMAL)
     else
         if ( comfortable_fear <= 40. ) then
             call AddSpecialEffectTargetUnitBJ("overhead", ambiguous_dapper, "Abilities\\Spells\\Human\\Polymorph\\PolyMorphDoneGround.mdl")
-            set cure_combative=CreateUnitAtLoc(basin_excite, 'h001', order_cabbage, 270.)
-            call IssueTargetOrderById(cure_combative, $D007F, ambiguous_dapper)
-            call UnitApplyTimedLife(cure_combative, 'BTLF', 3.)
+            set trigUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY, loc, 270.)
+            call IssueTargetOrderById(trigUnit, $D007F, ambiguous_dapper)
+            call UnitApplyTimedLife(trigUnit, 'BTLF', 3.)
         else
             if ( comfortable_fear <= 80. ) then
                 call AddSpecialEffectTargetUnitBJ("overhead", ambiguous_dapper, "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilSpecialArt.mdl")
@@ -8007,50 +8039,50 @@ function concentrate_skip takes nothing returns nothing
         endif
     endif
     call TriggerExecute(love_finger)
-    call RemoveLocation(order_cabbage)
+    call RemoveLocation(loc)
     call RemoveLocation(workable_flap)
-    set spray_vase=null
+    set dummyUnit=null
     set workable_flap=null
     set tent_nut=null
     set ambiguous_dapper=null
-    set basin_excite=null
-    set order_cabbage=null
+    set owningPlayer=null
+    set loc=null
 endfunction
 
 function scream_bait takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    local location order_cabbage=GetUnitLoc(cure_combative)
-    local group nice_acoustics=wriggle_brown(( 400. + ( 50. * I2R(GetUnitAbilityLevelSwapped(GetSpellAbilityId(), cure_combative)) ) ) , order_cabbage , Condition(function remain_power))
+    local unit trigUnit=GetTriggerUnit()
+    local location loc=GetUnitLoc(trigUnit)
+    local group nice_acoustics=wriggle_brown(( 400. + ( 50. * I2R(GetUnitAbilityLevelSwapped(GetSpellAbilityId(), trigUnit)) ) ) , loc , Condition(function remain_power))
     call ForGroupBJ(nice_acoustics, function concentrate_skip)
-    set cure_combative=null
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
+    set trigUnit=null
+    call RemoveLocation(loc)
+    set loc=null
     call DestroyGroup(nice_acoustics)
     set nice_acoustics=null
 endfunction
 
 function small_mighty takes nothing returns boolean
-    local location order_cabbage=GetSpellTargetLoc()
+    local location loc=GetSpellTargetLoc()
     if ( ( GetSpellAbilityId() == 'A02A' ) or ( GetSpellAbilityId() == 'A057' ) ) then
-        if ( ( RectContainsLoc(gg_rct_West_Side, order_cabbage) ) or ( RectContainsLoc(gg_rct_East_Side, order_cabbage) ) ) then
-            set order_cabbage=null
-            call RemoveLocation(order_cabbage)
+        if ( ( RectContainsLoc(gg_rct_West_Side, loc) ) or ( RectContainsLoc(gg_rct_East_Side, loc) ) ) then
+            set loc=null
+            call RemoveLocation(loc)
             return true
         endif
     endif
-    set order_cabbage=null
-    call RemoveLocation(order_cabbage)
+    set loc=null
+    call RemoveLocation(loc)
     return false
 endfunction
 
 function regular_fallacious takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    if ( GetUnitTypeId(cure_combative) == 'h000' ) then
+    local unit trigUnit=GetTriggerUnit()
+    if ( GetUnitTypeId(trigUnit) == 'h000' ) then
         call fertile_breezy(6 , 0)
     else
         call fertile_breezy(3 , 1)
     endif
-    set cure_combative=null
+    set trigUnit=null
 endfunction
 
 function tacky_ugliest takes nothing returns boolean
@@ -8059,7 +8091,7 @@ endfunction
 
 function accessible_encouraging takes nothing returns nothing
     set look_pumped=GetUnitLoc(GetTriggerUnit())
-    call CreateNUnitsAtLoc(1, 'h005', GetOwningPlayer(GetTriggerUnit()), look_pumped, bj_UNIT_FACING)
+    call CreateNUnitsAtLoc(1, RAW_DUMMY_DUMMY_3, GetOwningPlayer(GetTriggerUnit()), look_pumped, bj_UNIT_FACING)
     call UnitApplyTimedLifeBJ(3., 'BTLF', bj_lastCreatedUnit)
     call IssueTargetOrderById(bj_lastCreatedUnit, $D008A, GetSpellTargetUnit())
 endfunction
@@ -8139,11 +8171,11 @@ function ban_guitar takes nothing returns nothing
 endfunction
 
 function exchange_pick takes nothing returns nothing
-    local location order_cabbage
+    local location loc
     local group nice_acoustics
     set lake_grip=GetEnumUnit()
-    set order_cabbage=GetUnitLoc(lake_grip)
-    set nice_acoustics=wriggle_brown(500. , order_cabbage , Condition(function sophisticated_snow))
+    set loc=GetUnitLoc(lake_grip)
+    set nice_acoustics=wriggle_brown(500. , loc , Condition(function sophisticated_snow))
     call ForGroupBJ(nice_acoustics, function ban_guitar)
 endfunction
 
@@ -8189,7 +8221,7 @@ function grip_umbrella takes nothing returns nothing
         if ( (GetOwningPlayer(GetTriggerUnit()) != GetOwningPlayer(GetEnumUnit())) ) then // INLINED!!
             call CameraClearNoiseForPlayer(GetOwningPlayer(GetEnumUnit()))
         else
-            call CreateNUnitsAtLoc(1, 'h002', GetOwningPlayer(GetEnumUnit()), GetUnitLoc(GetEnumUnit()), bj_UNIT_FACING)
+            call CreateNUnitsAtLoc(1, RAW_DUMMY_DUMMY_2, GetOwningPlayer(GetEnumUnit()), GetUnitLoc(GetEnumUnit()), bj_UNIT_FACING)
             call IssueTargetOrderById(bj_lastCreatedUnit, $D0269, GetEnumUnit())
             call UnitApplyTimedLifeBJ(3., 'BTLF', bj_lastCreatedUnit)
         endif
@@ -8254,7 +8286,7 @@ function nutty_lackadaisical takes nothing returns nothing
         exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
         if ( (IsUnitInGroup(starcraft[bj_forLoopAIndex], gifted_poised)) ) then // INLINED!!
             if ( (UnitHasBuffBJ(starcraft[bj_forLoopAIndex], 'Bams')) ) then // INLINED!!
-                call CreateNUnitsAtLoc(1, 'h001', GetOwningPlayer(starcraft[bj_forLoopAIndex]), GetUnitLoc(starcraft[bj_forLoopAIndex]), bj_UNIT_FACING)
+                call CreateNUnitsAtLoc(1, RAW_DUMMY_DUMMY, GetOwningPlayer(starcraft[bj_forLoopAIndex]), GetUnitLoc(starcraft[bj_forLoopAIndex]), bj_UNIT_FACING)
                 call TriggerSleepAction(.05)
                 call IssueTargetOrderById(bj_lastCreatedUnit, $D00DA, starcraft[bj_forLoopAIndex])
                 call UnitApplyTimedLifeBJ(3., 'BTLF', bj_lastCreatedUnit)
@@ -8271,32 +8303,32 @@ function river_magical takes nothing returns boolean
 endfunction
 
 function unit_yell takes nothing returns nothing
-    local unit cure_combative=GetSpellTargetUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    local location order_cabbage
-    local integer measure_unequaled=GetRandomInt(1, 2)
+    local unit trigUnit=GetSpellTargetUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
+    local location loc
+    local integer forceID=GetRandomInt(1, 2)
     call TriggerSleepAction(.15)
-    if ( ( UnitHasBuffBJ(cure_combative, 'BEsh') ) and ( IsPlayerInForce(basin_excite, ambitious_pray[4]) ) ) then
-        if ( RectContainsUnit(gg_rct_West_Side, cure_combative) ) then
-            if ( measure_unequaled == 1 ) then
-                set order_cabbage=GetRandomLocInRect(gg_rct_West_Monster_Spawn_W)
+    if ( ( UnitHasBuffBJ(trigUnit, 'BEsh') ) and ( IsPlayerInForce(owningPlayer, ambitious_pray[4]) ) ) then
+        if ( RectContainsUnit(gg_rct_West_Side, trigUnit) ) then
+            if ( forceID == 1 ) then
+                set loc=GetRandomLocInRect(gg_rct_West_Monster_Spawn_W)
             else
-                set order_cabbage=GetRandomLocInRect(gg_rct_West_Monster_Spawn_E)
+                set loc=GetRandomLocInRect(gg_rct_West_Monster_Spawn_E)
             endif
-            call IssuePointOrderById(cure_combative, $D000F, 6400, - $C00)
-        elseif ( RectContainsUnit(gg_rct_East_Side, cure_combative) ) then
-            if ( measure_unequaled == 1 ) then
-                set order_cabbage=GetRandomLocInRect(gg_rct_East_Monster_Spawn_W)
+            call IssuePointOrderById(trigUnit, $D000F, 6400, - $C00)
+        elseif ( RectContainsUnit(gg_rct_East_Side, trigUnit) ) then
+            if ( forceID == 1 ) then
+                set loc=GetRandomLocInRect(gg_rct_East_Monster_Spawn_W)
             else
-                set order_cabbage=GetRandomLocInRect(gg_rct_East_Monster_Spawn_E)
+                set loc=GetRandomLocInRect(gg_rct_East_Monster_Spawn_E)
             endif
-            call IssuePointOrderById(cure_combative, $D000F, - 6400, - $C00)
+            call IssuePointOrderById(trigUnit, $D000F, - 6400, - $C00)
         endif
-        call SetUnitPositionLoc(cure_combative, order_cabbage)
+        call SetUnitPositionLoc(trigUnit, loc)
     endif
-    set cure_combative=null
-    set basin_excite=null
-    set order_cabbage=null
+    set trigUnit=null
+    set owningPlayer=null
+    set loc=null
 endfunction
 
 function addition_warn takes nothing returns boolean
@@ -8361,7 +8393,7 @@ function heal_productive takes nothing returns nothing
 endfunction
 
 function silk_disgusted takes nothing returns boolean
-    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_WEST_ID]) )
+    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_WEST_ID]) )
 endfunction
 
 function habitual_tray takes nothing returns boolean
@@ -8370,7 +8402,7 @@ endfunction
 
 function ticket_marble takes nothing returns nothing
     if ( (GetUnitTypeId(GetTriggerUnit()) == 'n00L') ) then // INLINED!!
-        if ( (IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_WEST_ID])) ) then // INLINED!!
+        if ( (IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_WEST_ID])) ) then // INLINED!!
             call UnitAddAbility(GetTriggerUnit(), 'A018')
             call UnitRemoveAbility(GetTriggerUnit(), 'A03D')
         else
@@ -8381,7 +8413,7 @@ function ticket_marble takes nothing returns nothing
 endfunction
 
 function curve_equal takes nothing returns boolean
-    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_EAST_ID]) )
+    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_EAST_ID]) )
 endfunction
 
 function press_pickle takes nothing returns boolean
@@ -8390,7 +8422,7 @@ endfunction
 
 function scattered_race takes nothing returns nothing
     if ( (GetUnitTypeId(GetTriggerUnit()) == 'n00L') ) then // INLINED!!
-        if ( (IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_EAST_ID])) ) then // INLINED!!
+        if ( (IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_EAST_ID])) ) then // INLINED!!
             call UnitAddAbility(GetTriggerUnit(), 'A018')
             call UnitRemoveAbility(GetTriggerUnit(), 'A03D')
         else
@@ -8441,11 +8473,11 @@ function humorous_waves takes nothing returns boolean
 endfunction
 
 function wealth_scribble takes nothing returns boolean
-    return ( GetUnitTypeId(GetTriggerUnit()) == HERO_RAW_AHLEN )
+    return ( GetUnitTypeId(GetTriggerUnit()) == RAW_HERO_AHLEN )
 endfunction
 
 function unite_society takes nothing returns nothing
-    if ( (GetUnitTypeId(GetTriggerUnit()) == HERO_RAW_AHLEN) ) then // INLINED!!
+    if ( (GetUnitTypeId(GetTriggerUnit()) == RAW_HERO_AHLEN) ) then // INLINED!!
         if ( (GetItemTypeId(GetManipulatedItem()) == 'I00I') ) then // INLINED!!
             call UnitRemoveItemSwapped(GetManipulatedItem(), GetTriggerUnit())
             call RemoveItem(bj_lastRemovedItem)
@@ -8477,8 +8509,8 @@ function door_shut takes nothing returns boolean
 endfunction
 
 function welcome_division takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
     local item fruit_suspend=GetManipulatedItem()
     local integer splendid_giraffe=GetItemTypeId(fruit_suspend)
     local integer pest_earn
@@ -8486,18 +8518,18 @@ function welcome_division takes nothing returns nothing
     local integer brave_axiomatic=1
     loop
         exitwhen brave_axiomatic > 6
-        set pest_earn=GetItemTypeId(UnitItemInSlotBJ(cure_combative, brave_axiomatic))
+        set pest_earn=GetItemTypeId(UnitItemInSlotBJ(trigUnit, brave_axiomatic))
         if ( pest_earn == splendid_giraffe ) then
             set nondescript_murder=nondescript_murder + 1
         endif
         set brave_axiomatic=brave_axiomatic + 1
     endloop
     if ( nondescript_murder > 1 ) then
-        call UnitRemoveItemSwapped(fruit_suspend, cure_combative)
-        call DisplayTimedTextToForce(rotten_ship(basin_excite), 5., "You can't have more than one of each Unique Item.")
+        call UnitRemoveItemSwapped(fruit_suspend, trigUnit)
+        call DisplayTimedTextToForce(rotten_ship(owningPlayer), 5., "You can't have more than one of each Unique Item.")
     endif
-    set cure_combative=null
-    set basin_excite=null
+    set trigUnit=null
+    set owningPlayer=null
     set fruit_suspend=null
 endfunction
 
@@ -8506,26 +8538,26 @@ function harsh_astonishing takes nothing returns boolean
 endfunction
 
 function glistening_observation takes nothing returns nothing
-    local unit cure_combative=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
+    local unit trigUnit=GetTriggerUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
     local item fruit_suspend=GetManipulatedItem()
     local integer count_calculator=0
     local integer brave_axiomatic=1
     local itemtype broad_sweater
     loop
         exitwhen brave_axiomatic > 6
-        set broad_sweater=GetItemType(UnitItemInSlotBJ(cure_combative, brave_axiomatic))
+        set broad_sweater=GetItemType(UnitItemInSlotBJ(trigUnit, brave_axiomatic))
         if ( broad_sweater == ITEM_TYPE_ARTIFACT ) then
             set count_calculator=count_calculator + 1
         endif
         set brave_axiomatic=brave_axiomatic + 1
     endloop
     if ( count_calculator > 1 ) then
-        call UnitRemoveItemSwapped(fruit_suspend, cure_combative)
-        call DisplayTimedTextToForce(rotten_ship(basin_excite), 5., "You can't have more than one Artifact.")
+        call UnitRemoveItemSwapped(fruit_suspend, trigUnit)
+        call DisplayTimedTextToForce(rotten_ship(owningPlayer), 5., "You can't have more than one Artifact.")
     endif
-    set cure_combative=null
-    set basin_excite=null
+    set trigUnit=null
+    set owningPlayer=null
     set fruit_suspend=null
 endfunction
 
@@ -8535,18 +8567,18 @@ endfunction
 
 function parched_adhoc takes nothing returns nothing
     local unit vase_lucky=GetTriggerUnit()
-    local player basin_excite=GetOwningPlayer(vase_lucky)
-    local location order_cabbage=GetUnitLoc(vase_lucky)
-    local unit cure_combative=CreateUnitAtLoc(basin_excite, 'h001', order_cabbage, bj_UNIT_FACING)
-    call IssueTargetOrderById(cure_combative, $D00DA, vase_lucky)
-    call CameraClearNoiseForPlayer(basin_excite)
+    local player owningPlayer=GetOwningPlayer(vase_lucky)
+    local location loc=GetUnitLoc(vase_lucky)
+    local unit trigUnit=CreateUnitAtLoc(owningPlayer, RAW_DUMMY_DUMMY, loc, bj_UNIT_FACING)
+    call IssueTargetOrderById(trigUnit, $D00DA, vase_lucky)
+    call CameraClearNoiseForPlayer(owningPlayer)
     call TriggerSleepAction(20.)
     call UnitRemoveAbility(vase_lucky, 'Bams')
-    call RemoveUnit(cure_combative)
-    set cure_combative=null
+    call RemoveUnit(trigUnit)
+    set trigUnit=null
     set vase_lucky=null
-    set order_cabbage=null
-    set basin_excite=null
+    set loc=null
+    set owningPlayer=null
 endfunction
 
 function cute_pull takes nothing returns boolean
@@ -8562,13 +8594,13 @@ endfunction
 function idiotic_numberless takes nothing returns nothing
     local unit tent_nut=GetTriggerUnit()
     local unit gullible_separate=GetAttacker()
-    local player basin_excite=GetOwningPlayer(gullible_separate)
-    call IssueTargetOrderById(breathe_religion[( 1 + GetPlayerId(basin_excite) )], $D00B5, tent_nut)
+    local player owningPlayer=GetOwningPlayer(gullible_separate)
+    call IssueTargetOrderById(breathe_religion[( 1 + GetPlayerId(owningPlayer) )], $D00B5, tent_nut)
     call TriggerSleepAction(.1)
-    call IssueTargetOrderById(breathe_religion[( 1 + GetPlayerId(basin_excite) )], $D00B5, tent_nut)
+    call IssueTargetOrderById(breathe_religion[( 1 + GetPlayerId(owningPlayer) )], $D00B5, tent_nut)
     set tent_nut=null
     set gullible_separate=null
-    set basin_excite=null
+    set owningPlayer=null
 endfunction
 
 function weak_look takes nothing returns boolean
@@ -8717,7 +8749,7 @@ function able_mark takes nothing returns boolean
 endfunction
 
 function flap_weigh takes nothing returns boolean
-    return ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), ( StringLength(GetEventPlayerChatString()) - 1 ), StringLength(GetEventPlayerChatString()))) )), force_on_west_east[FORCE_WEST_ID]) == false ) and ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), ( StringLength(GetEventPlayerChatString()) - 1 ), StringLength(GetEventPlayerChatString()))) )), force_on_west_east[FORCE_EAST_ID]) == false )
+    return ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), ( StringLength(GetEventPlayerChatString()) - 1 ), StringLength(GetEventPlayerChatString()))) )), forceList[FORCE_WEST_ID]) == false ) and ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), ( StringLength(GetEventPlayerChatString()) - 1 ), StringLength(GetEventPlayerChatString()))) )), forceList[FORCE_EAST_ID]) == false )
 endfunction
 
 function crawl_trashy takes nothing returns boolean
@@ -8733,7 +8765,7 @@ function jam_crown takes nothing returns nothing
         call DisplayTimedTextToForce(bj_FORCE_PLAYER[0], 5., "TRIGSTR_2349")
     else
         if ( (SubStringBJ(GetEventPlayerChatString(), 2, 5) == "kick") ) then // INLINED!!
-            if ( (( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), ( StringLength(GetEventPlayerChatString()) - 1 ), StringLength(GetEventPlayerChatString()))) )), force_on_west_east[FORCE_WEST_ID]) == false ) and ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), ( StringLength(GetEventPlayerChatString()) - 1 ), StringLength(GetEventPlayerChatString()))) )), force_on_west_east[FORCE_EAST_ID]) == false )) ) then // INLINED!!
+            if ( (( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), ( StringLength(GetEventPlayerChatString()) - 1 ), StringLength(GetEventPlayerChatString()))) )), forceList[FORCE_WEST_ID]) == false ) and ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), ( StringLength(GetEventPlayerChatString()) - 1 ), StringLength(GetEventPlayerChatString()))) )), forceList[FORCE_EAST_ID]) == false )) ) then // INLINED!!
                 call DisplayTimedTextToForce(bj_FORCE_PLAYER[0], 5., "This player is not in the game!")
             else
                 call planes_letter(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), ( StringLength(GetEventPlayerChatString()) - 1 ), StringLength(GetEventPlayerChatString()))) )) , true)
@@ -8828,34 +8860,34 @@ function obtain_plug takes nothing returns boolean
 endfunction
 
 function macho_paper takes nothing returns nothing
-    local player basin_excite=GetTriggerPlayer()
+    local player owningPlayer=GetTriggerPlayer()
     local integer brave_axiomatic=1
     local effect incredible_cute
-    local location order_cabbage=GetUnitLoc(starcraft[( 1 + GetPlayerId(basin_excite) )])
+    local location loc=GetUnitLoc(starcraft[( 1 + GetPlayerId(owningPlayer) )])
     local location l
     local string s=GetEventPlayerChatString()
     local real comfortable_fear=S2R(SubStringBJ(s, 8, StringLength(s)))
     if ( ( comfortable_fear >= 9999. ) and ( comfortable_fear <= .0 ) ) then
-        call DisplayTextToForce(rotten_ship(basin_excite), "Invalid input for acquisition range.")
+        call DisplayTextToForce(rotten_ship(owningPlayer), "Invalid input for acquisition range.")
     else
-        call DisplayTextToForce(rotten_ship(basin_excite), ( "|c004EEA1A - |rYour Hero's acquisition range has been changed to |cffffcc00" + I2S(R2I(comfortable_fear)) + "|r." ))
+        call DisplayTextToForce(rotten_ship(owningPlayer), ( "|c004EEA1A - |rYour Hero's acquisition range has been changed to |cffffcc00" + I2S(R2I(comfortable_fear)) + "|r." ))
         if ( comfortable_fear <= 'd' ) then
-            call SetUnitAcquireRange(starcraft[( 1 + GetPlayerId(basin_excite) )], 100.)
+            call SetUnitAcquireRange(starcraft[( 1 + GetPlayerId(owningPlayer) )], 100.)
         else
-            call SetUnitAcquireRange(starcraft[( 1 + GetPlayerId(basin_excite) )], comfortable_fear)
+            call SetUnitAcquireRange(starcraft[( 1 + GetPlayerId(owningPlayer) )], comfortable_fear)
         endif
         loop
             exitwhen brave_axiomatic > $C
-            set l=bridge_basin(order_cabbage , comfortable_fear , ( 30. * I2R(brave_axiomatic) ))
+            set l=bridge_basin(loc , comfortable_fear , ( 30. * I2R(brave_axiomatic) ))
             set incredible_cute=AddSpecialEffectLocBJ(l, "Abilities\\Spells\\NightElf\\Barkskin\\BarkSkinTarget.mdl")
             call TriggerExecute(love_finger)
             set brave_axiomatic=brave_axiomatic + 1
         endloop
     endif
-    set basin_excite=null
+    set owningPlayer=null
     set incredible_cute=null
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
+    call RemoveLocation(loc)
+    set loc=null
     call RemoveLocation(l)
     set l=null
     set s=null
@@ -8885,14 +8917,14 @@ function tangible_rough takes nothing returns nothing
         if ( dependent_flag[( 1 + GetPlayerId(nosy_invent) )] ) then
             call DisplayTimedTextToForce(extralarge_plant, 10., "You have already voted for cheat commands.")
         else
-            if ( IsPlayerInForce(nosy_invent, force_on_west_east[FORCE_WEST_ID]) ) then
+            if ( IsPlayerInForce(nosy_invent, forceList[FORCE_WEST_ID]) ) then
                 set partner_thoughtless=1
                 set a=1
             else
                 set partner_thoughtless=2
                 set a=6
             endif
-            set close_party=CountPlayersInForceBJ(force_on_west_east[partner_thoughtless]) - CountPlayersInForceBJ(prefer_change)
+            set close_party=CountPlayersInForceBJ(forceList[partner_thoughtless]) - CountPlayersInForceBJ(prefer_change)
             set dependent_flag[( 1 + GetPlayerId(nosy_invent) )]=true
             loop
                 exitwhen a > 5 * partner_thoughtless
@@ -8919,13 +8951,13 @@ function tangible_rough takes nothing returns nothing
                 call PlaySoundBJ(gg_snd_GoodJob)
                 set cent_wren=true
             else
-                call DisplayTimedTextToForce(force_on_west_east[partner_thoughtless], 10., ( ( range_uncovered[( 1 + GetPlayerId(nosy_invent) )] + ( GetPlayerName(nosy_invent) + "|r" ) ) + ( " (" + ( ( "Player " + I2S(( 1 + GetPlayerId(nosy_invent) )) ) + ( ") has voted for enabling cheat commands. Remaining votes:|cffffcc00 " + I2S(( CountPlayersInForceBJ(force_on_west_east[partner_thoughtless]) - i )) ) ) ) ))
+                call DisplayTimedTextToForce(forceList[partner_thoughtless], 10., ( ( range_uncovered[( 1 + GetPlayerId(nosy_invent) )] + ( GetPlayerName(nosy_invent) + "|r" ) ) + ( " (" + ( ( "Player " + I2S(( 1 + GetPlayerId(nosy_invent) )) ) + ( ") has voted for enabling cheat commands. Remaining votes:|cffffcc00 " + I2S(( CountPlayersInForceBJ(forceList[partner_thoughtless]) - i )) ) ) ) ))
                 if ( i == 1 ) then
-                    call DisplayTimedTextToForce(force_on_west_east[partner_thoughtless], 10., "|cffffcc00 - |rThe team has |cffffcc0020 seconds|r to vote for enabling cheat commands.")
+                    call DisplayTimedTextToForce(forceList[partner_thoughtless], 10., "|cffffcc00 - |rThe team has |cffffcc0020 seconds|r to vote for enabling cheat commands.")
                     call TriggerSleepAction(20.)
                     set i=0
                     set a=1
-                    set close_party=CountPlayersInForceBJ(force_on_west_east[partner_thoughtless])
+                    set close_party=CountPlayersInForceBJ(forceList[partner_thoughtless])
                     loop
                         exitwhen a > close_party
                         if ( dependent_flag[a] ) then
@@ -8935,7 +8967,7 @@ function tangible_rough takes nothing returns nothing
                         set a=a + 1
                     endloop
                     if ( i >= 1 ) then
-                        call DisplayTimedTextToForce(force_on_west_east[partner_thoughtless], 10., "|cffffcc00 - |rAll votes for cheat commands were cleaned up.")
+                        call DisplayTimedTextToForce(forceList[partner_thoughtless], 10., "|cffffcc00 - |rAll votes for cheat commands were cleaned up.")
                     endif
                 endif
             endif
@@ -8957,7 +8989,7 @@ function pigs_coordinated takes nothing returns nothing
 endfunction
 
 function wave_mere takes nothing returns boolean
-    return ( erratic_bright[1] != 0 ) and ( erratic_bright[2] != 0 )
+    return ( numberOfLives[1] != 0 ) and ( numberOfLives[2] != 0 )
 endfunction
 
 function produce_dusty takes nothing returns boolean
@@ -8989,7 +9021,7 @@ function mine_juvenile takes nothing returns boolean
 endfunction
 
 function square_third takes nothing returns boolean
-    return ( IsPlayerInForce(GetFilterPlayer(), force_on_west_east[FORCE_EAST_ID]) )
+    return ( IsPlayerInForce(GetFilterPlayer(), forceList[FORCE_EAST_ID]) )
 endfunction
 
 function jelly_eggs takes nothing returns boolean
@@ -8997,7 +9029,7 @@ function jelly_eggs takes nothing returns boolean
 endfunction
 
 function expansion_dance takes nothing returns boolean
-    return GetBooleanAnd((IsPlayerInForce(GetFilterPlayer(), force_on_west_east[FORCE_EAST_ID])), (GetPlayerController(GetFilterPlayer()) == MAP_CONTROL_USER)) // INLINED!!
+    return GetBooleanAnd((IsPlayerInForce(GetFilterPlayer(), forceList[FORCE_EAST_ID])), (GetPlayerController(GetFilterPlayer()) == MAP_CONTROL_USER)) // INLINED!!
 endfunction
 
 function drop_bounce takes nothing returns boolean
@@ -9033,7 +9065,7 @@ function sea_ruthless takes nothing returns boolean
 endfunction
 
 function heat_alert takes nothing returns boolean
-    return ( IsPlayerInForce(GetFilterPlayer(), force_on_west_east[FORCE_WEST_ID]) )
+    return ( IsPlayerInForce(GetFilterPlayer(), forceList[FORCE_WEST_ID]) )
 endfunction
 
 function sail_smile takes nothing returns boolean
@@ -9041,7 +9073,7 @@ function sail_smile takes nothing returns boolean
 endfunction
 
 function knee_jail takes nothing returns boolean
-    return GetBooleanAnd((IsPlayerInForce(GetFilterPlayer(), force_on_west_east[FORCE_WEST_ID])), (GetPlayerController(GetFilterPlayer()) == MAP_CONTROL_USER)) // INLINED!!
+    return GetBooleanAnd((IsPlayerInForce(GetFilterPlayer(), forceList[FORCE_WEST_ID])), (GetPlayerController(GetFilterPlayer()) == MAP_CONTROL_USER)) // INLINED!!
 endfunction
 
 function adorable_knock takes nothing returns boolean
@@ -9081,10 +9113,10 @@ function balance_gamy takes nothing returns nothing
                     call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 10., "TRIGSTR_941")
                     call PlaySoundBJ(gg_snd_SecretFound)
                     call TriggerSleepAction(2.)
-                    set erratic_bright[1]=0
+                    set numberOfLives[1]=0
                     call ConditionalTriggerExecute(test_desert)
                 else
-                    call DisplayTimedTextToForce(testy_existence(Condition(function free_debt)), 10., ( ( range_uncovered[( 1 + GetPlayerId(GetTriggerPlayer()) )] + ( GetPlayerName(GetTriggerPlayer()) + "|r" ) ) + ( " (" + ( ( "Player " + I2S(( 1 + GetPlayerId(GetTriggerPlayer()) )) ) + ( ") has voted for a forfeit. Remaining votes:|cffffcc00 " + I2S(( CountPlayersInForceBJ(force_on_west_east[FORCE_WEST_ID]) - trail_pin )) ) ) ) ))
+                    call DisplayTimedTextToForce(testy_existence(Condition(function free_debt)), 10., ( ( range_uncovered[( 1 + GetPlayerId(GetTriggerPlayer()) )] + ( GetPlayerName(GetTriggerPlayer()) + "|r" ) ) + ( " (" + ( ( "Player " + I2S(( 1 + GetPlayerId(GetTriggerPlayer()) )) ) + ( ") has voted for a forfeit. Remaining votes:|cffffcc00 " + I2S(( CountPlayersInForceBJ(forceList[FORCE_WEST_ID]) - trail_pin )) ) ) ) ))
                     if ( (trail_pin == 1) ) then // INLINED!!
                         call DisplayTimedTextToForce(testy_existence(Condition(function volleyball_sigh)), 10., "|cffffcc00 - |rThe team has |cffffcc0020 seconds|r to vote for a forfeit.")
                         call TriggerSleepAction(20.)
@@ -9118,10 +9150,10 @@ function balance_gamy takes nothing returns nothing
                     call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 10., "TRIGSTR_979")
                     call PlaySoundBJ(gg_snd_SecretFound)
                     call TriggerSleepAction(2.)
-                    set erratic_bright[2]=0
+                    set numberOfLives[2]=0
                     call ConditionalTriggerExecute(test_desert)
                 else
-                    call DisplayTimedTextToForce(testy_existence(Condition(function fairies_gaping)), 10., ( GetPlayerName(GetTriggerPlayer()) + ( " (" + ( ( "Player " + I2S(( 1 + GetPlayerId(GetTriggerPlayer()) )) ) + ( ") has voted for a forfeit. Remaining votes:|cffffcc00 " + I2S(( CountPlayersInForceBJ(force_on_west_east[FORCE_WEST_ID]) - trail_pin )) ) ) ) ))
+                    call DisplayTimedTextToForce(testy_existence(Condition(function fairies_gaping)), 10., ( GetPlayerName(GetTriggerPlayer()) + ( " (" + ( ( "Player " + I2S(( 1 + GetPlayerId(GetTriggerPlayer()) )) ) + ( ") has voted for a forfeit. Remaining votes:|cffffcc00 " + I2S(( CountPlayersInForceBJ(forceList[FORCE_WEST_ID]) - trail_pin )) ) ) ) ))
                     if ( (trail_pin == 1) ) then // INLINED!!
                         call DisplayTimedTextToForce(testy_existence(Condition(function attach_act)), 10., "|cffffcc00 - |rThe team has |cffffcc0020 seconds|r to vote for a forfeit.")
                         call TriggerSleepAction(20.)
@@ -9313,7 +9345,7 @@ function uninterested_level takes nothing returns nothing
 endfunction
 
 function literate_bomb takes nothing returns boolean
-    return ( GetUnitTypeId(starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )]) == HERO_RAW_MOON_MAGE )
+    return ( GetUnitTypeId(starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )]) == RAW_HERO_MOON_MAGE )
 endfunction
 
 function handsomely_capable takes nothing returns boolean
@@ -9337,7 +9369,7 @@ function pass_root takes nothing returns nothing
 endfunction
 
 function spiteful_collar takes nothing returns boolean
-    return ( GetUnitTypeId(starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )]) == HERO_RAW_MOON_MAGE )
+    return ( GetUnitTypeId(starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )]) == RAW_HERO_MOON_MAGE )
 endfunction
 
 function inquisitive_horn takes nothing returns boolean
@@ -9375,7 +9407,7 @@ function selfish_rabbit takes nothing returns nothing
         call DisplayTextToForce(question_temper(GetTriggerPlayer()), ( ( "|c004EEA1A - |r" + ( ( range_uncovered[( 1 + GetPlayerId(GetTriggerPlayer()) )] + GetPlayerName(GetTriggerPlayer()) ) + "|r has repicked." ) ) + "" ))
         call RemoveUnit(starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )])
         call KillUnit(dinner_ragged[( 1 + GetPlayerId(GetTriggerPlayer()) )])
-        if ( (GetUnitTypeId(starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )]) == HERO_RAW_MOON_MAGE) ) then // INLINED!!
+        if ( (GetUnitTypeId(starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )]) == RAW_HERO_MOON_MAGE) ) then // INLINED!!
             call ForGroupBJ(chess_reply(bj_mapInitialPlayableArea , Condition(function group_festive)), function uninterested_level)
         endif
         set bj_forLoopAIndex=1
@@ -9387,7 +9419,7 @@ function selfish_rabbit takes nothing returns nothing
         endloop
         call PanCameraToTimedLocForPlayer(GetTriggerPlayer(), GetPlayerStartLocationLoc(Player(0)), .3)
         set starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )]=null
-        call CreateNUnitsAtLoc(1, 'ushd', GetTriggerPlayer(), GetPlayerStartLocationLoc(GetTriggerPlayer()), bj_UNIT_FACING)
+        call CreateNUnitsAtLoc(1, RAW_UNIT_HERO_SELECTOR, GetTriggerPlayer(), GetPlayerStartLocationLoc(GetTriggerPlayer()), bj_UNIT_FACING)
     else
         if ( (( flavor_repulsive ) or ( fortunate_gentle )) ) then // INLINED!!
             call DisplayTimedTextToForce(rotten_ship(GetTriggerPlayer()), 5., "|c004EEA1A - |rYou can't repick in |cffffcc00Random|r or |cffffcc00Draft|r Modes.")
@@ -9409,7 +9441,7 @@ function selfish_rabbit takes nothing returns nothing
                             call RemoveUnit(spooky_somber[( 1 + GetPlayerId(GetTriggerPlayer()) )])
                             call RemoveUnit(starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )])
                             call KillUnit(dinner_ragged[( 1 + GetPlayerId(GetTriggerPlayer()) )])
-                            if ( (GetUnitTypeId(starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )]) == HERO_RAW_MOON_MAGE) ) then // INLINED!!
+                            if ( (GetUnitTypeId(starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )]) == RAW_HERO_MOON_MAGE) ) then // INLINED!!
                                 call ForGroupBJ(chess_reply(bj_mapInitialPlayableArea , Condition(function apathetic_infamous)), function pass_root)
                             endif
                             set bj_forLoopAIndex=1
@@ -9421,7 +9453,7 @@ function selfish_rabbit takes nothing returns nothing
                             endloop
                             call PanCameraToTimedLocForPlayer(GetTriggerPlayer(), GetPlayerStartLocationLoc(Player(0)), .3)
                             set starcraft[( 1 + GetPlayerId(GetTriggerPlayer()) )]=null
-                            call CreateNUnitsAtLoc(1, 'ushd', GetTriggerPlayer(), GetPlayerStartLocationLoc(GetTriggerPlayer()), bj_UNIT_FACING)
+                            call CreateNUnitsAtLoc(1, RAW_UNIT_HERO_SELECTOR, GetTriggerPlayer(), GetPlayerStartLocationLoc(GetTriggerPlayer()), bj_UNIT_FACING)
                         endif
                     endif
                 endif
@@ -9881,8 +9913,8 @@ endfunction
 function hissing_alike takes nothing returns nothing
     call PlaySoundBJ(gg_snd_GoodJob)
     call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 16., "TRIGSTR_235")
-    set erratic_bright[1]=1
-    set erratic_bright[2]=1
+    set numberOfLives[1]=1
+    set numberOfLives[2]=1
     set round_outrageous=true
 endfunction
 
@@ -9938,15 +9970,15 @@ function coast_command takes nothing returns boolean
 endfunction
 
 function elfin_homeless takes nothing returns boolean
-    return ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), force_on_west_east[FORCE_EAST_ID]) )
+    return ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), forceList[FORCE_EAST_ID]) )
 endfunction
 
 function hungry_hover takes nothing returns boolean
-    return ( (( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), force_on_west_east[FORCE_EAST_ID]) )) ) // INLINED!!
+    return ( (( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), forceList[FORCE_EAST_ID]) )) ) // INLINED!!
 endfunction
 
 function acrid_grieving takes nothing returns nothing
-    if ( (( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), force_on_west_east[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), force_on_west_east[FORCE_EAST_ID]) )) ) then // INLINED!!
+    if ( (( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), forceList[FORCE_WEST_ID]) ) or ( IsPlayerInForce(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )), forceList[FORCE_EAST_ID]) )) ) then // INLINED!!
         if ( (( IsUnitType(starcraft[( 1 + GetPlayerId(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) ))) )], UNIT_TYPE_HERO) == false ) != null) ) then // INLINED!!
             if ( (rush_abusive == 0) ) then // INLINED!!
                 call PlaySoundBJ(gg_snd_SecretFound)
@@ -9957,7 +9989,7 @@ function acrid_grieving takes nothing returns nothing
                 else
                     set plot_accurate=2
                 endif
-                call ForceRemovePlayer(force_on_west_east[plot_accurate], Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )))
+                call ForceRemovePlayer(forceList[plot_accurate], Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) )))
                 call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[( 1 + GetPlayerId(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) ))) )], "(Referee)")
                 call ForGroupBJ(squirrel_stem(Player(- 1 + ( S2I(SubStringBJ(GetEventPlayerChatString(), $A, $A)) ))), function announce_squealing)
                 call ForForce(person_kneel(MAP_CONTROL_USER), function discover_strap)
@@ -10189,7 +10221,7 @@ endfunction
 
 function tank_abject takes nothing returns nothing
     call DisplayTextToForce(bj_FORCE_ALL_PLAYERS, "Warning: The Ghost hero can bug some of the game mechanics like the multiboard and kill/death counters.")
-    call CreateNUnitsAtLoc(1, HERO_RAW_BLOOD_DANCER, GetTriggerPlayer(), GetRectCenter(obnoxious_army[( 1 + GetPlayerId(GetTriggerPlayer()) )]), 270.)
+    call CreateNUnitsAtLoc(1, RAW_HERO_BLOOD_DANCER, GetTriggerPlayer(), GetRectCenter(obnoxious_army[( 1 + GetPlayerId(GetTriggerPlayer()) )]), 270.)
     set probable_confuse=bj_lastCreatedUnit
 endfunction
 
@@ -10240,10 +10272,10 @@ function pumped_orange takes nothing returns nothing
 endfunction
 
 function grumpy_anxious takes nothing returns nothing
-    local player basin_excite=GetTriggerPlayer()
-    set basin_excite=Player(- 1 + ( ( 1 + GetPlayerId(basin_excite) ) ))
-    call AdjustPlayerStateBJ($186A0, basin_excite, PLAYER_STATE_RESOURCE_GOLD)
-    set basin_excite=null
+    local player owningPlayer=GetTriggerPlayer()
+    set owningPlayer=Player(- 1 + ( ( 1 + GetPlayerId(owningPlayer) ) ))
+    call AdjustPlayerStateBJ($186A0, owningPlayer, PLAYER_STATE_RESOURCE_GOLD)
+    set owningPlayer=null
 endfunction
 
 function flowery_neighborly takes nothing returns nothing
@@ -10275,16 +10307,16 @@ function unarmed_quiver takes nothing returns nothing
 endfunction
 
 function infamous_waves takes nothing returns boolean
-    return ( IsPlayerInForce(GetTriggerPlayer(), force_on_west_east[FORCE_WEST_ID]) )
+    return ( IsPlayerInForce(GetTriggerPlayer(), forceList[FORCE_WEST_ID]) )
 endfunction
 
 function advice_book takes nothing returns nothing
-    if ( (IsPlayerInForce(GetTriggerPlayer(), force_on_west_east[FORCE_WEST_ID])) ) then // INLINED!!
-        set erratic_bright[1]=( erratic_bright[1] + 'd' )
-        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[$B], ( "   |c00ffcc00W|r|c00ff9900e|r|c00ff6600s|r|c00ff0000t S|r|c00ff6600i|r|c00ff9900d|r|c00ffcc00e|r [" + ( I2S(erratic_bright[1]) + "]" ) ))
+    if ( (IsPlayerInForce(GetTriggerPlayer(), forceList[FORCE_WEST_ID])) ) then // INLINED!!
+        set numberOfLives[1]=( numberOfLives[1] + 'd' )
+        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[$B], ( "   |c00ffcc00W|r|c00ff9900e|r|c00ff6600s|r|c00ff0000t S|r|c00ff6600i|r|c00ff9900d|r|c00ffcc00e|r [" + ( I2S(numberOfLives[1]) + "]" ) ))
     else
-        set erratic_bright[2]=( erratic_bright[2] + 'd' )
-        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[$C], ( "    |c00ccffffE|r|c0099ccffa|r|c0000ccffs|r|c003366fft S|r|c0000ccffi|r|c0099ccffd|r|c00ccffffe|r [" + ( I2S(erratic_bright[2]) + "]" ) ))
+        set numberOfLives[2]=( numberOfLives[2] + 'd' )
+        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[$C], ( "    |c00ccffffE|r|c0099ccffa|r|c0000ccffs|r|c003366fft S|r|c0000ccffi|r|c0099ccffd|r|c00ccffffe|r [" + ( I2S(numberOfLives[2]) + "]" ) ))
     endif
 endfunction
 
@@ -10297,7 +10329,7 @@ function sad_tray takes nothing returns nothing
 endfunction
 
 function kaput_acoustic takes nothing returns boolean
-    return ( GetUnitTypeId(probable_confuse) == HERO_RAW_BLOOD_DANCER )
+    return ( GetUnitTypeId(probable_confuse) == RAW_HERO_BLOOD_DANCER )
 endfunction
 
 function things_itch takes nothing returns nothing
@@ -10319,11 +10351,11 @@ endfunction
 
 function hang_sidewalk takes nothing returns nothing
     local force extralarge_plant=bj_FORCE_ALL_PLAYERS
-    local player basin_excite=GetTriggerPlayer()
+    local player owningPlayer=GetTriggerPlayer()
     call PlaySoundBJ(gg_snd_Warning)
-    //call DisplayTextToForce(extralarge_plant,("W"+"A"+"R"+"N"+"starcraft"+"N"+"G"+"!"+" "+(GetPlayerName(basin_excite)+(" (Player "+(I2S((1+GetPlayerId(basin_excite)))+")"+" "+"i"+"s"+" "+"t"+"r"+"y"+"i"+"n"+"g"+" "+"t"+"o"+" "+"c"+"h"+"e"+"a"+"t"+"!"+" "+"t"+"h"+"i"+"s"+" "+"v"+"e"+"r"+"s"+"i"+"o"+"n"+" "+"m"+"a"+"y"+" "+"b"+"e"+" "+"a"+" "+"h"+"a"+"c"+"k"+"e"+"d"+" "+"o"+"n"+"e"+"!")))))
+    //call DisplayTextToForce(extralarge_plant,("W"+"A"+"R"+"N"+"starcraft"+"N"+"G"+"!"+" "+(GetPlayerName(owningPlayer)+(" (Player "+(I2S((1+GetPlayerId(owningPlayer)))+")"+" "+"i"+"s"+" "+"t"+"r"+"y"+"i"+"n"+"g"+" "+"t"+"o"+" "+"c"+"h"+"e"+"a"+"t"+"!"+" "+"t"+"h"+"i"+"s"+" "+"v"+"e"+"r"+"s"+"i"+"o"+"n"+" "+"m"+"a"+"y"+" "+"b"+"e"+" "+"a"+" "+"h"+"a"+"c"+"k"+"e"+"d"+" "+"o"+"n"+"e"+"!")))))
     set extralarge_plant=null
-    set basin_excite=null
+    set owningPlayer=null
 endfunction
 
 function wind_charge takes nothing returns nothing
@@ -10377,8 +10409,8 @@ function robust_stop takes nothing returns nothing
         endif
         set i=i + 1
     endloop
-    set loud_wall=R2I(loud_wall / ( CountPlayersInForceBJ(force_on_west_east[FORCE_WEST_ID]) - ashamed_ethereal ))
-    set intend_dispensable=R2I(intend_dispensable / ( CountPlayersInForceBJ(force_on_west_east[FORCE_WEST_ID]) - ashamed_ethereal ))
+    set loud_wall=R2I(loud_wall / ( CountPlayersInForceBJ(forceList[FORCE_WEST_ID]) - ashamed_ethereal ))
+    set intend_dispensable=R2I(intend_dispensable / ( CountPlayersInForceBJ(forceList[FORCE_WEST_ID]) - ashamed_ethereal ))
     set i=0
     loop
         exitwhen i > 4
@@ -10405,8 +10437,8 @@ function robust_stop takes nothing returns nothing
         endif
         set i=i + 1
     endloop
-    set loud_wall=R2I(loud_wall / ( CountPlayersInForceBJ(force_on_west_east[FORCE_EAST_ID]) - ashamed_ethereal ))
-    set intend_dispensable=R2I(intend_dispensable / ( CountPlayersInForceBJ(force_on_west_east[FORCE_EAST_ID]) - ashamed_ethereal ))
+    set loud_wall=R2I(loud_wall / ( CountPlayersInForceBJ(forceList[FORCE_EAST_ID]) - ashamed_ethereal ))
+    set intend_dispensable=R2I(intend_dispensable / ( CountPlayersInForceBJ(forceList[FORCE_EAST_ID]) - ashamed_ethereal ))
     set i=5
     loop
         exitwhen i > 9
@@ -10613,52 +10645,52 @@ function purring_day takes nothing returns boolean
 endfunction
 
 function needy_pie takes nothing returns boolean
-    local unit cure_combative=GetDyingUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
-    return GetBooleanAnd(( IsUnitAlly(GetFilterUnit(), basin_excite) ), ( GetUnitTypeId(GetFilterUnit()) == HERO_RAW_CLERIC ))
+    local unit trigUnit=GetDyingUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
+    return GetBooleanAnd(( IsUnitAlly(GetFilterUnit(), owningPlayer) ), ( GetUnitTypeId(GetFilterUnit()) == RAW_HERO_CLERIC ))
 endfunction
 
 function wrathful_name takes nothing returns nothing
     local timerdialog brush_laugh
     local real comfortable_fear
-    local unit cure_combative=GetDyingUnit()
-    local player basin_excite=GetOwningPlayer(cure_combative)
+    local unit trigUnit=GetDyingUnit()
+    local player owningPlayer=GetOwningPlayer(trigUnit)
     local timer eatable_beg=CreateTimer()
-    local integer search_mighty=GetHeroLevel(cure_combative)
-    local location workable_flap=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(basin_excite) )])
-    local location order_cabbage=GetUnitLoc(cure_combative)
+    local integer search_mighty=GetHeroLevel(trigUnit)
+    local location workable_flap=GetRectCenter(obnoxious_army[( 1 + GetPlayerId(owningPlayer) )])
+    local location loc=GetUnitLoc(trigUnit)
     local real suggestion_morning=( ( search_mighty + 30 ) / moaning_gentle )
     local integer partner_thoughtless
-    local group nice_acoustics=wriggle_brown(750. , order_cabbage , Condition(function needy_pie))
+    local group nice_acoustics=wriggle_brown(750. , loc , Condition(function needy_pie))
     local integer team2
-    if ( ( GetUnitTypeId(cure_combative) == HERO_RAW_CLERIC ) or ( ( CountUnitsInGroup(nice_acoustics) >= 1 ) ) ) then
+    if ( ( GetUnitTypeId(trigUnit) == RAW_HERO_CLERIC ) or ( ( CountUnitsInGroup(nice_acoustics) >= 1 ) ) ) then
         set suggestion_morning=suggestion_morning / 2
     endif
-    set partner_thoughtless=release_strong(basin_excite)
-    set man_drink[( 1 + GetPlayerId(basin_excite) )]=man_drink[( 1 + GetPlayerId(basin_excite) )] + 1
-    call MultiboardSetItemValueBJ(game_multiboard, 3, yawn_follow[( 1 + GetPlayerId(basin_excite) )], I2S(man_drink[( 1 + GetPlayerId(basin_excite) )]))
-    call CameraClearNoiseForPlayer(basin_excite)
+    set partner_thoughtless=GetPlayerForceID(owningPlayer)
+    set man_drink[( 1 + GetPlayerId(owningPlayer) )]=man_drink[( 1 + GetPlayerId(owningPlayer) )] + 1
+    call MultiboardSetItemValueBJ(game_multiboard, 3, yawn_follow[( 1 + GetPlayerId(owningPlayer) )], I2S(man_drink[( 1 + GetPlayerId(owningPlayer) )]))
+    call CameraClearNoiseForPlayer(owningPlayer)
     call StartTimerBJ(eatable_beg, false, suggestion_morning)
     set brush_laugh=CreateTimerDialogBJ(eatable_beg, "Hero Revives In")
     call TimerDialogDisplay(brush_laugh, false)
-    call TimerDialogDisplayForPlayerBJ(true, brush_laugh, basin_excite)
-    call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 7., ( range_uncovered[( 1 + GetPlayerId(basin_excite) )] + GetPlayerName(basin_excite) + "|r's " + GetHeroProperName(cure_combative) + " the " + range_uncovered[( 1 + GetPlayerId(basin_excite) )] + GetUnitName(cure_combative) + "|r (level " + I2S(search_mighty) + ") has fallen." ))
+    call TimerDialogDisplayForPlayerBJ(true, brush_laugh, owningPlayer)
+    call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 7., ( range_uncovered[( 1 + GetPlayerId(owningPlayer) )] + GetPlayerName(owningPlayer) + "|r's " + GetHeroProperName(trigUnit) + " the " + range_uncovered[( 1 + GetPlayerId(owningPlayer) )] + GetUnitName(trigUnit) + "|r (level " + I2S(search_mighty) + ") has fallen." ))
     call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS, 7., ( "|cffffcc00Time to revive:|r " + I2S(R2I(suggestion_morning)) + " seconds." ))
     if ( suggestion_morning > 30 ) then
         call TriggerSleepAction(suggestion_morning - 30.)
-        call DisplayTimedTextToForce(force_on_west_east[partner_thoughtless], 5., ( "30 seconds until the resurrection of " + range_uncovered[( 1 + GetPlayerId(basin_excite) )] + ( GetPlayerName(basin_excite) + ( "|r's " + GetUnitName(cure_combative) ) ) ))
+        call DisplayTimedTextToForce(forceList[partner_thoughtless], 5., ( "30 seconds until the resurrection of " + range_uncovered[( 1 + GetPlayerId(owningPlayer) )] + ( GetPlayerName(owningPlayer) + ( "|r's " + GetUnitName(trigUnit) ) ) ))
         call TriggerSleepAction(30.)
     else
         call TriggerSleepAction(suggestion_morning)
     endif
-    call TimerDialogDisplayForPlayerBJ(false, brush_laugh, basin_excite)
+    call TimerDialogDisplayForPlayerBJ(false, brush_laugh, owningPlayer)
     call DestroyTimerDialog(brush_laugh)
-    if ( IsUnitAliveBJ(cure_combative) == false ) then
+    if ( IsUnitAliveBJ(trigUnit) == false ) then
         call DisplayTimedTextToForce(loutish_title, $A, "Is Unit Alive: false")
     else
         call DisplayTimedTextToForce(loutish_title, $A, "Is Unit Alive: true")
     endif
-    if ( IsPlayerInForce(basin_excite, force_on_west_east[partner_thoughtless]) ) then
+    if ( IsPlayerInForce(owningPlayer, forceList[partner_thoughtless]) ) then
         call DisplayTimedTextToForce(loutish_title, $A, "Is Player in Force: true")
     else
         call DisplayTimedTextToForce(loutish_title, $A, "Is Player in Force: false")
@@ -10668,21 +10700,21 @@ function wrathful_name takes nothing returns nothing
     else
         call DisplayTimedTextToForce(loutish_title, $A, "Flag_Victory: true")
     endif
-    if ( IsPlayerInForce(basin_excite, force_on_west_east[partner_thoughtless]) ) then
+    if ( IsPlayerInForce(owningPlayer, forceList[partner_thoughtless]) ) then
         if ( educate_joyous == false ) then
-            call ReviveHeroLoc(cure_combative, workable_flap, true)
-            call SetUnitManaPercentBJ(cure_combative, 15.)
-            call SetUnitInvulnerable(cure_combative, true)
+            call ReviveHeroLoc(trigUnit, workable_flap, true)
+            call SetUnitManaPercentBJ(trigUnit, 15.)
+            call SetUnitInvulnerable(trigUnit, true)
             call TriggerSleepAction(3.)
-            call SetUnitInvulnerable(cure_combative, false)
+            call SetUnitInvulnerable(trigUnit, false)
         endif
     endif
     set brush_laugh=null
-    set cure_combative=null
-    set basin_excite=null
+    set trigUnit=null
+    set owningPlayer=null
     set eatable_beg=null
-    call RemoveLocation(order_cabbage)
-    set order_cabbage=null
+    call RemoveLocation(loc)
+    set loc=null
     call RemoveLocation(workable_flap)
     set workable_flap=null
 endfunction
@@ -10699,37 +10731,37 @@ function difficult_abrupt takes nothing returns nothing
 endfunction
 
 function steadfast_post takes nothing returns boolean
-    local unit judge_afraid=GetKillingUnit()
-    local player plant_whispering=GetOwningPlayer(judge_afraid)
-    if ( IsPlayerInForce(plant_whispering, ambitious_pray[3]) ) then
-        set judge_afraid=null
-        set plant_whispering=null
+    local unit killingUnit=GetKillingUnit()
+    local player ownerOfKillingUnit=GetOwningPlayer(killingUnit)
+    if ( IsPlayerInForce(ownerOfKillingUnit, ambitious_pray[3]) ) then
+        set killingUnit=null
+        set ownerOfKillingUnit=null
         return true
     endif
-    set judge_afraid=null
-    set plant_whispering=null
+    set killingUnit=null
+    set ownerOfKillingUnit=null
     return false
 endfunction
 
 function half_shade takes nothing returns boolean
     local player arithmetic_explain=GetFilterPlayer()
-    local unit judge_afraid=GetKillingUnit()
-    local player plant_whispering=GetOwningPlayer(judge_afraid)
-    if ( arithmetic_explain != plant_whispering ) then
+    local unit killingUnit=GetKillingUnit()
+    local player ownerOfKillingUnit=GetOwningPlayer(killingUnit)
+    if ( arithmetic_explain != ownerOfKillingUnit ) then
         set arithmetic_explain=null
-        set judge_afraid=null
-        set plant_whispering=null
+        set killingUnit=null
+        set ownerOfKillingUnit=null
         return true
     else
         set arithmetic_explain=null
-        set judge_afraid=null
-        set plant_whispering=null
+        set killingUnit=null
+        set ownerOfKillingUnit=null
         return false
     endif
 endfunction
 
 function shock_ready takes nothing returns boolean
-    local unit arithmetic_explain=GetFilterUnit()
+    local unit arithmetic_explain= GetFilterUnit()
     if ( ( UnitHasBuffBJ(arithmetic_explain, 'B00W') == false ) and ( GetUnitAbilityLevelSwapped('A06P', arithmetic_explain) >= 1 ) ) then
         set arithmetic_explain=null
         return true
@@ -10739,98 +10771,104 @@ function shock_ready takes nothing returns boolean
     endif
 endfunction
 
-function mountain_blue takes nothing returns nothing
-    local unit hook_stomach=GetTriggerUnit()
-    local unit judge_afraid=GetKillingUnit()
-    local player plant_whispering=GetOwningPlayer(judge_afraid)
-    local player jeans_entertaining=GetOwningPlayer(hook_stomach)
+function UnitIsKilled takes nothing returns nothing
+    local unit killedUnit=GetTriggerUnit()
+    local unit killingUnit=GetKillingUnit()
+    local player ownerOfKillingUnit= GetOwningPlayer(killingUnit)
+    local player ownerOfKilledUnit= GetOwningPlayer(killedUnit)
     local integer tremble_dress
-    local integer partner_thoughtless
+    local integer killingForceID
     local integer i
     local texttag judge_quizzical
     local group disgusting_place
-    local location happy_ancient=GetUnitLoc(hook_stomach)
+    local location happy_ancient=GetUnitLoc(killedUnit)
     local unit unadvised_expect
     local real develop_smelly=physical_shiny
-    if ( IsPlayerInForce(plant_whispering, force_on_west_east[FORCE_WEST_ID]) ) then
-        set partner_thoughtless=1
+    
+    if ( IsPlayerInForce(ownerOfKillingUnit, forceList[FORCE_WEST_ID]) ) then
+        set killingForceID=FORCE_WEST_ID
     else
-        set partner_thoughtless=2
+        set killingForceID=FORCE_EAST_ID
     endif
-    if ( IsPlayerEnemy(plant_whispering, jeans_entertaining) ) then
-        if ( ( GetUnitTypeId(hook_stomach) == 'n020' ) or ( GetUnitTypeId(hook_stomach) == 'n01Z' ) ) then
-            set erratic_bright[partner_thoughtless]=( erratic_bright[partner_thoughtless] + 1 )
-            set march_ants[partner_thoughtless]=march_ants[partner_thoughtless] + 1
-            call DisplayTimedTextToForce(force_on_west_east[partner_thoughtless], 3., ( "|c004EEA1ALife Gained - |r" + ( I2S(erratic_bright[partner_thoughtless]) + " |c004EEA1ARemaining!|r" ) ))
-            call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[$A + partner_thoughtless], ( defiant_concerned[partner_thoughtless + 2] + defiant_concerned[partner_thoughtless] + " [" + ( I2S(erratic_bright[partner_thoughtless]) + "]" ) ))
+    
+    if ( IsPlayerEnemy(ownerOfKillingUnit, ownerOfKilledUnit) ) then
+    
+        // Bonus Wave
+        if ( ( GetUnitTypeId(killedUnit) == RAW_MONSTER_SPIRIT_HAWK ) or ( GetUnitTypeId(killedUnit) == RAW_MONSTER_SPIRIT_OWL ) ) then
+            set numberOfLives[killingForceID]=( numberOfLives[killingForceID] + 1 )
+            set bonusMonstersKilled[killingForceID]=bonusMonstersKilled[killingForceID] + 1
+            call DisplayTimedTextToForce(forceList[killingForceID], 3., ( "|c004EEA1ALife Gained - |r" + ( I2S(numberOfLives[killingForceID]) + " |c004EEA1ARemaining!|r" ) ))
+            call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[10 + killingForceID], ( defiant_concerned[killingForceID + 2] + defiant_concerned[killingForceID] + " [" + ( I2S(numberOfLives[killingForceID]) + "]" ) ))
         endif
+        
         set disgusting_place=wriggle_brown(1200. , happy_ancient , Condition(function shock_ready))
+        
         if ( CountUnitsInGroup(disgusting_place) >= 1 ) then
             set unadvised_expect=GroupPickRandomUnit(disgusting_place)
-            set happy_ancient=GetUnitLoc(judge_afraid)
+            set happy_ancient=GetUnitLoc(killingUnit)
             call AddSpecialEffectLocBJ(happy_ancient, "UI\\Feedback\\GoldCredit\\GoldCredit.mdl")
             call TriggerExecute(love_finger)
             set develop_smelly=develop_smelly + ( I2R(GetUnitAbilityLevelSwapped('A06P', unadvised_expect)) * .05 )
         endif
         if ( axiomatic_garrulous ) then
-            set tremble_dress=R2I(develop_smelly * ( ( GetUnitPointValue(hook_stomach) + GetRandomInt(1, 6) + GetRandomInt(1, 6) + GetRandomInt(1, 6) ) / CountPlayersInForceBJ(force_on_west_east[partner_thoughtless]) ))
-            set judge_quizzical=CreateTextTagUnitBJ(( "+" + I2S(tremble_dress) ), hook_stomach, 0, 10., 100., 90., .0, 0)
-            if ( partner_thoughtless == 1 ) then
-                call ShowTextTagForceBJ(false, judge_quizzical, force_on_west_east[FORCE_EAST_ID])
+            set tremble_dress=R2I(develop_smelly * ( ( GetUnitPointValue(killedUnit) + GetRandomInt(1, 6) + GetRandomInt(1, 6) + GetRandomInt(1, 6) ) / CountPlayersInForceBJ(forceList[killingForceID]) ))
+            set judge_quizzical=CreateTextTagUnitBJ(( "+" + I2S(tremble_dress) ), killedUnit, 0, 10., 100., 90., .0, 0)
+            if ( killingForceID == 1 ) then
+                call ShowTextTagForceBJ(false, judge_quizzical, forceList[FORCE_EAST_ID])
                 set i=1
             else
-                call ShowTextTagForceBJ(false, judge_quizzical, force_on_west_east[FORCE_WEST_ID])
+                call ShowTextTagForceBJ(false, judge_quizzical, forceList[FORCE_WEST_ID])
                 set i=6
             endif
             loop
-                exitwhen i > ( 5 * partner_thoughtless )
+                exitwhen i > ( 5 * killingForceID )
                 call AdjustPlayerStateBJ(tremble_dress, Player(- 1 + ( i )), PLAYER_STATE_RESOURCE_GOLD)
                 set i=i + 1
             endloop
         else
-            set tremble_dress=R2I(develop_smelly * ( GetUnitPointValue(hook_stomach) + ( GetRandomInt(1, 6) + GetRandomInt(1, 6) + GetRandomInt(1, 6) ) ))
-            set judge_quizzical=CreateTextTagUnitBJ(( "+" + I2S(tremble_dress) ), hook_stomach, 0, 10., 100., 90., .0, 0)
+            set tremble_dress=R2I(develop_smelly * ( GetUnitPointValue(killedUnit) + ( GetRandomInt(1, 6) + GetRandomInt(1, 6) + GetRandomInt(1, 6) ) ))
+            set judge_quizzical=CreateTextTagUnitBJ(( "+" + I2S(tremble_dress) ), killedUnit, 0, 10., 100., 90., .0, 0)
             call ShowTextTagForceBJ(false, judge_quizzical, testy_existence(Condition(function half_shade)))
-            call AdjustPlayerStateBJ(tremble_dress, plant_whispering, PLAYER_STATE_RESOURCE_GOLD)
+            call AdjustPlayerStateBJ(tremble_dress, ownerOfKillingUnit, PLAYER_STATE_RESOURCE_GOLD)
         endif
         call SetTextTagVelocityBJ(judge_quizzical, 64, 90)
         call SetTextTagPermanentBJ(judge_quizzical, false)
         call SetTextTagFadepointBJ(judge_quizzical, 2.)
         call SetTextTagLifespanBJ(judge_quizzical, 3.)
-        if ( GetUnitAbilityLevelSwapped('A06H', judge_afraid) >= 1 ) then
-            if ( chilly_ceaseless[( 1 + GetPlayerId(plant_whispering) )] == 19 ) then
+        if ( GetUnitAbilityLevelSwapped('A06H', killingUnit) >= 1 ) then
+            if ( chilly_ceaseless[( 1 + GetPlayerId(ownerOfKillingUnit) )] == 19 ) then
                 set happy_ancient=GetRectCenter(bj_mapInitialPlayableArea)
-                call CreateUnitAtLoc(plant_whispering, 'o006', happy_ancient, bj_UNIT_FACING)
+                call CreateUnitAtLoc(ownerOfKillingUnit, 'o006', happy_ancient, bj_UNIT_FACING)
             else
-                set chilly_ceaseless[( 1 + GetPlayerId(plant_whispering) )]=( chilly_ceaseless[( 1 + GetPlayerId(plant_whispering) )] + 1 )
+                set chilly_ceaseless[( 1 + GetPlayerId(ownerOfKillingUnit) )]=( chilly_ceaseless[( 1 + GetPlayerId(ownerOfKillingUnit) )] + 1 )
             endif
         endif
-        set blackandwhite_press[( 1 + GetPlayerId(plant_whispering) )]=( blackandwhite_press[( 1 + GetPlayerId(plant_whispering) )] + 1 )
-        call MultiboardSetItemValueBJ(game_multiboard, 2, yawn_follow[( 1 + GetPlayerId(plant_whispering) )], I2S(blackandwhite_press[( 1 + GetPlayerId(plant_whispering) )]))
+        set numberOfKillsByPlayer[( 1 + GetPlayerId(ownerOfKillingUnit) )]=( numberOfKillsByPlayer[( 1 + GetPlayerId(ownerOfKillingUnit) )] + 1 )
+        call MultiboardSetItemValueBJ(game_multiboard, 2, yawn_follow[( 1 + GetPlayerId(ownerOfKillingUnit) )], I2S(numberOfKillsByPlayer[( 1 + GetPlayerId(ownerOfKillingUnit) )]))
     endif
-    if ( ( jeans_entertaining == Player($A) ) or ( jeans_entertaining == Player($D) ) ) then
+    if ( ( ownerOfKilledUnit == Player($A) ) or ( ownerOfKilledUnit == Player($D) ) ) then
         set yell_supreme[1]=( yell_supreme[1] - 1 )
         call superb_file()
     else
-        if ( ( jeans_entertaining == Player($B) ) or ( jeans_entertaining == Player($E) ) ) then
+        if ( ( ownerOfKilledUnit == Player($B) ) or ( ownerOfKilledUnit == Player($E) ) ) then
             set yell_supreme[2]=( yell_supreme[2] - 1 )
             call train_unusual()
         endif
     endif
     call DestroyGroup(disgusting_place)
     call RemoveLocation(happy_ancient)
-    set judge_afraid=null
-    set plant_whispering=null
-    set jeans_entertaining=null
+    set killingUnit=null
+    set ownerOfKillingUnit=null
+    set ownerOfKilledUnit=null
     set disgusting_place=null
     set happy_ancient=null
     set unadvised_expect=null
     call TriggerSleepAction(20.)
-    if ( IsUnitDeadBJ(hook_stomach) ) then
-        call RemoveUnit(hook_stomach)
+    if ( IsUnitDeadBJ(killedUnit) ) then
+        call RemoveUnit(killedUnit)
     endif
     set judge_quizzical=null
-    set hook_stomach=null
+    set killedUnit=null
 endfunction
 
 function misty_crush takes nothing returns boolean
@@ -10875,16 +10913,16 @@ function mixed_camp takes nothing returns nothing
     else
         set partner_thoughtless=2
     endif
-    if ( ( erratic_bright[1] > 0 ) and ( erratic_bright[2] > 0 ) ) then
+    if ( ( numberOfLives[1] > 0 ) and ( numberOfLives[2] > 0 ) ) then
         if ( ( GetUnitTypeId(wander_complete) == 'n01Z' ) or ( GetUnitTypeId(wander_complete) == 'n020' ) ) then
         else
             if ( test_selection == 0 ) then
                 set test_selection=partner_thoughtless
             endif
-            set erratic_bright[partner_thoughtless]=( erratic_bright[partner_thoughtless] - 1 )
-            call DisplayTimedTextToForce(force_on_west_east[partner_thoughtless], 3., ( "|c00F70D0DLife Lost - |r" + ( I2S(erratic_bright[partner_thoughtless]) + " |c00F70D0DRemaining!|r" ) ))
+            set numberOfLives[partner_thoughtless]=( numberOfLives[partner_thoughtless] - 1 )
+            call DisplayTimedTextToForce(forceList[partner_thoughtless], 3., ( "|c00F70D0DLife Lost - |r" + ( I2S(numberOfLives[partner_thoughtless]) + " |c00F70D0DRemaining!|r" ) ))
         endif
-        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[( partner_thoughtless + $A )], ( defiant_concerned[partner_thoughtless] + " [" + ( I2S(erratic_bright[partner_thoughtless]) + "]" ) ))
+        call MultiboardSetItemValueBJ(game_multiboard, 1, yawn_follow[( partner_thoughtless + $A )], ( defiant_concerned[partner_thoughtless] + " [" + ( I2S(numberOfLives[partner_thoughtless]) + "]" ) ))
     endif
     if ( basketball_guard == Player($A) ) then
         set yell_supreme[1]=( yell_supreme[1] - 1 )
@@ -10917,9 +10955,9 @@ function mixed_camp takes nothing returns nothing
 endfunction
 
 function bell_xray takes nothing returns nothing
-    local player basin_excite=GetTriggerPlayer()
-    call planes_letter(basin_excite , false)
-    set basin_excite=null
+    local player owningPlayer=GetTriggerPlayer()
+    call planes_letter(owningPlayer , false)
+    set owningPlayer=null
 endfunction
 
 function nine_tap takes nothing returns nothing
@@ -10973,7 +11011,7 @@ function testy_month takes nothing returns nothing
 endfunction
 
 function destruction_vast takes nothing returns boolean
-    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_WEST_ID]) )
+    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_WEST_ID]) )
 endfunction
 
 function bang_low takes nothing returns nothing
@@ -10991,7 +11029,7 @@ function bang_low takes nothing returns nothing
 endfunction
 
 function food_opposite takes nothing returns boolean
-    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_WEST_ID]) )
+    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_WEST_ID]) )
 endfunction
 
 function satisfying_earth takes nothing returns nothing
@@ -11007,7 +11045,7 @@ function satisfying_earth takes nothing returns nothing
 endfunction
 
 function petite_kiss takes nothing returns boolean
-    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_WEST_ID]) )
+    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_WEST_ID]) )
 endfunction
 
 function train_poor takes nothing returns nothing
@@ -11026,7 +11064,7 @@ function train_poor takes nothing returns nothing
 endfunction
 
 function grotesque_tricky takes nothing returns boolean
-    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_WEST_ID]) )
+    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_WEST_ID]) )
 endfunction
 
 function makeshift_noisy takes nothing returns nothing
@@ -11042,7 +11080,7 @@ function makeshift_noisy takes nothing returns nothing
 endfunction
 
 function quilt_melt takes nothing returns boolean
-    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_EAST_ID]) )
+    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_EAST_ID]) )
 endfunction
 
 function late_suit takes nothing returns nothing
@@ -11061,7 +11099,7 @@ function late_suit takes nothing returns nothing
 endfunction
 
 function friction_lively takes nothing returns boolean
-    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_EAST_ID]) )
+    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_EAST_ID]) )
 endfunction
 
 function march_rifle takes nothing returns nothing
@@ -11077,7 +11115,7 @@ function march_rifle takes nothing returns nothing
 endfunction
 
 function oafish_approval takes nothing returns boolean
-    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_EAST_ID]) )
+    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_EAST_ID]) )
 endfunction
 
 function thirsty_feeble takes nothing returns nothing
@@ -11096,7 +11134,7 @@ function thirsty_feeble takes nothing returns nothing
 endfunction
 
 function fantastic_sweltering takes nothing returns boolean
-    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), force_on_west_east[FORCE_EAST_ID]) )
+    return ( IsPlayerInForce(GetOwningPlayer(GetTriggerUnit()), forceList[FORCE_EAST_ID]) )
 endfunction
 
 function muddled_choke takes nothing returns nothing
@@ -11152,7 +11190,7 @@ function push_worry takes nothing returns nothing
 endfunction
 
 function disturbed_jewel takes nothing returns boolean
-    return ( erratic_bright[1] != 0 ) and ( erratic_bright[2] != 0 )
+    return ( numberOfLives[1] != 0 ) and ( numberOfLives[2] != 0 )
 endfunction
 
 function playground_slippery takes nothing returns nothing
@@ -11259,7 +11297,6 @@ endfunction
 // scope hurr begins
 
     function hurr__createSpellbringerForPlayerAtLoc takes integer player_number,real x,real y returns nothing
-        // player_number is zero-indexed
         local player p= Player(player_number)
         local unit spellbringer= CreateUnit(p, 'h000', x, y, 270.)
         call UnitAddItemToSlotById(spellbringer, 'wcyc', 0)
@@ -11272,7 +11309,7 @@ endfunction
         return
     endfunction
 
-    function hurr__old_main takes nothing returns nothing
+    function hurr__OldMain takes nothing returns nothing
         local weathereffect we
         local integer i
         local player p
@@ -11330,7 +11367,7 @@ endfunction
         set fretful_trot=CreateUnit(p, 'ncop', - 1536., - 4096., 270.)
         set icicle_bare=CreateUnit(p, 'ncop', - 1536., - 6400., 270.)
         set rhyme_erect=CreateUnit(p, 'ncop', 1536., - 5888., 270.)
-        set p=Player($F) // Player 16 (Neutral Passive)
+        set p=Player(PLAYER_NEUTRAL_PASSIVE)
         set toes_women=CreateUnit(p, 'ncop', 7936., - 4480., 270.)
         set suppose_mend=CreateUnit(p, 'ncop', 4864., - 4480., 270.)
         set husky_good=CreateUnit(p, 'ncop', - 4864., - 4480., 270.)
@@ -11372,79 +11409,79 @@ endfunction
         call hurr__createSpellbringerForPlayerAtLoc(23 , 6656. , 5632. - ( 512. * 5 ))
         
         //      Hero spawn placement
-        set p=Player(PLAYER_NEUTRAL_AGGRESSIVE) // Player 25 (Neutral Hostile)
-        set sign_hospital=CreateUnit(p, HERO_RAW_TROLL_CANNIBAL, - 1690.7, - 6146., .0)
-        call SetUnitState(sign_hospital, UNIT_STATE_MANA, 0)
-        set gaudy_mean=CreateUnit(p, HERO_RAW_TRADER, 1667.3, - 5620.7, 180.)
-        call SetUnitState(gaudy_mean, UNIT_STATE_MANA, 96)
-        set inquisitive_peep=CreateUnit(p, HERO_RAW_FAENRAE_CHAMPION_ALT, - 1681.2, - 6404.3, .0)
-        call SetUnitState(inquisitive_peep, UNIT_STATE_MANA, 0)
-        set wing_war=CreateUnit(p, HERO_RAW_BLOOD_DANCER, - 1694.1, - 5884.1, .0)
+        set p=Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        set spawnHeroTrollCanibal=CreateUnit(p, RAW_HERO_TROLL_CANNIBAL, - 1690.7, - 6146., .0)
+        call SetUnitState(spawnHeroTrollCanibal, UNIT_STATE_MANA, 0)
+        set spawnHeroTrader=CreateUnit(p, RAW_HERO_TRADER, 1667.3, - 5620.7, 180.)
+        call SetUnitState(spawnHeroTrader, UNIT_STATE_MANA, 96)
+        set spawnHeroFaenraeChampion=CreateUnit(p, RAW_HERO_FAENRAE_CHAMPION_ALT, - 1681.2, - 6404.3, .0)
+        call SetUnitState(spawnHeroFaenraeChampion, UNIT_STATE_MANA, 0)
+        set wing_war=CreateUnit(p, RAW_HERO_BLOOD_DANCER, - 1694.1, - 5884.1, .0)
         call SetUnitState(wing_war, UNIT_STATE_MANA, 0)
-        set useless_dysfunctional=CreateUnit(p, HERO_RAW_WARRIOR_MAGE, - 254.8, - 6760., 90.)
+        set useless_dysfunctional=CreateUnit(p, RAW_HERO_WARRIOR_MAGE, - 254.8, - 6760., 90.)
         call SetUnitState(useless_dysfunctional, UNIT_STATE_MANA, 96)
-        set land_shrug=CreateUnit(p, HERO_RAW_AHLEN, - 1681.5, - 5640.5, .0)
+        set land_shrug=CreateUnit(p, RAW_HERO_AHLEN, - 1681.5, - 5640.5, .0)
         call SetUnitState(land_shrug, UNIT_STATE_MANA, 0)
-        set seal_test=CreateUnit(p, HERO_RAW_WEAPONSMITH, - 1670.1, - 5375.3, .0)
+        set seal_test=CreateUnit(p, RAW_HERO_WEAPONSMITH, - 1670.1, - 5375.3, .0)
         call SetUnitState(seal_test, UNIT_STATE_MANA, 0)
-        set friction_twig=CreateUnit(p, HERO_RAW_BATTLE_CHANTER, 1660.2, - 5375.7, 180.)
+        set friction_twig=CreateUnit(p, RAW_HERO_BATTLE_CHANTER, 1660.2, - 5375.7, 180.)
         call SetUnitState(friction_twig, UNIT_STATE_MANA, 64)
-        set lunchroom_wholesale=CreateUnit(p, HERO_RAW_PALADIN, - 1687.1, - 4871., .0)
-        set three_filthy=CreateUnit(p, HERO_RAW_MAGIC_INFUSER, - 1687.5, - 4094., .0)
-        set u=CreateUnit(p, HERO_RAW_RANDOM_HERO, 1664., - 3454.5, 216.822)
-        set trade_rigid=CreateUnit(p, HERO_RAW_RANGER, - 1018.1, - 3416., 315.)
+        set lunchroom_wholesale=CreateUnit(p, RAW_HERO_PALADIN, - 1687.1, - 4871., .0)
+        set three_filthy=CreateUnit(p, RAW_HERO_MAGIC_INFUSER, - 1687.5, - 4094., .0)
+        set u=CreateUnit(p, RAW_HERO_RANDOM_HERO, 1664., - 3454.5, 216.822)
+        set trade_rigid=CreateUnit(p, RAW_HERO_RANGER, - 1018.1, - 3416., 315.)
         call SetUnitState(trade_rigid, UNIT_STATE_MANA, 48)
         call SetUnitAcquireRange(trade_rigid, 200.)
-        set corn_daughter=CreateUnit(p, HERO_RAW_EMPATH, 1662.4, - 4357.1, 180.)
+        set corn_daughter=CreateUnit(p, RAW_HERO_EMPATH, 1662.4, - 4357.1, 180.)
         call SetUnitState(corn_daughter, UNIT_STATE_MANA, 96)
-        set righteous_jam=CreateUnit(p, HERO_RAW_ENTROPIST, 263.6, - 3434.3, 270.)
+        set righteous_jam=CreateUnit(p, RAW_HERO_ENTROPIST, 263.6, - 3434.3, 270.)
         call SetUnitState(righteous_jam, UNIT_STATE_MANA, 96)
-        set little_wait=CreateUnit(p, HERO_RAW_BARD, 1656.6, - 4860.3, 180.)
+        set little_wait=CreateUnit(p, RAW_HERO_BARD, 1656.6, - 4860.3, 180.)
         call SetUnitState(little_wait, UNIT_STATE_MANA, $80)
-        set pies_overt=CreateUnit(p, HERO_RAW_SPIKED_TREE, 777.6, - 3439.7, 270.64)
+        set pies_overt=CreateUnit(p, RAW_HERO_SPIKED_TREE, 777.6, - 3439.7, 270.64)
         call SetUnitState(pies_overt, UNIT_STATE_MANA, 48)
-        set lip_amazing=CreateUnit(p, HERO_RAW_HOLY_WARRIOR, - 1689.4, - 4368.5, .0)
-        set real_interest=CreateUnit(p, HERO_RAW_BARBARIAN, - 1675.1, - 4623.7, .0)
-        set stocking_cold=CreateUnit(p, HERO_RAW_EVOKER, - 766.8, - 6760., 90.)
+        set lip_amazing=CreateUnit(p, RAW_HERO_HOLY_WARRIOR, - 1689.4, - 4368.5, .0)
+        set real_interest=CreateUnit(p, RAW_HERO_BARBARIAN, - 1675.1, - 4623.7, .0)
+        set stocking_cold=CreateUnit(p, RAW_HERO_EVOKER, - 766.8, - 6760., 90.)
         call SetUnitState(stocking_cold, UNIT_STATE_MANA, $90)
-        set deeply_fetch=CreateUnit(p, HERO_RAW_CLERIC, 514.9, - 3434.3, 270.)
+        set deeply_fetch=CreateUnit(p, RAW_HERO_CLERIC, 514.9, - 3434.3, 270.)
         call SetUnitState(deeply_fetch, UNIT_STATE_MANA, 48)
-        set match_question=CreateUnit(p, HERO_RAW_CABALIST, - 255.6, - 3430.4, 270.)
+        set match_question=CreateUnit(p, RAW_HERO_CABALIST, - 255.6, - 3430.4, 270.)
         call SetUnitState(match_question, UNIT_STATE_MANA, 96)
-        set tightfisted_exotic=CreateUnit(p, HERO_RAW_REVENANT, 1277.6, - 6782.5, 90.279)
-        set possible_entertaining=CreateUnit(p, HERO_RAW_SNIPER, - 499.9, - 3417.8, 272.29)
+        set tightfisted_exotic=CreateUnit(p, RAW_HERO_REVENANT, 1277.6, - 6782.5, 90.279)
+        set possible_entertaining=CreateUnit(p, RAW_HERO_SNIPER, - 499.9, - 3417.8, 272.29)
         call SetUnitState(possible_entertaining, UNIT_STATE_MANA, $90)
         call SetUnitAcquireRange(possible_entertaining, 200.)
-        set admire_nose=CreateUnit(p, HERO_RAW_SUMMONER, 252.2, - 6764.1, 90.)
+        set admire_nose=CreateUnit(p, RAW_HERO_SUMMONER, 252.2, - 6764.1, 90.)
         call SetUnitState(admire_nose, UNIT_STATE_MANA, $90)
-        set day_health=CreateUnit(p, HERO_RAW_THIEF, - 762.9, - 3435., 270.)
+        set day_health=CreateUnit(p, RAW_HERO_THIEF, - 762.9, - 3435., 270.)
         call SetUnitState(day_health, UNIT_STATE_MANA, 48)
-        set minute_sign=CreateUnit(p, HERO_RAW_MOON_MAGE, - 518.8, - 6765.4, 90.)
+        set minute_sign=CreateUnit(p, RAW_HERO_MOON_MAGE, - 518.8, - 6765.4, 90.)
         call SetUnitState(minute_sign, UNIT_STATE_MANA, $90)
-        set various_hurry=CreateUnit(p, HERO_RAW_HYPNOTIST, 1657.7, - 4609.4, 180.)
+        set various_hurry=CreateUnit(p, RAW_HERO_HYPNOTIST, 1657.7, - 4609.4, 180.)
         call SetUnitState(various_hurry, UNIT_STATE_MANA, 96)
-        set healthy_piquant=CreateUnit(p, HERO_RAW_MENTALIST, 1018.7, - 6772.2, 90.)
+        set healthy_piquant=CreateUnit(p, RAW_HERO_MENTALIST, 1018.7, - 6772.2, 90.)
         call SetUnitState(healthy_piquant, UNIT_STATE_MANA, $90)
-        set romantic_dreary=CreateUnit(p, HERO_RAW_SHADOW_PRIEST, 1687.5, - 6141.2, 167.15)
-        set direction_mountainous=CreateUnit(p, HERO_RAW_ARCANE_MISTRESS, 771.5, - 6761.5, 90.)
+        set romantic_dreary=CreateUnit(p, RAW_HERO_SHADOW_PRIEST, 1687.5, - 6141.2, 167.15)
+        set direction_mountainous=CreateUnit(p, RAW_HERO_ARCANE_MISTRESS, 771.5, - 6761.5, 90.)
         call SetUnitState(direction_mountainous, UNIT_STATE_MANA, $90)
-        set ignorant_chunky=CreateUnit(p, HERO_RAW_TEMPEST, 515.4, - 6759.5, 90.)
+        set ignorant_chunky=CreateUnit(p, RAW_HERO_TEMPEST, 515.4, - 6759.5, 90.)
         call SetUnitState(ignorant_chunky, UNIT_STATE_MANA, $90)
-        set u=CreateUnit(p, HERO_RAW_RANDOM_COMBAT_HERO, - 1666.5, - 5124.8, .0)
+        set u=CreateUnit(p, RAW_HERO_RANDOM_COMBAT_HERO, - 1666.5, - 5124.8, .0)
         call SetUnitState(u, UNIT_STATE_MANA, 48)
-        set u=CreateUnit(p, HERO_RAW_RANDOM_SPELLCASTER_HERO, 6.6, - 6765.9, 106.61)
+        set u=CreateUnit(p, RAW_HERO_RANDOM_SPELLCASTER_HERO, 6.6, - 6765.9, 106.61)
         call SetUnitState(u, UNIT_STATE_MANA, $90)
-        set u=CreateUnit(p, HERO_RAW_RANDOM_ROUNDED_HERO, 4.5, - 3441.1, 311.72)
+        set u=CreateUnit(p, RAW_HERO_RANDOM_ROUNDED_HERO, 4.5, - 3441.1, 311.72)
         call SetUnitState(u, UNIT_STATE_MANA, 96)
-        set u=CreateUnit(p, HERO_RAW_RANDOM_SUPPORT_HERO, 1665.3, - 5117.1, 262.78)
+        set u=CreateUnit(p, RAW_HERO_RANDOM_SUPPORT_HERO, 1665.3, - 5117.1, 262.78)
         call SetUnitState(u, UNIT_STATE_MANA, 96)
-        set veil_save=CreateUnit(p, HERO_RAW_WARLOCK, - 1024.4, - 6776.7, 89.56)
+        set veil_save=CreateUnit(p, RAW_HERO_WARLOCK, - 1024.4, - 6776.7, 89.56)
         call SetUnitState(veil_save, UNIT_STATE_MANA, $D0)
-        set offend_humdrum=CreateUnit(p, HERO_RAW_TIME_MAGE, 1671., - 5872.4, 182.24)
+        set offend_humdrum=CreateUnit(p, RAW_HERO_TIME_MAGE, 1671., - 5872.4, 182.24)
         call SetUnitState(offend_humdrum, UNIT_STATE_MANA, $90)
         
         //      Tournament region units
-        set p=Player(27) // Player 28 (Neutral Passive)
+        set p=Player(PLAYER_NEUTRAL_PASSIVE)
         set u=CreateUnit(p, 'u00H', 505.2, 6614.9, 298.252)
         set u=CreateUnit(p, 'u00L', 394., 6514.6, 302.814)
         set u=CreateUnit(p, 'u00J', 246., 6385.5, 307.128)
@@ -11465,8 +11502,8 @@ endfunction
         //  Uh... what?
         //      - Might be all of the Initializer functions in vJass
         //      - Maybe map optimizer?
-        call ConfigureNeutralVictim()
-        set harass_sturdy=Filter(function provide_craven)
+        call ConfigureNeutralVictim() // why?
+        set trueFilter=Filter(function TrueFilterFunction)
         set filterIssueHauntOrderAtLocBJ=Filter(function IssueHauntOrderAtLocBJFilter)
         set filterEnumDestructablesInCircleBJ=Filter(function unite_change)
         set filterGetUnitsInRectOfPlayer=Filter(function GetUnitsInRectOfPlayerFilter)
@@ -11543,16 +11580,16 @@ endfunction
         call TriggerRegisterPlayerUnitEvent(bj_stockItemPurchased, Player($F), EVENT_PLAYER_UNIT_SELL_ITEM, null)
         call TriggerAddAction(bj_stockItemPurchased, function RemovePurchasedItem)
         call DetectGameStarted()
-        set i=0
+        
         set i=0
         loop
             exitwhen ( i > 2 )
-            set erratic_bright[i]='d'
-            set force_on_west_east[i]=CreateForce()
+            set numberOfLives[i]='d'
+            set forceList[i]=CreateForce()
             set income_ground[i]=false
             set torpid_pause[i]=0
             set babies_nail[i]=CreateForce()
-            set march_ants[i]=0
+            set bonusMonstersKilled[i]=0
             set thoughtful_value[i]=0
             set i=i + 1
         endloop
@@ -11569,7 +11606,7 @@ endfunction
             exitwhen ( i > $A )
             set callous_geese[i]=CreateTimer()
             set yawn_follow[i]=1
-            set blackandwhite_press[i]=0
+            set numberOfKillsByPlayer[i]=0
             set sand_park[i]=0
             set worry_fresh[i]=false
             set chilly_ceaseless[i]=0
@@ -11720,7 +11757,7 @@ endfunction
         call DisableTrigger(love_finger)
         call TriggerAddAction(love_finger, function blind_cakes)
         set dizzy_cheese=CreateTrigger()
-        call TriggerAddAction(dizzy_cheese, function place_halting)
+        call TriggerAddAction(dizzy_cheese, function PrintScoreChart)
         set uneven_nail=CreateTrigger()
         call TriggerRegisterUnitInRangeSimple(uneven_nail, 80., utter_rabbits)
         call TriggerRegisterUnitInRangeSimple(uneven_nail, 80., contain_appear)
@@ -11901,9 +11938,9 @@ endfunction
         set hulking_paper=CreateTrigger()
         call TriggerAddCondition(hulking_paper, Condition(function spiders_need))
         call TriggerAddAction(hulking_paper, function try_back)
-        set massive_view=CreateTrigger()
-        call TriggerAddCondition(massive_view, Condition(function boat_rings))
-        call TriggerAddAction(massive_view, function breathe_gusty)
+        set spellBurstTrigger=CreateTrigger()
+        call TriggerAddCondition(spellBurstTrigger, Condition(function SpellIsBurst))
+        call TriggerAddAction(spellBurstTrigger, function SpellBurstIsCast)
         set foot_lethal=CreateTrigger()
         call TriggerAddCondition(foot_lethal, Condition(function chief_depend))
         call TriggerAddAction(foot_lethal, function pancake_six)
@@ -12646,7 +12683,7 @@ endfunction
         call TriggerAddAction(visitor_delicious, function difficult_abrupt)
         set moon_woozy=CreateTrigger()
         call TriggerAddCondition(moon_woozy, Condition(function steadfast_post))
-        call TriggerAddAction(moon_woozy, function mountain_blue)
+        call TriggerAddAction(moon_woozy, function UnitIsKilled)
         set writer_knot=CreateTrigger()
         call TriggerRegisterEnterRectSimple(writer_knot, gg_rct_Region_012)
         call TriggerRegisterEnterRectSimple(writer_knot, gg_rct_Region_013)
@@ -12735,225 +12772,6 @@ endfunction
     endfunction
 // scope hurr ends
 
-// scope hurrr begins
-    function hurrr__old_config takes nothing returns nothing
-        call SetMapName("TRIGSTR_003")
-        call SetMapDescription("TRIGSTR_005")
-        call SetPlayers($C)
-        call SetTeams($C)
-        call SetGamePlacement(MAP_PLACEMENT_TEAMS_TOGETHER)
-        call DefineStartLocation(0, .0, - 5120.)
-        call DefineStartLocation(1, .0, - 5120.)
-        call DefineStartLocation(2, .0, - 5120.)
-        call DefineStartLocation(3, .0, - 5120.)
-        call DefineStartLocation(4, .0, - 5120.)
-        call DefineStartLocation(5, .0, - 5120.)
-        call DefineStartLocation(6, .0, - 5120.)
-        call DefineStartLocation(7, .0, - 5120.)
-        call DefineStartLocation(8, .0, - 5120.)
-        call DefineStartLocation(9, .0, - 5120.)
-        call DefineStartLocation($A, .0, - 5120.)
-        call DefineStartLocation($B, .0, - 5120.)
-        call SetPlayerStartLocation(Player(0), 0)
-        call ForcePlayerStartLocation(Player(0), 0)
-        call SetPlayerColor(Player(0), ConvertPlayerColor(0))
-        call SetPlayerRacePreference(Player(0), RACE_PREF_RANDOM)
-        call SetPlayerRaceSelectable(Player(0), true)
-        call SetPlayerController(Player(0), MAP_CONTROL_USER)
-        call SetPlayerStartLocation(Player(1), 1)
-        call ForcePlayerStartLocation(Player(1), 1)
-        call SetPlayerColor(Player(1), ConvertPlayerColor(1))
-        call SetPlayerRacePreference(Player(1), RACE_PREF_RANDOM)
-        call SetPlayerRaceSelectable(Player(1), true)
-        call SetPlayerController(Player(1), MAP_CONTROL_USER)
-        call SetPlayerStartLocation(Player(2), 2)
-        call ForcePlayerStartLocation(Player(2), 2)
-        call SetPlayerColor(Player(2), ConvertPlayerColor(2))
-        call SetPlayerRacePreference(Player(2), RACE_PREF_RANDOM)
-        call SetPlayerRaceSelectable(Player(2), true)
-        call SetPlayerController(Player(2), MAP_CONTROL_USER)
-        call SetPlayerStartLocation(Player(3), 3)
-        call ForcePlayerStartLocation(Player(3), 3)
-        call SetPlayerColor(Player(3), ConvertPlayerColor(3))
-        call SetPlayerRacePreference(Player(3), RACE_PREF_RANDOM)
-        call SetPlayerRaceSelectable(Player(3), true)
-        call SetPlayerController(Player(3), MAP_CONTROL_USER)
-        call SetPlayerStartLocation(Player(4), 4)
-        call ForcePlayerStartLocation(Player(4), 4)
-        call SetPlayerColor(Player(4), ConvertPlayerColor(4))
-        call SetPlayerRacePreference(Player(4), RACE_PREF_RANDOM)
-        call SetPlayerRaceSelectable(Player(4), true)
-        call SetPlayerController(Player(4), MAP_CONTROL_USER)
-        call SetPlayerStartLocation(Player(5), 5)
-        call ForcePlayerStartLocation(Player(5), 5)
-        call SetPlayerColor(Player(5), ConvertPlayerColor(5))
-        call SetPlayerRacePreference(Player(5), RACE_PREF_RANDOM)
-        call SetPlayerRaceSelectable(Player(5), true)
-        call SetPlayerController(Player(5), MAP_CONTROL_USER)
-        call SetPlayerStartLocation(Player(6), 6)
-        call ForcePlayerStartLocation(Player(6), 6)
-        call SetPlayerColor(Player(6), ConvertPlayerColor(6))
-        call SetPlayerRacePreference(Player(6), RACE_PREF_RANDOM)
-        call SetPlayerRaceSelectable(Player(6), true)
-        call SetPlayerController(Player(6), MAP_CONTROL_USER)
-        call SetPlayerStartLocation(Player(7), 7)
-        call ForcePlayerStartLocation(Player(7), 7)
-        call SetPlayerColor(Player(7), ConvertPlayerColor(7))
-        call SetPlayerRacePreference(Player(7), RACE_PREF_RANDOM)
-        call SetPlayerRaceSelectable(Player(7), true)
-        call SetPlayerController(Player(7), MAP_CONTROL_USER)
-        call SetPlayerStartLocation(Player(8), 8)
-        call ForcePlayerStartLocation(Player(8), 8)
-        call SetPlayerColor(Player(8), ConvertPlayerColor(8))
-        call SetPlayerRacePreference(Player(8), RACE_PREF_RANDOM)
-        call SetPlayerRaceSelectable(Player(8), true)
-        call SetPlayerController(Player(8), MAP_CONTROL_USER)
-        call SetPlayerStartLocation(Player(9), 9)
-        call ForcePlayerStartLocation(Player(9), 9)
-        call SetPlayerColor(Player(9), ConvertPlayerColor(9))
-        call SetPlayerRacePreference(Player(9), RACE_PREF_RANDOM)
-        call SetPlayerRaceSelectable(Player(9), true)
-        call SetPlayerController(Player(9), MAP_CONTROL_USER)
-        call SetPlayerStartLocation(Player($A), $A)
-        call ForcePlayerStartLocation(Player($A), $A)
-        call SetPlayerColor(Player($A), ConvertPlayerColor($A))
-        call SetPlayerRacePreference(Player($A), RACE_PREF_UNDEAD)
-        call SetPlayerRaceSelectable(Player($A), false)
-        call SetPlayerController(Player($A), MAP_CONTROL_COMPUTER)
-        call SetPlayerStartLocation(Player($B), $B)
-        call ForcePlayerStartLocation(Player($B), $B)
-        call SetPlayerColor(Player($B), ConvertPlayerColor($B))
-        call SetPlayerRacePreference(Player($B), RACE_PREF_UNDEAD)
-        call SetPlayerRaceSelectable(Player($B), false)
-        call SetPlayerController(Player($B), MAP_CONTROL_COMPUTER)
-        //call InitCustomTeams()
-        call SetStartLocPrioCount(0, 9)
-        call SetStartLocPrio(0, 0, 1, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(0, 1, 2, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(0, 2, 3, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(0, 3, 4, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(0, 4, 5, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(0, 5, 6, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(0, 6, 7, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(0, 7, 8, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(0, 8, 9, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrioCount(1, 9)
-        call SetStartLocPrio(1, 0, 0, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(1, 1, 2, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(1, 2, 3, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(1, 3, 4, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(1, 4, 5, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(1, 5, 6, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(1, 6, 7, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(1, 7, 8, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(1, 8, 9, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrioCount(2, 9)
-        call SetStartLocPrio(2, 0, 0, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(2, 1, 1, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(2, 2, 3, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(2, 3, 4, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(2, 4, 5, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(2, 5, 6, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(2, 6, 7, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(2, 7, 8, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(2, 8, 9, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrioCount(3, 9)
-        call SetStartLocPrio(3, 0, 0, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(3, 1, 1, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(3, 2, 2, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(3, 3, 4, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(3, 4, 5, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(3, 5, 6, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(3, 6, 7, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(3, 7, 8, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(3, 8, 9, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrioCount(4, 9)
-        call SetStartLocPrio(4, 0, 0, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(4, 1, 1, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(4, 2, 2, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(4, 3, 3, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(4, 4, 5, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(4, 5, 6, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(4, 6, 7, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(4, 7, 8, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(4, 8, 9, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrioCount(5, 9)
-        call SetStartLocPrio(5, 0, 0, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(5, 1, 1, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(5, 2, 2, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(5, 3, 3, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(5, 4, 4, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(5, 5, 6, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(5, 6, 7, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(5, 7, 8, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(5, 8, 9, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrioCount(6, 9)
-        call SetStartLocPrio(6, 0, 0, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(6, 1, 1, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(6, 2, 2, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(6, 3, 3, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(6, 4, 4, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(6, 5, 5, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(6, 6, 7, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(6, 7, 8, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(6, 8, 9, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrioCount(7, 9)
-        call SetStartLocPrio(7, 0, 0, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(7, 1, 1, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(7, 2, 2, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(7, 3, 3, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(7, 4, 4, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(7, 5, 5, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(7, 6, 6, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(7, 7, 8, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(7, 8, 9, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrioCount(8, 9)
-        call SetStartLocPrio(8, 0, 0, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(8, 1, 1, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(8, 2, 2, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(8, 3, 3, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(8, 4, 4, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(8, 5, 5, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(8, 6, 6, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(8, 7, 7, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(8, 8, 9, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrioCount(9, 9)
-        call SetStartLocPrio(9, 0, 0, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(9, 1, 1, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(9, 2, 2, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(9, 3, 3, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(9, 4, 4, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(9, 5, 5, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(9, 6, 6, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(9, 7, 7, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio(9, 8, 8, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrioCount($A, $B)
-        call SetStartLocPrio($A, 0, 0, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($A, 1, 1, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($A, 2, 2, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($A, 3, 3, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($A, 4, 4, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($A, 5, 5, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($A, 6, 6, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($A, 7, 7, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($A, 8, 8, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($A, 9, 9, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($A, $A, $B, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrioCount($B, $B)
-        call SetStartLocPrio($B, 0, 0, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($B, 1, 1, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($B, 2, 2, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($B, 3, 3, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($B, 4, 4, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($B, 5, 5, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($B, 6, 6, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($B, 7, 7, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($B, 8, 8, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($B, 9, 9, MAP_LOC_PRIO_HIGH)
-        call SetStartLocPrio($B, $A, $A, MAP_LOC_PRIO_HIGH)
-    endfunction
-// scope hurrr ends
-
 
 //===========================================================================
 function InitCustomTriggers takes nothing returns nothing
@@ -12972,192 +12790,192 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerStartLocation(Player(0), 0)
     call ForcePlayerStartLocation(Player(0), 0)
     call SetPlayerColor(Player(0), ConvertPlayerColor(0))
-    call SetPlayerRacePreference(Player(0), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(0), false)
+    call SetPlayerRacePreference(Player(0), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(0), true)
     call SetPlayerController(Player(0), MAP_CONTROL_USER)
 
     // Player 1
     call SetPlayerStartLocation(Player(1), 1)
     call ForcePlayerStartLocation(Player(1), 1)
     call SetPlayerColor(Player(1), ConvertPlayerColor(1))
-    call SetPlayerRacePreference(Player(1), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(1), false)
+    call SetPlayerRacePreference(Player(1), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(1), true)
     call SetPlayerController(Player(1), MAP_CONTROL_USER)
 
     // Player 2
     call SetPlayerStartLocation(Player(2), 2)
     call ForcePlayerStartLocation(Player(2), 2)
     call SetPlayerColor(Player(2), ConvertPlayerColor(2))
-    call SetPlayerRacePreference(Player(2), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(2), false)
+    call SetPlayerRacePreference(Player(2), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(2), true)
     call SetPlayerController(Player(2), MAP_CONTROL_USER)
 
     // Player 3
     call SetPlayerStartLocation(Player(3), 3)
     call ForcePlayerStartLocation(Player(3), 3)
     call SetPlayerColor(Player(3), ConvertPlayerColor(3))
-    call SetPlayerRacePreference(Player(3), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(3), false)
+    call SetPlayerRacePreference(Player(3), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(3), true)
     call SetPlayerController(Player(3), MAP_CONTROL_USER)
 
     // Player 4
     call SetPlayerStartLocation(Player(4), 4)
     call ForcePlayerStartLocation(Player(4), 4)
     call SetPlayerColor(Player(4), ConvertPlayerColor(4))
-    call SetPlayerRacePreference(Player(4), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(4), false)
+    call SetPlayerRacePreference(Player(4), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(4), true)
     call SetPlayerController(Player(4), MAP_CONTROL_USER)
 
     // Player 5
     call SetPlayerStartLocation(Player(5), 5)
     call ForcePlayerStartLocation(Player(5), 5)
     call SetPlayerColor(Player(5), ConvertPlayerColor(5))
-    call SetPlayerRacePreference(Player(5), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(5), false)
+    call SetPlayerRacePreference(Player(5), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(5), true)
     call SetPlayerController(Player(5), MAP_CONTROL_USER)
 
     // Player 6
     call SetPlayerStartLocation(Player(6), 6)
     call ForcePlayerStartLocation(Player(6), 6)
     call SetPlayerColor(Player(6), ConvertPlayerColor(6))
-    call SetPlayerRacePreference(Player(6), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(6), false)
+    call SetPlayerRacePreference(Player(6), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(6), true)
     call SetPlayerController(Player(6), MAP_CONTROL_USER)
 
     // Player 7
     call SetPlayerStartLocation(Player(7), 7)
     call ForcePlayerStartLocation(Player(7), 7)
     call SetPlayerColor(Player(7), ConvertPlayerColor(7))
-    call SetPlayerRacePreference(Player(7), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(7), false)
+    call SetPlayerRacePreference(Player(7), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(7), true)
     call SetPlayerController(Player(7), MAP_CONTROL_USER)
 
     // Player 8
     call SetPlayerStartLocation(Player(8), 8)
     call ForcePlayerStartLocation(Player(8), 8)
     call SetPlayerColor(Player(8), ConvertPlayerColor(8))
-    call SetPlayerRacePreference(Player(8), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(8), false)
+    call SetPlayerRacePreference(Player(8), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(8), true)
     call SetPlayerController(Player(8), MAP_CONTROL_USER)
 
     // Player 9
     call SetPlayerStartLocation(Player(9), 9)
     call ForcePlayerStartLocation(Player(9), 9)
     call SetPlayerColor(Player(9), ConvertPlayerColor(9))
-    call SetPlayerRacePreference(Player(9), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(9), false)
+    call SetPlayerRacePreference(Player(9), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(9), true)
     call SetPlayerController(Player(9), MAP_CONTROL_USER)
 
     // Player 10
     call SetPlayerStartLocation(Player(10), 10)
     call ForcePlayerStartLocation(Player(10), 10)
     call SetPlayerColor(Player(10), ConvertPlayerColor(10))
-    call SetPlayerRacePreference(Player(10), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(10), false)
+    call SetPlayerRacePreference(Player(10), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(10), true)
     call SetPlayerController(Player(10), MAP_CONTROL_USER)
 
     // Player 11
     call SetPlayerStartLocation(Player(11), 11)
     call ForcePlayerStartLocation(Player(11), 11)
     call SetPlayerColor(Player(11), ConvertPlayerColor(11))
-    call SetPlayerRacePreference(Player(11), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(11), false)
+    call SetPlayerRacePreference(Player(11), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(11), true)
     call SetPlayerController(Player(11), MAP_CONTROL_USER)
 
     // Player 12
     call SetPlayerStartLocation(Player(12), 12)
     call ForcePlayerStartLocation(Player(12), 12)
     call SetPlayerColor(Player(12), ConvertPlayerColor(12))
-    call SetPlayerRacePreference(Player(12), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(12), false)
+    call SetPlayerRacePreference(Player(12), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(12), true)
     call SetPlayerController(Player(12), MAP_CONTROL_USER)
 
     // Player 13
     call SetPlayerStartLocation(Player(13), 13)
     call ForcePlayerStartLocation(Player(13), 13)
     call SetPlayerColor(Player(13), ConvertPlayerColor(13))
-    call SetPlayerRacePreference(Player(13), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(13), false)
+    call SetPlayerRacePreference(Player(13), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(13), true)
     call SetPlayerController(Player(13), MAP_CONTROL_USER)
 
     // Player 14
     call SetPlayerStartLocation(Player(14), 14)
     call ForcePlayerStartLocation(Player(14), 14)
     call SetPlayerColor(Player(14), ConvertPlayerColor(14))
-    call SetPlayerRacePreference(Player(14), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(14), false)
+    call SetPlayerRacePreference(Player(14), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(14), true)
     call SetPlayerController(Player(14), MAP_CONTROL_USER)
 
     // Player 15
     call SetPlayerStartLocation(Player(15), 15)
     call ForcePlayerStartLocation(Player(15), 15)
     call SetPlayerColor(Player(15), ConvertPlayerColor(15))
-    call SetPlayerRacePreference(Player(15), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(15), false)
+    call SetPlayerRacePreference(Player(15), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(15), true)
     call SetPlayerController(Player(15), MAP_CONTROL_USER)
 
     // Player 16
     call SetPlayerStartLocation(Player(16), 16)
     call ForcePlayerStartLocation(Player(16), 16)
     call SetPlayerColor(Player(16), ConvertPlayerColor(16))
-    call SetPlayerRacePreference(Player(16), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(16), false)
+    call SetPlayerRacePreference(Player(16), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(16), true)
     call SetPlayerController(Player(16), MAP_CONTROL_USER)
 
     // Player 17
     call SetPlayerStartLocation(Player(17), 17)
     call ForcePlayerStartLocation(Player(17), 17)
     call SetPlayerColor(Player(17), ConvertPlayerColor(17))
-    call SetPlayerRacePreference(Player(17), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(17), false)
+    call SetPlayerRacePreference(Player(17), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(17), true)
     call SetPlayerController(Player(17), MAP_CONTROL_USER)
 
     // Player 18
     call SetPlayerStartLocation(Player(18), 18)
     call ForcePlayerStartLocation(Player(18), 18)
     call SetPlayerColor(Player(18), ConvertPlayerColor(18))
-    call SetPlayerRacePreference(Player(18), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(18), false)
+    call SetPlayerRacePreference(Player(18), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(18), true)
     call SetPlayerController(Player(18), MAP_CONTROL_USER)
 
     // Player 19
     call SetPlayerStartLocation(Player(19), 19)
     call ForcePlayerStartLocation(Player(19), 19)
     call SetPlayerColor(Player(19), ConvertPlayerColor(19))
-    call SetPlayerRacePreference(Player(19), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(19), false)
+    call SetPlayerRacePreference(Player(19), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(19), true)
     call SetPlayerController(Player(19), MAP_CONTROL_USER)
 
     // Player 20
     call SetPlayerStartLocation(Player(20), 20)
     call ForcePlayerStartLocation(Player(20), 20)
     call SetPlayerColor(Player(20), ConvertPlayerColor(20))
-    call SetPlayerRacePreference(Player(20), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(20), false)
+    call SetPlayerRacePreference(Player(20), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(20), true)
     call SetPlayerController(Player(20), MAP_CONTROL_USER)
 
     // Player 21
     call SetPlayerStartLocation(Player(21), 21)
     call ForcePlayerStartLocation(Player(21), 21)
     call SetPlayerColor(Player(21), ConvertPlayerColor(21))
-    call SetPlayerRacePreference(Player(21), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(21), false)
+    call SetPlayerRacePreference(Player(21), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(21), true)
     call SetPlayerController(Player(21), MAP_CONTROL_USER)
 
     // Player 22
     call SetPlayerStartLocation(Player(22), 22)
     call ForcePlayerStartLocation(Player(22), 22)
     call SetPlayerColor(Player(22), ConvertPlayerColor(22))
-    call SetPlayerRacePreference(Player(22), RACE_PREF_HUMAN)
-    call SetPlayerRaceSelectable(Player(22), false)
+    call SetPlayerRacePreference(Player(22), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(22), true)
     call SetPlayerController(Player(22), MAP_CONTROL_USER)
 
     // Player 23
     call SetPlayerStartLocation(Player(23), 23)
     call ForcePlayerStartLocation(Player(23), 23)
     call SetPlayerColor(Player(23), ConvertPlayerColor(23))
-    call SetPlayerRacePreference(Player(23), RACE_PREF_NIGHTELF)
-    call SetPlayerRaceSelectable(Player(23), false)
+    call SetPlayerRacePreference(Player(23), RACE_PREF_RANDOM)
+    call SetPlayerRaceSelectable(Player(23), true)
     call SetPlayerController(Player(23), MAP_CONTROL_USER)
 
 endfunction
@@ -14376,8 +14194,7 @@ function main takes nothing returns nothing
     call InitBlizzard()
 
 call set_donors()
-call hurr__old_main()
-call hurrr__old_config()
+call hurr__OldMain()
 
     call InitGlobals()
     call InitCustomTriggers()
@@ -14392,7 +14209,7 @@ endfunction
 
 function config takes nothing returns nothing
     call SetMapName("TRIGSTR_001")
-    call SetMapDescription("")
+    call SetMapDescription("TRIGSTR_3388")
     call SetPlayers(24)
     call SetTeams(24)
     call SetGamePlacement(MAP_PLACEMENT_TEAMS_TOGETHER)
