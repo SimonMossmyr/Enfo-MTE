@@ -5,8 +5,9 @@ _Enfo's Team Survival: MTExtended Edition_ is a continuation of the abandoned Wa
 ## Table of contents
 
 1.  [Instructions](#instructions)
-1.1 [How to play in WarCraft III](#how-to-play-in-Warcraft-iii)
-1.2 [How to open in World Editor](#how-to-open-in-world-editor)
+2.  [Patch notes](#patch-notes)
+3.  [Bug reporting](#bug-reporting)
+4.  [FAQ](#faq)
 
 ## Instructions
 
