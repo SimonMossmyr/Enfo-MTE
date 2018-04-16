@@ -44,6 +44,9 @@ Then proceed as follows:
 ## Patch notes
 Patch notes will (eventually) be found in the Wiki pages.
 
+## Bug reporting
+Report a bug by creating a new [Issue](https://github.com/SimonMossmyr/Enfo-MTE/issues).
+
 ## FAQ
 _Why have you made it so hard to open and edit the map in World Editor? Why not just host the .w3x map file directly?_
 
