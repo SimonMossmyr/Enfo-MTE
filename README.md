@@ -2,6 +2,11 @@
 
 _Enfo's Team Survival: MTExtended Edition_ is a continuation of the abandoned WarCraft III map _Enfo's Team Survival: MT Edition_ by Pedro (Mecatronic) and Bruno (Prytoluk). It picks up where the developers left off at version 1.93 released in 2011.
 
+## Table of contents
+1.  [Instructions](#instructions)
+1.1 [How to play in WarCraft III](#how-to-play-in-warcraft-iii)
+1.2 [How to open in World Editor](#how-to-open-in-world-editor)
+
 ## Instructions
 
 ### How to play in WarCraft III
