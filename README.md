@@ -34,15 +34,15 @@ Done. Make sure the map compiles and is playable using the Test Map button.
 ### 1.3 How to commit changes to the map
 After you've changed all you want in SharpCraft WEX, save the map, close it and follow these steps:
 
-(Optional) If you have imported third party resources like custom button images, models or textures, you have to create a new MPQ listfile. Otherwise you can ignore steps:
-
-1. Download [MPQ Recover v1.08](https://www.hiveworkshop.com/threads/mpq-recover-v1-08.249643/)
-2. Open up the map in MPQ Recover,
-3. Tick the boxes for Brute Force and Deep Scan,
-4. Scan the map,
-5. Save two copies of the listfile: one in MPQMaster's listfile directory `X:\...\MPQ master v1.2.0\mpqmaster\Listfiles\` and one by overwriting this repository's existing listfile `X:\...\Enfo-MTE-repository\mpq-listfile.txt`
-
-Then proceed as follows:
+> (Optional) If you have imported third party resources like custom button images, models or textures, you have to create a new MPQ listfile. Otherwise you can ignore steps:
+>
+> 1. Download [MPQ Recover v1.08](https://www.hiveworkshop.com/threads/mpq-recover-v1-08.249643/)
+> 2. Open up the map in MPQ Recover,
+> 3. Tick the boxes for Brute Force and Deep Scan,
+> 4. Scan the map,
+> 5. Save two copies of the listfile: one in MPQMaster's listfile directory `X:\...\MPQ master v1.2.0\mpqmaster\Listfiles\` and one by overwriting this repository's existing listfile `X:\...\Enfo-MTE-repository\mpq-listfile.txt`
+> 
+> Then proceed as follows:
 
 1. Open the map in MPQMaster using the listfile,
 2. Extract _all_ files and directories found within to the repository's raw mpq folder `X:\...\Enfo-MTE-repository\w3x-mpq-raw\`,
