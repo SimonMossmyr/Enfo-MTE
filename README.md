@@ -1,6 +1,6 @@
-# Enfo's Team Survival: MTExtended Edition
+# Enfo's Team Survival: MTE Edition
 
-_Enfo's Team Survival: MTExtended Edition_ is a continuation of the abandoned WarCraft III map _Enfo's Team Survival: MT Edition_ by Pedro (Mecatronic) and Bruno (Prytoluk). It picks up where the developers left off at version 1.93 released in 2011.
+_Enfo's Team Survival: MTExtended Edition_ is a continuation of the abandoned WarCraft III map _Enfo's Team Survival: MT Edition_ by Pedro (mecatronic) and Bruno (Prytoluk). It picks up where the developers left off at version 1.93 released in 2011.
 
 ## Table of contents
 
@@ -12,7 +12,7 @@ _Enfo's Team Survival: MTExtended Edition_ is a continuation of the abandoned Wa
 ## 1 Instructions
 
 ### 1.1 How to play in WarCraft III
-Download the latest release in the [Releases](https://github.com/SimonMossmyr/Enfo-MTE/releases) tab and put the `.w3x` file in your WarCraft III maps folder: `X:\...\WarCraft III\Maps`. Start the game and play.
+Download the latest release in the [Releases](https://github.com/SimonMossmyr/Enfo-MTE/releases) tab and put the `.w3x` file in your WarCraft III maps folder: `X:\Users\<user>\Documents\Warcraft III\Maps`. Start the game and play.
 
 ### 1.2 How to open in World Editor
 The `.w3x` under the [Releases](https://github.com/SimonMossmyr/Enfo-MTE/releases) tab is optimized and put under protection, so you can't open it in World Editor. To do this you require at least WarCraft III 1.29 and some third party software:
