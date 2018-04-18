@@ -4,7 +4,7 @@ Created with GNU Image Manipulation Program (GIMP). The custom loading screen an
 
 ## Loading Screen
 
-TGA format. Size 1024x768. Exists as four quadrants and a header(?) file when imported into the map:
+TGA format. Size 1024x768. Exists as four quadrants and a header(?) file when imported into the map. Full paths:
 
 - `LoadingScreen.mdx`
 - `LoadingScreenBL.tga` (512x256)
@@ -14,4 +14,4 @@ TGA format. Size 1024x768. Exists as four quadrants and a header(?) file when im
 
 ## Lobby preview
 
-TGA format. Size 256x256. Exists as `war3mapPreview.tga` when imported into the map.
+TGA format. Size 256x256. Exists with full path `war3mapPreview.tga` when imported into the map.
