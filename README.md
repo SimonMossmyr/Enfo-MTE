@@ -10,4 +10,4 @@ Download the latest release in the [Releases](https://github.com/SimonMossmyr/En
 
 ## Further information
 
-Want to know more? Information about how to open the map in World Editor, commiting changes to this repository, patch notes and more can be found in the [Wiki](https://github.com/SimonMossmyr/Enfo-MTE/wiki).
+Information about how to open the map in World Editor, commiting changes to this repository, patch notes and more can be found in the [Wiki](https://github.com/SimonMossmyr/Enfo-MTE/wiki).
