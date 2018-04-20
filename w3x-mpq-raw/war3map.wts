@@ -6,7 +6,7 @@
 
 STRING 1
 {
-|cffffaa00Enfo's TS:MTE Edition 1.0
+|cffffaa00Enfo's TS:MTE Edition Beta
 }
 
 STRING 2
@@ -16,7 +16,7 @@ STRING 2
 
 STRING 3
 {
-|cffffaa00Enfo's TS:MT Edition 1.93
+GitHub.com/SimonMossmyr/Enfo-MTE
 }
 
 STRING 4
@@ -30636,7 +30636,7 @@ Behead - [|cffffcc00Level 1|r]
 
 STRING 3388
 {
-Choose a Hero with unique abilities to help your team to fight against waves of monsters while using your spells to defeat the other team.
+Choose a Hero with unique abilities to help your team to fight against waves of monsters. Use your spells to defeat the other team.
 Released on |cffffaa00Month DDth|r, 2018.
 Hosted at |c004EEA1Agithub.com/SimonMossmyr/Enfo-MTE|r
 }
