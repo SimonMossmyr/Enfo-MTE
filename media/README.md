@@ -15,3 +15,8 @@ Size 1024x768. Exists as four quadrants and a header(?) file when imported into 
 ## Lobby preview
 
 Size 256x256. Exists with full path `war3mapPreview.tga` when imported into the map.
+
+## Sources
+
+- Background image: _Tauren vs. Panda_ by Vincent Carre (Gen-X).
+- Font: [_LeagueGothic-Italic_](https://www.ffonts.net/LeagueGothic-Italic.font) by The League of Moveable Type.
