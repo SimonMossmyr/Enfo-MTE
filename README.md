@@ -2,7 +2,7 @@
 
 _Enfo's Team Survival: MTExtended Edition_ is a custom map for the game WarCraft III. 
 
-_Enfo's Team Survival_ is a Hero team survival inspired by an old forum-based RPG called DragonRealms. Choose a Hero, defend against waves of monsters, and hold out longer than the enemy team. _MTExtended Edition_ is an open-sourced continuation of the abandoned _MT Edition_ by Pedro (mecatronic) and Bruno (Prytoluk). It picks up where the developers left off at version 1.93 released in 2011.
+_Enfo's Team Survival_ is a Hero-centered team survival inspired by an old multi-user dungeon called DragonRealms. Choose a Hero, defend against waves of monsters, and hold out longer than the enemy team. _MTExtended Edition_ is an open-sourced continuation of the abandoned _MT Edition_ by Pedro (mecatronic) and Bruno (Prytoluk). It picks up where the developers left off at version 1.93 released in 2011.
 
 ## Instructions
 
