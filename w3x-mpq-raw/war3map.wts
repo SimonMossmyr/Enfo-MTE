@@ -24,6 +24,21 @@ STRING 4
 Player 13
 }
 
+STRING 5
+// Abilities: A02J (Bard - Nexus), Ubertip (Tooltip - Normal - Extended)
+{
+|c00ffcc00Ability Type:|r Activated
+|c00ffcc00Target:|r Your SpellBringer
+|c00ffcc00Effect:|r Restores target's mana
+|c00ffcc00Cooldown:|r <A02J,Cool1> seconds
+
+The magical lilt of Nexus encourages, if not outright forces, the user's Spellbringer to draw upon ambient energy, resulting in a sudden increase of its mana stores.
+
+|c00ffcc00Mana Restored:|r 40
+
+|cff87ceebCasting this ability prevents you from repicking.|r
+}
+
 STRING 6
 {
 Player 14
@@ -11160,21 +11175,6 @@ STRING 1214
 // Abilities: A02J (Bard - Nexus), Tip (Tooltip - Normal)
 {
 [|cffffcc00C|r] Nexus
-}
-
-STRING 1215
-// Abilities: A02J (Bard - Nexus), Ubertip (Tooltip - Normal - Extended)
-{
-|c00ffcc00Ability Type:|r Activated
-|c00ffcc00Target:|r Your SpellBringer
-|c00ffcc00Effect:|r Restores target's mana
-|c00ffcc00Cooldown:|r <A02J,Cool1> seconds
-
-The magical lilt of Nexus encourages, if not outright forces, the user's Spellbringer to draw upon ambient energy, resulting in a sudden increase of its mana stores.
-
-|c00ffcc00Mana Restored:|r 50
-
-|cff87ceebCasting this ability prevents you from repicking.|r
 }
 
 STRING 1216
