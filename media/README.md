@@ -4,7 +4,7 @@ Created with GNU Image Manipulation Program (GIMP). The custom loading screen an
 
 ## Loading Screen
 
-Size 1024x768. Exists as four quadrants and a header(?) file when imported into the map. Full paths:
+Size 1024x768. Exists as four quadrants and a header(?) `.mdx` file when imported into the map. Full paths:
 
 - `LoadingScreen.mdx`
 - `LoadingScreenBL.tga` (512x256)
