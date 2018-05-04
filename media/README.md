@@ -23,3 +23,4 @@ Size 256x256. Exists with full path `war3mapPreview.tga` when imported into the 
 - Yellow: #ffa800
 - Orange: #ff6600 40% opacity
 - Red: #fe0000
+- Lime: #68f900
