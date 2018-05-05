@@ -6,7 +6,7 @@
 
 STRING 1
 {
-|cffffaa00Enfo's TS:MTE Edition Beta
+|cffffaa00Enfo's TS:MTE Edition 1.0
 }
 
 STRING 2
@@ -2270,16 +2270,30 @@ The Tremor spell triggers violent seismic activity to shake the very foundations
 STRING 240
 {
 Player Numbers:
-1 - |c00ff0000Red|r                   
-2 - |c000000ffBlue|r                   
-3 - |c0000ffffTeal|r                   
-4 - |c00800080Purple|r                   
-5 - |c00ffff00Yellow|r                   
-6 - |c00ff8000Orange|r                   
-7 - |c0000ff00Green|r                   
-8 - |c00ff00ffPink|r                   
-9 - |c00959697Gray|r
-10 - |c007ebff1Light Blue|r
+Player 1 - (|c00ff0000Red|r)
+Player 2 - (|c000000ffBlue|r)
+Player 3 - (|c0000ffffTeal|r)
+Player 4 - (|c00800080Purple|r)
+Player 5 - (|c00ffff00Yellow|r)
+Player 6 - (|c00ff8000Orange|r)
+Player 7 - (|c0000ff00Green|r)
+Player 8 - (|c00ff00ffPink|r)
+Player 9 - (|c00959697Gray|r)
+Player 10 - (|c007ebff1Light Blue|r)
+Player 11 - (|c00106246Dark Green|r)
+Player 12 - (|c004E2A04Brown|r)
+Player 13 - (|c009B0000Maroon|r)
+Player 14 - (|c000000C3Navy|r)
+Player 15 - (|c0000EAFFTurquoise|r)
+Player 16 - (|c00BE00FEViolet|r)
+Player 17 - (|c00EBCD87Wheat|r)
+Player 18 - (|c00F8A48BPeach|r)
+Player 19 - (|c00BFFF80Mint|r)
+Player 20 - (|c00DCB9EBLavender|r)
+Player 21 - (|c00282828Coal|r)
+Player 22 - (|c00EBF0FFSnow|r)
+Player 23 - (|c0000781EEmerald|r)
+Player 24 - (|c00A46F33Peanut|r)
 }
 
 STRING 241
@@ -11177,6 +11191,11 @@ STRING 1214
 [|cffffcc00C|r] Nexus
 }
 
+STRING 1215
+{
+Enfo's Team Survival: MTE Edition
+}
+
 STRING 1216
 // Abilities: A03E (Meraud's Blessing), Name (Name)
 {
@@ -12342,13 +12361,6 @@ STRING 1345
 
 |c00ffcc00Permanent Damage Bonus:|r <A03Y,DataB10>
 |c00ffcc00|r|n|c00ffcc00Note: |rIf used while charged, the effect is doubled.
-}
-
-STRING 1346
-{
-Modified by MT Team
-
-|c004EEA1Awww.enfomt.com
 }
 
 STRING 1347
@@ -24897,9 +24909,9 @@ Praying for Chadatru, the god of Justice, the Paladin can ask for holy blessing 
 
 STRING 2712
 {
-|cffffcc00Welcome to Enfo's Team Survival: MT Edition!|r
-|c004EEA1A - |rPress |cffffcc00F9|r for information about the map and have fun!
-|c004EEA1A - |rThis map is hosted at |c004EEA1Awww.enfomt.com|r.
+|cffffcc00Welcome to Enfo's Team Survival: MTE Edition!|r
+|c004EEA1A - |rPress |cffffcc00F9|r for information about the map, and have fun!
+|c004EEA1A - |rThis map is hosted at |c004EEA1AGitHub.com/SimonMossmyr/Enfo-MTE|r.
 }
 
 STRING 2713
@@ -30636,9 +30648,9 @@ Behead - [|cffffcc00Level 1|r]
 
 STRING 3388
 {
-Choose a Hero with unique abilities to help your team to fight against waves of monsters. Use your spells to defeat the other team.
+A Hero-centered team survival.
 Released on |cffffaa00May 5th|r, 2018.
-Hosted at |c004EEA1Agithub.com/SimonMossmyr/Enfo-MTE|r
+Hosted at |c004EEA1AGitHub.com/SimonMossmyr/Enfo-MTE|r
 }
 
 STRING 3389
@@ -32955,11 +32967,6 @@ STRING 3716
 Monsters:
 }
 
-STRING 3717
-{
-Enfo's Team Survival MT Edition
-}
-
 STRING 3718
 {
 Hero damage has the following adjustment:|n|c00ffff00100% Light|n|c00ffff00100% Medium|n|c00ffff00100% Heavy|n|c00ff000050% Fortified|n|c00ffff00100%  Normal|n|c00ffff00100%  Hero|n|c00ffff00100%  Unarmored
@@ -33060,11 +33067,6 @@ STRING 3737
 Your hero will revive soon.
 }
 
-STRING 3738
-{
-|cffffaa00ETS MT
-}
-
 STRING 3739
 {
  
@@ -33114,6 +33116,16 @@ Player 11
 STRING 3748
 {
 Player 12
+}
+
+STRING 3749
+{
+|c004EEA1AGitHub.com/SimonMossmyr/Enfo-MTE
+}
+
+STRING 3750
+{
+|cffffaa00ETS MTE
 }
 
 STRING 3821
