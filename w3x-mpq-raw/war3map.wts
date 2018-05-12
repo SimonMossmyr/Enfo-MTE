@@ -6,12 +6,12 @@
 
 STRING 1
 {
-|cffffaa00Enfo's TS:MTE Edition 1.0
+|cffffaa00Enfo's TS:MTE Edition Test
 }
 
 STRING 2
 {
-6-8 (up to 24)
+6-8 (up to 20)
 }
 
 STRING 3
@@ -30649,7 +30649,7 @@ Behead - [|cffffcc00Level 1|r]
 STRING 3388
 {
 A Hero-centered team survival.
-Released on |cffffaa00May 5th|r, 2018.
+Released on |cffffaa00MONTH DDth|r, YEAR.
 Hosted at |c004EEA1AGitHub.com/SimonMossmyr/Enfo-MTE|r
 }
 
